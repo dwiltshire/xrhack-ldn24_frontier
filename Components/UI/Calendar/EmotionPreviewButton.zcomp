@@ -1,0 +1,320 @@
+{
+	"behaviors": {
+	},
+	"behaviorsByNode": {
+	},
+	"constructorProps": {
+	},
+	"entitiesByLabel": {
+		"background": {
+			"337404cd6aa24a5e9579860e86a07d9a": true
+		},
+		"date": {
+			"719950d69fad4edf9ff6d66512193948": true
+		},
+		"emotion_back": {
+			"cb27f8df539e4fb29792239a980af80d": true
+		},
+		"emotion_sample": {
+			"498cc010ed1b49fd833bd5232e9199a5": true
+		}
+	},
+	"entitiesByScriptName": {
+		"background": {
+			"337404cd6aa24a5e9579860e86a07d9a": true
+		},
+		"date": {
+			"719950d69fad4edf9ff6d66512193948": true
+		},
+		"emotion_back": {
+			"cb27f8df539e4fb29792239a980af80d": true
+		},
+		"emotion_sample": {
+			"498cc010ed1b49fd833bd5232e9199a5": true
+		}
+	},
+	"entityConstructorProps": {
+		"337404cd6aa24a5e9579860e86a07d9a": {
+			"source": "file://./Resources/calender_btn_bg.png"
+		},
+		"498cc010ed1b49fd833bd5232e9199a5": {
+			"source": "file://./Resources/shape_01.png"
+		},
+		"719950d69fad4edf9ff6d66512193948": {
+		},
+		"cb27f8df539e4fb29792239a980af80d": {
+			"source": "file://./Resources/emotion_btn_sample.png"
+		}
+	},
+	"entityPropOverrides": {
+		"componentprop:prop:root:position": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"position"
+			],
+			"id": "componentprop:prop:root:position",
+			"isConstructorProp": false,
+			"propName": "position",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:rotation": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"rotation"
+			],
+			"id": "componentprop:prop:root:rotation",
+			"isConstructorProp": false,
+			"propName": "rotation",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:scale": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"scale"
+			],
+			"id": "componentprop:prop:root:scale",
+			"isConstructorProp": false,
+			"propName": "scale",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:visible": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"visible"
+			],
+			"id": "componentprop:prop:root:visible",
+			"isConstructorProp": false,
+			"propName": "visible",
+			"type": "componentprop"
+		}
+	},
+	"entityProps": {
+		"337404cd6aa24a5e9579860e86a07d9a": {
+		},
+		"498cc010ed1b49fd833bd5232e9199a5": {
+			"position": [
+				0,
+				0,
+				0.02880772325690767
+			],
+			"scale": [
+				0.7800463394243563,
+				0.7800463394243563,
+				0.7800463394243563
+			]
+		},
+		"719950d69fad4edf9ff6d66512193948": {
+			"position": [
+				0.2800669726778081,
+				-0.2941798582531901,
+				0.03742041684145617
+			],
+			"scale": [
+				1.0490286392771795,
+				1.0490286392771795,
+				1.0490286392771795
+			],
+			"text": "01"
+		},
+		"cb27f8df539e4fb29792239a980af80d": {
+			"position": [
+				0,
+				0,
+				0.015890105533339555
+			]
+		}
+	},
+	"id": "9967ab8ff7a140a98285797b5ecc34ec",
+	"nodes": {
+		"337404cd6aa24a5e9579860e86a07d9a": {
+			"id": "337404cd6aa24a5e9579860e86a07d9a",
+			"label": "background",
+			"parent": {
+				"id": "root",
+				"order": "Zz"
+			},
+			"scriptName": "background",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"498cc010ed1b49fd833bd5232e9199a5": {
+			"id": "498cc010ed1b49fd833bd5232e9199a5",
+			"label": "emotion_sample",
+			"parent": {
+				"id": "cb27f8df539e4fb29792239a980af80d",
+				"order": "a0"
+			},
+			"scriptName": "emotion_sample",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"719950d69fad4edf9ff6d66512193948": {
+			"id": "719950d69fad4edf9ff6d66512193948",
+			"label": "date",
+			"parent": {
+				"id": "337404cd6aa24a5e9579860e86a07d9a",
+				"order": "a0"
+			},
+			"scriptName": "date",
+			"type": "@zcomponent/three/lib/components/text/Text#Text"
+		},
+		"cb27f8df539e4fb29792239a980af80d": {
+			"id": "cb27f8df539e4fb29792239a980af80d",
+			"label": "emotion_back",
+			"parent": {
+				"id": "root",
+				"order": "Zy"
+			},
+			"scriptName": "emotion_back",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"root": {
+			"id": "root",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		}
+	},
+	"preview": "@zcomponent/three/lib/preview#default",
+	"props": {
+		"position": {
+			"comments": [
+				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "position",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"rotation": {
+			"comments": [
+				"The rotation, in three dimensions, of this node relative to its parent. The three elements of the array correspond to Euler angles - yaw, pitch and roll."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "rotation",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"scale": {
+			"comments": [
+				"The scale, in three dimensions, of this node relative to its parent. The three elements of the array correspond to scales in the the `x`, `y`, and `z` axis."
+			],
+			"default": [
+				1,
+				1,
+				1
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "scale",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"visible": {
+			"comments": [
+				"Determines if this object and its children are rendered to the screen."
+			],
+			"default": true,
+			"group": "Appearance",
+			"groupPriority": 11,
+			"name": "visible",
+			"type": {
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "boolean"
+			}
+		}
+	},
+	"root": "root"
+}

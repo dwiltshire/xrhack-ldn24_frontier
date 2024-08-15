@@ -1,0 +1,947 @@
+{
+	"behaviors": {
+	},
+	"behaviorsByNode": {
+	},
+	"constructorProps": {
+	},
+	"entitiesByLabel": {
+		"AddNewButton 10": {
+			"75549ef6aed84954af9f28086b10e68d": true
+		},
+		"AddNewButton 11": {
+			"e52efb5b2c5e4f0da8a88e7ef5626a85": true
+		},
+		"AddNewButton 12": {
+			"ea5049f5f1ab4c50bf70628508862546": true
+		},
+		"AddNewButton 13": {
+			"6b5f6e6f51cd45adaeec66d06fd34a21": true
+		},
+		"AddNewButton 14": {
+			"86e7f7702533461289ce7d4ff9ad8889": true
+		},
+		"AddNewButton 15": {
+			"ddafbc56db7b475d9077daaa54653486": true
+		},
+		"AddNewButton 2": {
+			"f3f3b971f1054592ada8ea25640adc01": true
+		},
+		"AddNewButton 3": {
+			"08117c1c91694d1388471127e4ab5b93": true
+		},
+		"AddNewButton 4": {
+			"34e01d985ba0488e84ab5e6ce9c62d1a": true
+		},
+		"AddNewButton 5": {
+			"f72d43d2696c4a069941b705a64ede8e": true
+		},
+		"AddNewButton 6": {
+			"574e8f21c06d404992a5e822b0afa626": true
+		},
+		"AddNewButton 7": {
+			"4f3a6061986544eaa2d63c54b6da329d": true
+		},
+		"AddNewButton 8": {
+			"a5f6d50fa18e40dc8fce2fdccc8272e2": true
+		},
+		"AddNewButton 9": {
+			"8ead2a44ae7d4479ba81175a6338071c": true
+		},
+		"Base": {
+			"03e8cbeaaac945549fd0a0b203ff1d71": true
+		},
+		"CalendarUI": {
+			"7ecf6f20bfdc45b0a2ced7b8b7695e38": true
+		},
+		"DirectionalLight": {
+			"64eaa6df25bb49d696c5180d65bca8ca": true
+		},
+		"HDREnvironment": {
+			"667849678013424b91a73971b8bb8054": true
+		},
+		"Left Controller": {
+			"c3598646278d4462a3611c0dd1a90363": true
+		},
+		"MeshStandardMaterial": {
+			"de97c0586a564eaa90ff64e7087da3e6": true
+		},
+		"PlaceholderSphere": {
+			"43f0d259d177401491ad7961645fd512": true
+		},
+		"Right Controller": {
+			"784372b138c040faa090347d09ed52ee": true
+		},
+		"ShadowPlane": {
+			"51f00a875efa4d04b3b330e27fc5670b": true
+		},
+		"Teleport Manager": {
+			"41426860a1634f009521f3821beca22f": true
+		},
+		"Turn Manager": {
+			"db9fca09e5ab46fd915de2f09869a6a1": true
+		},
+		"XR Camera": {
+			"f5c9a17aaf1f47829fc5415a59fe9289": true
+		},
+		"XR Default Loader": {
+			"bb010b99aca94a2a9d5774bb7632351f": true
+		},
+		"XR Manager": {
+			"edbb589785eb43e2923d0326f18c49d4": true
+		},
+		"XRRigVRPassthrough": {
+			"d3bec9c2ca4e4c88a19c174234e21adb": true
+		}
+	},
+	"entitiesByScriptName": {
+		"AddNewButton0": {
+			"f3f3b971f1054592ada8ea25640adc01": true
+		},
+		"AddNewButton1": {
+			"08117c1c91694d1388471127e4ab5b93": true
+		},
+		"AddNewButton_2": {
+			"8ead2a44ae7d4479ba81175a6338071c": true
+		},
+		"AddNewButton_3": {
+			"34e01d985ba0488e84ab5e6ce9c62d1a": true
+		},
+		"AddNewButton_30": {
+			"75549ef6aed84954af9f28086b10e68d": true
+		},
+		"AddNewButton_4": {
+			"f72d43d2696c4a069941b705a64ede8e": true
+		},
+		"AddNewButton_40": {
+			"574e8f21c06d404992a5e822b0afa626": true
+		},
+		"AddNewButton_41": {
+			"4f3a6061986544eaa2d63c54b6da329d": true
+		},
+		"AddNewButton_42": {
+			"a5f6d50fa18e40dc8fce2fdccc8272e2": true
+		},
+		"AddNewButton_43": {
+			"e52efb5b2c5e4f0da8a88e7ef5626a85": true
+		},
+		"AddNewButton_5": {
+			"ddafbc56db7b475d9077daaa54653486": true
+		},
+		"AddNewButton_6": {
+			"86e7f7702533461289ce7d4ff9ad8889": true
+		},
+		"AddNewButton_7": {
+			"6b5f6e6f51cd45adaeec66d06fd34a21": true
+		},
+		"AddNewButton_8": {
+			"ea5049f5f1ab4c50bf70628508862546": true
+		},
+		"Base": {
+			"03e8cbeaaac945549fd0a0b203ff1d71": true
+		},
+		"CalendarUI": {
+			"7ecf6f20bfdc45b0a2ced7b8b7695e38": true
+		},
+		"DirectionalLight": {
+			"64eaa6df25bb49d696c5180d65bca8ca": true
+		},
+		"HDREnvironment": {
+			"667849678013424b91a73971b8bb8054": true
+		},
+		"Left_Controller": {
+			"c3598646278d4462a3611c0dd1a90363": true
+		},
+		"MeshStandardMaterial": {
+			"de97c0586a564eaa90ff64e7087da3e6": true
+		},
+		"PlaceholderSphere": {
+			"43f0d259d177401491ad7961645fd512": true
+		},
+		"Right_Controller": {
+			"784372b138c040faa090347d09ed52ee": true
+		},
+		"ShadowPlane": {
+			"51f00a875efa4d04b3b330e27fc5670b": true
+		},
+		"Teleport_Manager": {
+			"41426860a1634f009521f3821beca22f": true
+		},
+		"Turn_Manager": {
+			"db9fca09e5ab46fd915de2f09869a6a1": true
+		},
+		"XRRigVRPassthrough": {
+			"d3bec9c2ca4e4c88a19c174234e21adb": true
+		},
+		"XR_Camera": {
+			"f5c9a17aaf1f47829fc5415a59fe9289": true
+		},
+		"XR_DefaultLoader": {
+			"bb010b99aca94a2a9d5774bb7632351f": true
+		},
+		"XR_Manager": {
+			"edbb589785eb43e2923d0326f18c49d4": true
+		}
+	},
+	"entityConstructorProps": {
+		"03e8cbeaaac945549fd0a0b203ff1d71": {
+		},
+		"08117c1c91694d1388471127e4ab5b93": {
+		},
+		"34e01d985ba0488e84ab5e6ce9c62d1a": {
+		},
+		"41426860a1634f009521f3821beca22f": {
+		},
+		"43f0d259d177401491ad7961645fd512": {
+		},
+		"4f3a6061986544eaa2d63c54b6da329d": {
+		},
+		"51f00a875efa4d04b3b330e27fc5670b": {
+		},
+		"574e8f21c06d404992a5e822b0afa626": {
+		},
+		"64eaa6df25bb49d696c5180d65bca8ca": {
+		},
+		"667849678013424b91a73971b8bb8054": {
+			"setSceneBackground": false,
+			"setSceneEnvironment": true,
+			"source": "file://./Resources/00262_OpenfootageNET_Beach05_LOW.hdr"
+		},
+		"6b5f6e6f51cd45adaeec66d06fd34a21": {
+		},
+		"75549ef6aed84954af9f28086b10e68d": {
+		},
+		"784372b138c040faa090347d09ed52ee": {
+			"allowLeftHandControllers": false
+		},
+		"7ecf6f20bfdc45b0a2ced7b8b7695e38": {
+		},
+		"86e7f7702533461289ce7d4ff9ad8889": {
+		},
+		"8ead2a44ae7d4479ba81175a6338071c": {
+		},
+		"a5f6d50fa18e40dc8fce2fdccc8272e2": {
+		},
+		"bb010b99aca94a2a9d5774bb7632351f": {
+		},
+		"c3598646278d4462a3611c0dd1a90363": {
+			"allowRightHandControllers": false,
+			"allowUnspecifiedHandControllers": false
+		},
+		"d3bec9c2ca4e4c88a19c174234e21adb": {
+		},
+		"db9fca09e5ab46fd915de2f09869a6a1": {
+		},
+		"ddafbc56db7b475d9077daaa54653486": {
+		},
+		"de97c0586a564eaa90ff64e7087da3e6": {
+		},
+		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
+		},
+		"ea5049f5f1ab4c50bf70628508862546": {
+		},
+		"edbb589785eb43e2923d0326f18c49d4": {
+			"startOnLaunch": "immersive-ar"
+		},
+		"f3f3b971f1054592ada8ea25640adc01": {
+		},
+		"f5c9a17aaf1f47829fc5415a59fe9289": {
+		},
+		"f72d43d2696c4a069941b705a64ede8e": {
+		}
+	},
+	"entityPropOverrides": {
+		"componentprop:prop:root:position": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"position"
+			],
+			"id": "componentprop:prop:root:position",
+			"isConstructorProp": false,
+			"propName": "position",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:rotation": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"rotation"
+			],
+			"id": "componentprop:prop:root:rotation",
+			"isConstructorProp": false,
+			"propName": "rotation",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:scale": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"scale"
+			],
+			"id": "componentprop:prop:root:scale",
+			"isConstructorProp": false,
+			"propName": "scale",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:visible": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"visible"
+			],
+			"id": "componentprop:prop:root:visible",
+			"isConstructorProp": false,
+			"propName": "visible",
+			"type": "componentprop"
+		}
+	},
+	"entityProps": {
+		"03e8cbeaaac945549fd0a0b203ff1d71": {
+		},
+		"08117c1c91694d1388471127e4ab5b93": {
+			"Add": false,
+			"Date": 2,
+			"HasEmotion": true,
+			"position": [
+				0.9819157204541971,
+				3.2,
+				-2
+			]
+		},
+		"34e01d985ba0488e84ab5e6ce9c62d1a": {
+			"Add": false,
+			"Date": 7,
+			"HasEmotion": true,
+			"position": [
+				6.750158965603883,
+				3.2,
+				-2
+			]
+		},
+		"41426860a1634f009521f3821beca22f": {
+		},
+		"43f0d259d177401491ad7961645fd512": {
+			"position": [
+				0,
+				1.0169628400234525,
+				-2.5677998297287896
+			],
+			"scale": [
+				1,
+				1,
+				1
+			]
+		},
+		"4f3a6061986544eaa2d63c54b6da329d": {
+			"Add": false,
+			"Date": 5,
+			"HasEmotion": true,
+			"position": [
+				4.424616880263322,
+				3.2,
+				-2
+			]
+		},
+		"51f00a875efa4d04b3b330e27fc5670b": {
+			"position": [
+				0.11194781319333202,
+				-0.15619569836524838,
+				-1.1256899169139003
+			]
+		},
+		"574e8f21c06d404992a5e822b0afa626": {
+			"Add": false,
+			"Date": 4,
+			"HasEmotion": true,
+			"position": [
+				3.2703167906063517,
+				3.2,
+				-2
+			]
+		},
+		"64eaa6df25bb49d696c5180d65bca8ca": {
+			"rotation": [
+				0,
+				0,
+				-0.49718528034550596
+			]
+		},
+		"667849678013424b91a73971b8bb8054": {
+		},
+		"6b5f6e6f51cd45adaeec66d06fd34a21": {
+			"Add": true,
+			"Date": 5,
+			"HasEmotion": false,
+			"position": [
+				4.424616880263322,
+				2,
+				-2
+			]
+		},
+		"75549ef6aed84954af9f28086b10e68d": {
+			"Add": false,
+			"Date": 2,
+			"HasEmotion": true,
+			"position": [
+				0.9819157204541971,
+				2,
+				-2
+			]
+		},
+		"784372b138c040faa090347d09ed52ee": {
+			"position": [
+				0.3,
+				1.3,
+				0
+			]
+		},
+		"7ecf6f20bfdc45b0a2ced7b8b7695e38": {
+			"position": [
+				-3.3135171735495303,
+				1.2006388114159212,
+				0
+			]
+		},
+		"86e7f7702533461289ce7d4ff9ad8889": {
+			"Add": false,
+			"Date": 4,
+			"HasEmotion": true,
+			"position": [
+				3.2703167906063517,
+				2,
+				-2
+			]
+		},
+		"8ead2a44ae7d4479ba81175a6338071c": {
+			"Date": 1,
+			"HasEmotion": true,
+			"position": [
+				-0.13334515839017713,
+				2,
+				-2
+			],
+			"visible": true
+		},
+		"a5f6d50fa18e40dc8fce2fdccc8272e2": {
+			"Add": false,
+			"Date": 6,
+			"HasEmotion": true,
+			"position": [
+				5.576837500247923,
+				3.2,
+				-2
+			]
+		},
+		"bb010b99aca94a2a9d5774bb7632351f": {
+		},
+		"c3598646278d4462a3611c0dd1a90363": {
+			"position": [
+				-0.3,
+				1.3,
+				0
+			]
+		},
+		"d3bec9c2ca4e4c88a19c174234e21adb": {
+		},
+		"db9fca09e5ab46fd915de2f09869a6a1": {
+		},
+		"ddafbc56db7b475d9077daaa54653486": {
+			"Add": false,
+			"Date": 3,
+			"HasEmotion": true,
+			"position": [
+				2.1018741864058157,
+				2,
+				-2
+			]
+		},
+		"de97c0586a564eaa90ff64e7087da3e6": {
+			"metalness": 1,
+			"roughness": 0
+		},
+		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
+			"Add": true,
+			"Date": 7,
+			"HasEmotion": false,
+			"position": [
+				6.750158965603883,
+				2,
+				-2
+			]
+		},
+		"ea5049f5f1ab4c50bf70628508862546": {
+			"Add": true,
+			"Date": 6,
+			"HasEmotion": false,
+			"position": [
+				5.576837500247923,
+				2,
+				-2
+			]
+		},
+		"edbb589785eb43e2923d0326f18c49d4": {
+		},
+		"f3f3b971f1054592ada8ea25640adc01": {
+			"Date": 1,
+			"HasEmotion": true,
+			"position": [
+				-0.13334515839017713,
+				3.2,
+				-2
+			],
+			"visible": true
+		},
+		"f5c9a17aaf1f47829fc5415a59fe9289": {
+		},
+		"f72d43d2696c4a069941b705a64ede8e": {
+			"Add": false,
+			"Date": 3,
+			"HasEmotion": true,
+			"position": [
+				2.1018741864058157,
+				3.2,
+				-2
+			]
+		}
+	},
+	"id": "f6edd7b862064f25949523b86bed449a",
+	"nodes": {
+		"03e8cbeaaac945549fd0a0b203ff1d71": {
+			"id": "03e8cbeaaac945549fd0a0b203ff1d71",
+			"label": "Base",
+			"parent": {
+				"id": "root",
+				"order": "a8"
+			},
+			"scriptName": "Base",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"08117c1c91694d1388471127e4ab5b93": {
+			"id": "08117c1c91694d1388471127e4ab5b93",
+			"label": "AddNewButton 3",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a3"
+			},
+			"scriptName": "AddNewButton1",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"34e01d985ba0488e84ab5e6ce9c62d1a": {
+			"id": "34e01d985ba0488e84ab5e6ce9c62d1a",
+			"label": "AddNewButton 4",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a5"
+			},
+			"scriptName": "AddNewButton_3",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"41426860a1634f009521f3821beca22f": {
+			"id": "41426860a1634f009521f3821beca22f",
+			"label": "Teleport Manager",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a3"
+			},
+			"scriptName": "Teleport_Manager",
+			"type": "@zcomponent/three-webxr/lib/components/TeleportManager#TeleportManager"
+		},
+		"43f0d259d177401491ad7961645fd512": {
+			"id": "43f0d259d177401491ad7961645fd512",
+			"label": "PlaceholderSphere",
+			"parent": {
+				"id": "root",
+				"order": "a5"
+			},
+			"scriptName": "PlaceholderSphere",
+			"type": "@zcomponent/three/lib/components/meshes/Sphere#Sphere"
+		},
+		"4f3a6061986544eaa2d63c54b6da329d": {
+			"id": "4f3a6061986544eaa2d63c54b6da329d",
+			"label": "AddNewButton 7",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a9"
+			},
+			"scriptName": "AddNewButton_41",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"51f00a875efa4d04b3b330e27fc5670b": {
+			"id": "51f00a875efa4d04b3b330e27fc5670b",
+			"label": "ShadowPlane",
+			"parent": {
+				"id": "03e8cbeaaac945549fd0a0b203ff1d71",
+				"order": "Zz"
+			},
+			"scriptName": "ShadowPlane",
+			"type": "@zcomponent/three/lib/components/meshes/ShadowPlane#ShadowPlane"
+		},
+		"574e8f21c06d404992a5e822b0afa626": {
+			"id": "574e8f21c06d404992a5e822b0afa626",
+			"label": "AddNewButton 6",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "aB"
+			},
+			"scriptName": "AddNewButton_40",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"64eaa6df25bb49d696c5180d65bca8ca": {
+			"id": "64eaa6df25bb49d696c5180d65bca8ca",
+			"label": "DirectionalLight",
+			"parent": {
+				"id": "03e8cbeaaac945549fd0a0b203ff1d71",
+				"order": "a0"
+			},
+			"scriptName": "DirectionalLight",
+			"type": "@zcomponent/three/lib/components/lights/DirectionalLight#DirectionalLight"
+		},
+		"667849678013424b91a73971b8bb8054": {
+			"id": "667849678013424b91a73971b8bb8054",
+			"label": "HDREnvironment",
+			"parent": {
+				"id": "03e8cbeaaac945549fd0a0b203ff1d71",
+				"order": "Zy"
+			},
+			"scriptName": "HDREnvironment",
+			"type": "@zcomponent/three/lib/components/environments/HDREnvironment#HDREnvironment"
+		},
+		"6b5f6e6f51cd45adaeec66d06fd34a21": {
+			"id": "6b5f6e6f51cd45adaeec66d06fd34a21",
+			"label": "AddNewButton 13",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a8"
+			},
+			"scriptName": "AddNewButton_7",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"75549ef6aed84954af9f28086b10e68d": {
+			"id": "75549ef6aed84954af9f28086b10e68d",
+			"label": "AddNewButton 10",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a2"
+			},
+			"scriptName": "AddNewButton_30",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"784372b138c040faa090347d09ed52ee": {
+			"id": "784372b138c040faa090347d09ed52ee",
+			"label": "Right Controller",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a1"
+			},
+			"scriptName": "Right_Controller",
+			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"7ecf6f20bfdc45b0a2ced7b8b7695e38": {
+			"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+			"label": "CalendarUI",
+			"parent": {
+				"id": "root",
+				"order": "a6"
+			},
+			"scriptName": "CalendarUI",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"86e7f7702533461289ce7d4ff9ad8889": {
+			"id": "86e7f7702533461289ce7d4ff9ad8889",
+			"label": "AddNewButton 14",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "aA"
+			},
+			"scriptName": "AddNewButton_6",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"8ead2a44ae7d4479ba81175a6338071c": {
+			"id": "8ead2a44ae7d4479ba81175a6338071c",
+			"label": "AddNewButton 9",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a0"
+			},
+			"scriptName": "AddNewButton_2",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"a5f6d50fa18e40dc8fce2fdccc8272e2": {
+			"id": "a5f6d50fa18e40dc8fce2fdccc8272e2",
+			"label": "AddNewButton 8",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a7"
+			},
+			"scriptName": "AddNewButton_42",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"bb010b99aca94a2a9d5774bb7632351f": {
+			"id": "bb010b99aca94a2a9d5774bb7632351f",
+			"label": "XR Default Loader",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a6"
+			},
+			"scriptName": "XR_DefaultLoader",
+			"type": "@zcomponent/three-webxr/lib/components/XRDefaultLoader#XRDefaultLoader"
+		},
+		"c3598646278d4462a3611c0dd1a90363": {
+			"id": "c3598646278d4462a3611c0dd1a90363",
+			"label": "Left Controller",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a0"
+			},
+			"scriptName": "Left_Controller",
+			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"d3bec9c2ca4e4c88a19c174234e21adb": {
+			"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+			"label": "XRRigVRPassthrough",
+			"parent": {
+				"id": "root",
+				"order": "a7"
+			},
+			"scriptName": "XRRigVRPassthrough",
+			"type": "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough#XRRigVRPassthrough"
+		},
+		"db9fca09e5ab46fd915de2f09869a6a1": {
+			"id": "db9fca09e5ab46fd915de2f09869a6a1",
+			"label": "Turn Manager",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a4"
+			},
+			"scriptName": "Turn_Manager",
+			"type": "@zcomponent/three-webxr/lib/components/TurnManager#TurnManager"
+		},
+		"ddafbc56db7b475d9077daaa54653486": {
+			"id": "ddafbc56db7b475d9077daaa54653486",
+			"label": "AddNewButton 15",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "aC"
+			},
+			"scriptName": "AddNewButton_5",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"de97c0586a564eaa90ff64e7087da3e6": {
+			"id": "de97c0586a564eaa90ff64e7087da3e6",
+			"label": "MeshStandardMaterial",
+			"parent": {
+				"id": "43f0d259d177401491ad7961645fd512",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
+		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
+			"id": "e52efb5b2c5e4f0da8a88e7ef5626a85",
+			"label": "AddNewButton 11",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a4"
+			},
+			"scriptName": "AddNewButton_43",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"ea5049f5f1ab4c50bf70628508862546": {
+			"id": "ea5049f5f1ab4c50bf70628508862546",
+			"label": "AddNewButton 12",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a6"
+			},
+			"scriptName": "AddNewButton_8",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"edbb589785eb43e2923d0326f18c49d4": {
+			"id": "edbb589785eb43e2923d0326f18c49d4",
+			"label": "XR Manager",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a5"
+			},
+			"scriptName": "XR_Manager",
+			"type": "@zcomponent/three-webxr/lib/components/XRManager#XRManager"
+		},
+		"f3f3b971f1054592ada8ea25640adc01": {
+			"id": "f3f3b971f1054592ada8ea25640adc01",
+			"label": "AddNewButton 2",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "a1"
+			},
+			"scriptName": "AddNewButton0",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"f5c9a17aaf1f47829fc5415a59fe9289": {
+			"id": "f5c9a17aaf1f47829fc5415a59fe9289",
+			"label": "XR Camera",
+			"parent": {
+				"id": "d3bec9c2ca4e4c88a19c174234e21adb",
+				"order": "a2"
+			},
+			"scriptName": "XR_Camera",
+			"type": "@zcomponent/three-webxr/lib/components/XRCamera#XRCamera"
+		},
+		"f72d43d2696c4a069941b705a64ede8e": {
+			"id": "f72d43d2696c4a069941b705a64ede8e",
+			"label": "AddNewButton 5",
+			"parent": {
+				"id": "7ecf6f20bfdc45b0a2ced7b8b7695e38",
+				"order": "aD"
+			},
+			"scriptName": "AddNewButton_4",
+			"type": "./AddNewButton.zcomp#default"
+		},
+		"root": {
+			"id": "root",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		}
+	},
+	"preview": "@zcomponent/three/lib/preview#default",
+	"props": {
+		"position": {
+			"comments": [
+				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "position",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"rotation": {
+			"comments": [
+				"The rotation, in three dimensions, of this node relative to its parent. The three elements of the array correspond to Euler angles - yaw, pitch and roll."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "rotation",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"scale": {
+			"comments": [
+				"The scale, in three dimensions, of this node relative to its parent. The three elements of the array correspond to scales in the the `x`, `y`, and `z` axis."
+			],
+			"default": [
+				1,
+				1,
+				1
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "scale",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"visible": {
+			"comments": [
+				"Determines if this object and its children are rendered to the screen."
+			],
+			"default": true,
+			"group": "Appearance",
+			"groupPriority": 11,
+			"name": "visible",
+			"type": {
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "boolean"
+			}
+		}
+	},
+	"root": "root"
+}
