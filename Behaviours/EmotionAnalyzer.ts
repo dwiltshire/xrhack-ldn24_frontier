@@ -123,13 +123,8 @@ export class EmotionAnalyzer extends Behavior<Group> {
 
             const opacity = cumulativeSums[group] / (100.0 * 4);
 
-            if (!component)
-                {
-                    console.log("Group: ", group);
-                }
-
             component.opacity += opacity;
-            console.log(component.opacity);
+            // console.log(component.opacity);
         }
 
        
