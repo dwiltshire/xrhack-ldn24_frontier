@@ -249,7 +249,7 @@
 				"_zfn": true,
 				"args": {
 				},
-				"prop": "onClick",
+				"prop": "onButtonClick",
 				"t": "emitcomponentevent"
 			}
 		},
@@ -303,10 +303,10 @@
 	},
 	"preview": "@zcomponent/three/lib/preview#default",
 	"props": {
-		"onClick": {
+		"onButtonClick": {
 			"group": "Button",
 			"groupPriority": 30,
-			"name": "onClick",
+			"name": "onButtonClick",
 			"order": 0,
 			"type": {
 				"children": [
