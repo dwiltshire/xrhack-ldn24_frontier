@@ -7,6 +7,9 @@
 		"Box": {
 			"194aae695cba4b60a35c287f3e37fbcf": true
 		},
+		"Button": {
+			"eabdc277461d400b9b7c14eec8769f1e": true
+		},
 		"Cone": {
 			"f6371bf08200415f82989d46101107a8": true
 		},
@@ -64,6 +67,9 @@
 		"Turn Manager": {
 			"78b306b6a3bc4a2badcdcb844a684766": true
 		},
+		"UI": {
+			"747969f055334066832fae3254d8bec5": true
+		},
 		"XR Camera": {
 			"f82f3ce18b9e4f6985431ebf8ee9f60d": true
 		},
@@ -80,6 +86,9 @@
 	"entitiesByScriptName": {
 		"Box": {
 			"194aae695cba4b60a35c287f3e37fbcf": true
+		},
+		"Button": {
+			"eabdc277461d400b9b7c14eec8769f1e": true
 		},
 		"Cone": {
 			"f6371bf08200415f82989d46101107a8": true
@@ -135,6 +144,9 @@
 		"Turn_Manager": {
 			"78b306b6a3bc4a2badcdcb844a684766": true
 		},
+		"UI": {
+			"747969f055334066832fae3254d8bec5": true
+		},
 		"XRRigVRPassthrough": {
 			"1cc708d8a74849a3970861a8c786ddf3": true
 		},
@@ -162,6 +174,8 @@
 		"547097f646a54d39aa1706d0ba7c7ef8": {
 		},
 		"6ef7d30d3e044b6f806dac36e63a857d": {
+		},
+		"747969f055334066832fae3254d8bec5": {
 		},
 		"77a68218309245289c411d5da417fab9": {
 		},
@@ -193,6 +207,8 @@
 		"d00105d4f4dc4897b014577ba2fae6fd": {
 			"fallbackSessionMode": "immersive-vr",
 			"startOnLaunch": "immersive-ar"
+		},
+		"eabdc277461d400b9b7c14eec8769f1e": {
 		},
 		"f3937ace1ef5478c9221e2cfc2453503": {
 			"height": 3,
@@ -281,6 +297,8 @@
 		},
 		"6ef7d30d3e044b6f806dac36e63a857d": {
 		},
+		"747969f055334066832fae3254d8bec5": {
+		},
 		"77a68218309245289c411d5da417fab9": {
 			"position": [
 				0.2071166689187388,
@@ -346,6 +364,14 @@
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
 		},
 		"d00105d4f4dc4897b014577ba2fae6fd": {
+		},
+		"eabdc277461d400b9b7c14eec8769f1e": {
+			"position": [
+				0,
+				0.9241960556842486,
+				-1.7368616342448604
+			],
+			"text": "Start"
 		},
 		"f3937ace1ef5478c9221e2cfc2453503": {
 		},
@@ -434,6 +460,16 @@
 				"order": "Zz"
 			},
 			"scriptName": "Mesh_GroupDeleteMe0",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"747969f055334066832fae3254d8bec5": {
+			"id": "747969f055334066832fae3254d8bec5",
+			"label": "UI",
+			"parent": {
+				"id": "root",
+				"order": "a1"
+			},
+			"scriptName": "UI",
 			"type": "@zcomponent/three/lib/components/Group#Group"
 		},
 		"77a68218309245289c411d5da417fab9": {
@@ -566,6 +602,16 @@
 			},
 			"scriptName": "XR_Manager",
 			"type": "@zcomponent/three-webxr/lib/components/XRManager#XRManager"
+		},
+		"eabdc277461d400b9b7c14eec8769f1e": {
+			"id": "eabdc277461d400b9b7c14eec8769f1e",
+			"label": "Button",
+			"parent": {
+				"id": "747969f055334066832fae3254d8bec5",
+				"order": "a0"
+			},
+			"scriptName": "Button",
+			"type": "./Button/Button.zcomp#default"
 		},
 		"f3937ace1ef5478c9221e2cfc2453503": {
 			"id": "f3937ace1ef5478c9221e2cfc2453503",

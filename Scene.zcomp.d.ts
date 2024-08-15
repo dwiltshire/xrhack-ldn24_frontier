@@ -18,6 +18,7 @@ import { XRRigVRPassthrough as XRRigVRPassthrough_14 } from "@zcomponent/three-w
 import { XRCamera as XRCamera_15 } from "@zcomponent/three-webxr/lib/components/XRCamera";
 import { XRDefaultLoader as XRDefaultLoader_16 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
 import { XRManager as XRManager_17 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { default as Button_zcomp_18 } from "./Button/Button.zcomp";
 
 interface ConstructorProps {
 
@@ -143,6 +144,16 @@ declare class Comp extends ZComponent {
 			}
 		},
 		XR_Manager: XRManager_17 & {
+			behaviors: {
+
+			}
+		},
+		UI: Group_3 & {
+			behaviors: {
+
+			}
+		},
+		Button: Button_zcomp_18 & {
 			behaviors: {
 
 			}
