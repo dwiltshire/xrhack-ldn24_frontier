@@ -1,6 +1,7 @@
 import { Component, Behavior, BehaviorConstructorProps, ContextManager, registerBehaviorRunAtDesignTime } from "@zcomponent/core";
 import { Group as Group } from "@zcomponent/three/lib/components/Group";
 import { default as SceneVis} from "../SceneVis.zcomp";
+import { EmotionMeshComponent } from '../Components/Visualization/EmotionMeshComponent';
 
 
 // Define the emotion groups
@@ -10,6 +11,9 @@ const EMOTION_GROUPS = {
     Interest: ["Interest", "Excitement", "Concentration", "Determination", "Triumph", "Pride"],
     Surprise: ["Surprise (positive)", "Surprise (negative)", "Awe", "Realization", "Confusion", "Awkwardness"],
     Sadness: ["Sadness", "Disappointment", "Nostalgia", "Contemplation", "Empathic Pain", "Pain"],
+    Fear: ['Fear', 'Anxiety', 'Horror', 'Distress', 'Doubt', 'Guilt'],
+    Anger: ['Anger', 'Contempt', 'Disgust', 'Embarrassment', 'Shame'],
+    Amusement: ['Amusement', 'Aesthetic Appreciation', 'Craving', 'Boredom', 'Tiredness', 'Entrancement']
 };
 
 // Initialize cumulative sums for each group
@@ -19,6 +23,9 @@ const cumulativeSums = {
     Interest: 0,
     Surprise: 0,
     Sadness: 0,
+    Fear: 0,
+    Anger: 0,
+    Amusement: 0
 };
 
 // Generate mock data
@@ -73,29 +80,12 @@ export class EmotionAnalyzer extends Behavior<Group> {
                 this.updateRandomWord();  // Fetch and update the random word every 5 seconds
             }, 1000); // 1 second interval
         }
-
-		/*
-		// You can register handlers for events on the node that this behavior
-		// is attached to like this:
-
-		this.register(this.instance.onPointerDown, evt => {
-			// Code to handle event
-		});
-
-		// Or against other nodes in your zcomp file
-		this.register(this.zcomponent.nodes.MyNode.onPointerDown, evt => {
-
-		});
-		
-		*/
 	}
 
 	updateEmotionScoresAndBoxHeights() {
         // Generate mock data and update the emotion scores
         const mockData = generateMock();
         const emotionScores = mockData.models.prosody.scores;
-
-        let scoresText = "";
 
         // Calculate the sum of emotion scores for each group and add to cumulative sums
         for (const group in EMOTION_GROUPS) {
@@ -106,16 +96,43 @@ export class EmotionAnalyzer extends Behavior<Group> {
                 });
                 cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
 
-                scoresText += `<strong>${group}:</strong><br>`;
-                EMOTION_GROUPS[group].forEach(emotion => {
-                    const score = emotionScores[emotion] !== undefined ? emotionScores[emotion].toFixed(6) : "N/A";
-                    scoresText += `"${emotion}": ${score}<br>`;
-                });
-                scoresText += "<br>"; // Add some space between groups
+                // scoresText += `<strong>${group}:</strong><br>`;
+                // EMOTION_GROUPS[group].forEach(emotion => {
+                //     const score = emotionScores[emotion] !== undefined ? emotionScores[emotion].toFixed(6) : "N/A";
+                // });
             }
         }
 
-        console.log(this.zcomponent.nodes);
+        console.log('CHIILLLLDDREEN', this.zcomponent.nodes.Content_Group.children.length);
+
+        // var nodes = this.zcomponent.nodes.Content_Group.children;
+
+        const EmotionToComponentMap = {
+            Anger: this.zcomponent.nodes.EmotionAnger,
+            Fear: this.zcomponent.nodes.EmotionFear,
+            Amusement: this.zcomponent.nodes.EmotionAmusement,
+            Love: this.zcomponent.nodes.EmotionLove,
+            Surprise: this.zcomponent.nodes.EmotionSurprise,
+            Sadness: this.zcomponent.nodes.EmotionSadness,
+            Interest: this.zcomponent.nodes.EmotionInterest,
+            Joy: this.zcomponent.nodes.EmotionJoy
+        }
+
+        for (const group in EMOTION_GROUPS) {
+            let component = EmotionToComponentMap[group] as EmotionMeshComponent;  
+
+            const opacity = cumulativeSums[group] / (100.0 * 4);
+
+            if (!component)
+                {
+                    console.log("Group: ", group);
+                }
+
+            component.opacity += opacity;
+            console.log(component.opacity);
+        }
+
+       
 
         // Update the heights of the boxes based on the cumulative sums, divided by 100
         /*const boxOne = this.zcomponent.nodes.BoxOne.element;
@@ -144,7 +161,7 @@ export class EmotionAnalyzer extends Behavior<Group> {
             const wordArray = await response.json();
             const randomWord = wordArray[0]; // The API returns an array of words
 
-            console.log(`Fetched word: ${randomWord}`);
+            // console.log(`Fetched word: ${randomWord}`);
 
             // Update the text inside the element with id 'RandomWord'
             const randomWordElement = document.getElementById('RandomWord');

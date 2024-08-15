@@ -1,13 +1,13 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
 import { Group as Group_0 } from "@zcomponent/three/lib/components/Group";
-import { DefaultCookieConsent as DefaultCookieConsent_1 } from "@zcomponent/core/lib/components/DefaultCookieConsent";
-import { DefaultEnvironment as DefaultEnvironment_2 } from "@zcomponent/three/lib/components/environments/DefaultEnvironment";
-import { DefaultLoader as DefaultLoader_3 } from "@zcomponent/core/lib/components/DefaultLoader";
-import { DirectionalLight as DirectionalLight_4 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
-import { XRController as XRController_5 } from "@zcomponent/three-webxr/lib/components/XRController";
-import { EmitComponentPropEvent as EmitComponentPropEvent_6 } from "@zcomponent/core/lib/behaviors/EmitComponentPropEvent";
-import { PerspectiveCamera as PerspectiveCamera_7 } from "@zcomponent/three/lib/components/cameras/PerspectiveCamera";
+import { EmotionAnalyzer as EmotionAnalyzer_1 } from "./Behaviours/EmotionAnalyzer";
+import { DefaultCookieConsent as DefaultCookieConsent_2 } from "@zcomponent/core/lib/components/DefaultCookieConsent";
+import { DefaultEnvironment as DefaultEnvironment_3 } from "@zcomponent/three/lib/components/environments/DefaultEnvironment";
+import { DefaultLoader as DefaultLoader_4 } from "@zcomponent/core/lib/components/DefaultLoader";
+import { DirectionalLight as DirectionalLight_5 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
+import { XRController as XRController_6 } from "@zcomponent/three-webxr/lib/components/XRController";
+import { EmitComponentPropEvent as EmitComponentPropEvent_7 } from "@zcomponent/core/lib/behaviors/EmitComponentPropEvent";
 import { CallFunction as CallFunction_8 } from "@zcomponent/core/lib/behaviors/CallFunction";
 import { UserPlacementManager as UserPlacementManager_9 } from "@zcomponent/three-webxr/lib/components/UserPlacementManager";
 import { XRRigARUserPlacement as XRRigARUserPlacement_10 } from "@zcomponent/three-webxr/lib/components/XRRigARUserPlacement";
@@ -17,6 +17,7 @@ import { XRManager as XRManager_13 } from "@zcomponent/three-webxr/lib/component
 import { EmotionMeshComponent as EmotionMeshComponent_14 } from "./Components/Visualization/EmotionMeshComponent";
 import { ExtrudedText as ExtrudedText_15 } from "@zcomponent/three/lib/components/meshes/ExtrudedText";
 import { MeshStandardMaterial as MeshStandardMaterial_16 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
+import { XRControllerTransform as XRControllerTransform_17 } from "@zcomponent/three-webxr/lib/components/XRControllerTransform";
 
 interface ConstructorProps {
 
@@ -33,20 +34,21 @@ declare class Comp extends ZComponent {
 	nodes: {
 		Content_Group: Group_0 & {
 			behaviors: {
-
+				0: EmotionAnalyzer_1,
+				EmotionAnalyzer: EmotionAnalyzer_1,
 			}
 		},
-		DefaultCookieConsent: DefaultCookieConsent_1 & {
+		DefaultCookieConsent: DefaultCookieConsent_2 & {
 			behaviors: {
 
 			}
 		},
-		DefaultEnvironment: DefaultEnvironment_2 & {
+		DefaultEnvironment: DefaultEnvironment_3 & {
 			behaviors: {
 
 			}
 		},
-		DefaultLoader: DefaultLoader_3 & {
+		DefaultLoader: DefaultLoader_4 & {
 			behaviors: {
 
 			}
@@ -56,23 +58,18 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		DirectionalLight: DirectionalLight_4 & {
+		DirectionalLight: DirectionalLight_5 & {
 			behaviors: {
 
 			}
 		},
-		Left_Controller: XRController_5 & {
+		Left_Controller: XRController_6 & {
 			behaviors: {
-				0: EmitComponentPropEvent_6,
-				EmitComponentPropEvent: EmitComponentPropEvent_6,
+				0: EmitComponentPropEvent_7,
+				EmitComponentPropEvent: EmitComponentPropEvent_7,
 			}
 		},
-		PerspectiveCamera: PerspectiveCamera_7 & {
-			behaviors: {
-
-			}
-		},
-		Right_Controller: XRController_5 & {
+		Right_Controller: XRController_6 & {
 			behaviors: {
 				0: CallFunction_8,
 				Call_UserPlacementManager_restartPlacement: CallFunction_8,
@@ -219,6 +216,11 @@ declare class Comp extends ZComponent {
 			}
 		},
 		MeshStandardMaterial_8: MeshStandardMaterial_16 & {
+			behaviors: {
+
+			}
+		},
+		XRControllerTransform: XRControllerTransform_17 & {
 			behaviors: {
 
 			}

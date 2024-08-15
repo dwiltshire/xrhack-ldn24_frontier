@@ -76,6 +76,16 @@
 				"scriptName": "EmitComponentPropEvent"
 			},
 			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+		},
+		"dc6dc211baef4a19877886367be44e21": {
+			"id": "dc6dc211baef4a19877886367be44e21",
+			"label": "EmotionAnalyzer",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a0",
+				"scriptName": "EmotionAnalyzer"
+			},
+			"type": "./Behaviours/EmotionAnalyzer#EmotionAnalyzer"
 		}
 	},
 	"constructorProps": {
@@ -177,9 +187,6 @@
 		"MeshStandardMaterial 8": {
 			"f66a011b0cc14713b3b9213dfb5267b4": true
 		},
-		"PerspectiveCamera": {
-			"b0dfb6b646e34453ae49db6ce5071d59": true
-		},
 		"Right Controller": {
 			"be4d21ff928c48e48553efb8ec9aa26c": true
 		},
@@ -194,6 +201,9 @@
 		},
 		"XR Manager": {
 			"80d719b3dd9e4d56bd40efd3757ca0a3": true
+		},
+		"XRControllerTransform": {
+			"c980061a9cbe483fab862573a5ab4888": true
 		},
 		"XRRigARUserPlacement": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
@@ -293,14 +303,14 @@
 		"MeshStandardMaterial_8": {
 			"f66a011b0cc14713b3b9213dfb5267b4": true
 		},
-		"PerspectiveCamera": {
-			"b0dfb6b646e34453ae49db6ce5071d59": true
-		},
 		"Right_Controller": {
 			"be4d21ff928c48e48553efb8ec9aa26c": true
 		},
 		"User_PlacementManager": {
 			"1a58dc40b496466b880e7a51cea0328f": true
+		},
+		"XRControllerTransform": {
+			"c980061a9cbe483fab862573a5ab4888": true
 		},
 		"XRRigARUserPlacement0": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
@@ -372,8 +382,6 @@
 		},
 		"adc5e2842ba646719918b60749b09c74": {
 		},
-		"b0dfb6b646e34453ae49db6ce5071d59": {
-		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
 			"allowHands": true,
 			"allowLeftHandControllers": false
@@ -390,9 +398,13 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 		},
+		"c980061a9cbe483fab862573a5ab4888": {
+		},
 		"ca924693d1d14c1cad121d3747126acb": {
 		},
 		"d4d4440532bd43718d14775551748351": {
+		},
+		"dc6dc211baef4a19877886367be44e21": {
 		},
 		"ef9bcc68042d406f9093054448afcbb9": {
 		},
@@ -475,10 +487,12 @@
 				0.8901960784313725,
 				0,
 				0.9882352941176471
-			]
+			],
+			"fog": true,
+			"transparent": false
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				-10.261203555790917,
 				-5.875577273401237,
@@ -501,9 +515,14 @@
 		"345e47aa1ff0427e85381633c5f2bc01": {
 			"bevelEnabled": false,
 			"position": [
-				0,
-				0,
+				-9.586875933423885,
+				-1.4758250909600763,
 				0
+			],
+			"scale": [
+				1,
+				1,
+				1
 			],
 			"text": "Amusement\n\n\n"
 		},
@@ -522,7 +541,7 @@
 			]
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				-13.004726214242394,
 				2.6489265614697826,
@@ -544,17 +563,17 @@
 		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
 			"position": [
-				0,
+				2.4585391434542445,
 				0,
 				0
 			],
 			"text": "Surprise\n\n\n\n"
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
-				-0.9364192819457235,
-				-7.558031194574154,
+				-0.6488590920761705,
+				-10.229779018857124,
 				-28.400346026271272
 			],
 			"rateOfChange": 0.4,
@@ -599,14 +618,19 @@
 		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"castShadow": true,
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
-				-1.3298832720943112,
-				12.985123495711095,
-				-28.400346026271272
+				-1.3398364878853743,
+				17.098361498335382,
+				-28.40032419175318
 			],
 			"rateOfChange": 2,
 			"receiveShadow": true,
+			"rotation": [
+				0,
+				0.002193711411622612,
+				0
+			],
 			"scale": [
 				1,
 				1,
@@ -636,15 +660,15 @@
 		},
 		"8c594047ea674c3bab3a2f22961e60b2": {
 			"position": [
-				0,
-				0,
+				-0.8876292812045238,
+				2.40910719189017,
 				0
 			],
 			"text": "Joy\n\n\n"
 		},
 		"9256d579f67744baa35da13378520884": {
 			"castShadow": true,
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				10.816176236898592,
 				2.7123714668922756,
@@ -673,7 +697,7 @@
 		},
 		"a30ef6a438e84eaa9e5139fdf7a4f095": {
 			"position": [
-				0,
+				2.492229786907574,
 				0,
 				0
 			],
@@ -683,18 +707,11 @@
 		},
 		"adc5e2842ba646719918b60749b09c74": {
 			"position": [
-				0,
+				2.8271235010628373,
 				0,
 				0
 			],
 			"text": "Love\n\n\n"
-		},
-		"b0dfb6b646e34453ae49db6ce5071d59": {
-			"rotation": [
-				0,
-				6.315876140562566,
-				0
-			]
 		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
 			"position": [
@@ -704,11 +721,12 @@
 			]
 		},
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
+			"enabled": true
 		},
 		"c087e89d60b044ef8e93b81b6b1ac95d": {
 			"position": [
-				0,
-				0,
+				-2.966304576309418,
+				-3.91618616606595,
 				0
 			],
 			"text": "Sadness\n\n\n"
@@ -732,7 +750,7 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"castShadow": true,
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				8.110049838456142,
 				11.237319359032272,
@@ -759,6 +777,8 @@
 			"spikeFrequency": 0.25,
 			"visible": true
 		},
+		"c980061a9cbe483fab862573a5ab4888": {
+		},
 		"ca924693d1d14c1cad121d3747126acb": {
 			"color": [
 				0.21176470588235294,
@@ -768,7 +788,7 @@
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"castShadow": true,
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				8.196566924529597,
 				-5.940490388843481,
@@ -795,6 +815,9 @@
 			"spikeFrequency": 0.5,
 			"visible": true
 		},
+		"dc6dc211baef4a19877886367be44e21": {
+			"enabled": true
+		},
 		"ef9bcc68042d406f9093054448afcbb9": {
 			"color": [
 				0,
@@ -804,8 +827,8 @@
 		},
 		"f4be4ad085ae4331bad804c99dc0fe88": {
 			"position": [
-				0,
-				0,
+				-2.7180815628303545,
+				2.426600440397106,
 				0
 			],
 			"text": "Interest\n\n\n"
@@ -819,7 +842,7 @@
 		},
 		"f8bc763e629544c2a9734325736a3835": {
 			"position": [
-				0,
+				-6.896870939431084,
 				0,
 				0
 			],
@@ -827,7 +850,7 @@
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"castShadow": true,
-			"opacity": 0.05,
+			"opacity": 0.5,
 			"position": [
 				-10.731790793436957,
 				11.595450036403491,
@@ -1102,16 +1125,6 @@
 			"scriptName": "ExtrudedText0",
 			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
 		},
-		"b0dfb6b646e34453ae49db6ce5071d59": {
-			"id": "b0dfb6b646e34453ae49db6ce5071d59",
-			"label": "PerspectiveCamera",
-			"parent": {
-				"id": "c37977ec906344f3802cdca1d6ac24d5",
-				"order": "a0"
-			},
-			"scriptName": "PerspectiveCamera",
-			"type": "@zcomponent/three/lib/components/cameras/PerspectiveCamera#PerspectiveCamera"
-		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
 			"id": "be4d21ff928c48e48553efb8ec9aa26c",
 			"label": "Right Controller",
@@ -1161,6 +1174,16 @@
 			},
 			"scriptName": "EmotionLove",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"c980061a9cbe483fab862573a5ab4888": {
+			"id": "c980061a9cbe483fab862573a5ab4888",
+			"label": "XRControllerTransform",
+			"parent": {
+				"id": "1e9992bc9dcf44d3b01ced234f9f1235",
+				"order": "Zz"
+			},
+			"scriptName": "XRControllerTransform",
+			"type": "@zcomponent/three-webxr/lib/components/XRControllerTransform#XRControllerTransform"
 		},
 		"ca924693d1d14c1cad121d3747126acb": {
 			"id": "ca924693d1d14c1cad121d3747126acb",
