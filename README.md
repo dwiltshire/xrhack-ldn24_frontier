@@ -27,3 +27,8 @@ export const HUME_AI = {
   SECRET_KEY: "your-secret-key-here",
 };
 ```
+
+## Gotchas
+
+_Context Links_
+There was an issue with Context registration timings which can cause fields to not link to their values when mapping using the "link to context value" feature. To work around this, make sure the `ContextSetup.ts` component is included in your scene.
