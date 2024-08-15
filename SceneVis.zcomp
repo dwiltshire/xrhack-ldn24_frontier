@@ -66,6 +66,16 @@
 				"scriptName": "Call_UserPlacementManager_restartPlacement"
 			},
 			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
+		},
+		"c2ae3c5bbbcd46799c0897bb0643203f": {
+			"id": "c2ae3c5bbbcd46799c0897bb0643203f",
+			"label": "EmitComponentPropEvent",
+			"parent": {
+				"id": "69c513aa1eb04439afdc5e25c9742e8b",
+				"order": "a0",
+				"scriptName": "EmitComponentPropEvent"
+			},
+			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
 		}
 	},
 	"constructorProps": {
@@ -113,11 +123,59 @@
 		"EmotionSurprise": {
 			"d4d4440532bd43718d14775551748351": true
 		},
+		"ExtrudedText": {
+			"8c594047ea674c3bab3a2f22961e60b2": true
+		},
+		"ExtrudedText 2": {
+			"adc5e2842ba646719918b60749b09c74": true
+		},
+		"ExtrudedText 3": {
+			"345e47aa1ff0427e85381633c5f2bc01": true
+		},
+		"ExtrudedText 4": {
+			"f4be4ad085ae4331bad804c99dc0fe88": true
+		},
+		"ExtrudedText 5": {
+			"4f044f8ce02442d3a5df4f5387683d07": true
+		},
+		"ExtrudedText 6": {
+			"a30ef6a438e84eaa9e5139fdf7a4f095": true
+		},
+		"ExtrudedText 7": {
+			"c087e89d60b044ef8e93b81b6b1ac95d": true
+		},
+		"ExtrudedText 8": {
+			"f8bc763e629544c2a9734325736a3835": true
+		},
 		"Group": {
 			"root": true
 		},
 		"Left Controller": {
 			"69c513aa1eb04439afdc5e25c9742e8b": true
+		},
+		"MeshStandardMaterial": {
+			"ef9bcc68042d406f9093054448afcbb9": true
+		},
+		"MeshStandardMaterial 2": {
+			"366246262b7d47e1b9980f88a52ef7f5": true
+		},
+		"MeshStandardMaterial 3": {
+			"1b6e550ab10c4b99afde95da490e7928": true
+		},
+		"MeshStandardMaterial 4": {
+			"3ba26cc8bcf1499f8d52b6d97d0e43b8": true
+		},
+		"MeshStandardMaterial 5": {
+			"ca924693d1d14c1cad121d3747126acb": true
+		},
+		"MeshStandardMaterial 6": {
+			"6e0af755157247098ef881c563fe44be": true
+		},
+		"MeshStandardMaterial 7": {
+			"0dd90d75beb548fcbbc3f4e63b79137a": true
+		},
+		"MeshStandardMaterial 8": {
+			"f66a011b0cc14713b3b9213dfb5267b4": true
 		},
 		"PerspectiveCamera": {
 			"b0dfb6b646e34453ae49db6ce5071d59": true
@@ -184,8 +242,56 @@
 		"EmotionSurprise": {
 			"d4d4440532bd43718d14775551748351": true
 		},
+		"ExtrudedText": {
+			"8c594047ea674c3bab3a2f22961e60b2": true
+		},
+		"ExtrudedText0": {
+			"adc5e2842ba646719918b60749b09c74": true
+		},
+		"ExtrudedText_2": {
+			"345e47aa1ff0427e85381633c5f2bc01": true
+		},
+		"ExtrudedText_3": {
+			"f4be4ad085ae4331bad804c99dc0fe88": true
+		},
+		"ExtrudedText_30": {
+			"4f044f8ce02442d3a5df4f5387683d07": true
+		},
+		"ExtrudedText_31": {
+			"c087e89d60b044ef8e93b81b6b1ac95d": true
+		},
+		"ExtrudedText_5": {
+			"a30ef6a438e84eaa9e5139fdf7a4f095": true
+		},
+		"ExtrudedText_7": {
+			"f8bc763e629544c2a9734325736a3835": true
+		},
 		"Left_Controller": {
 			"69c513aa1eb04439afdc5e25c9742e8b": true
+		},
+		"MeshStandardMaterial": {
+			"ef9bcc68042d406f9093054448afcbb9": true
+		},
+		"MeshStandardMaterial_2": {
+			"366246262b7d47e1b9980f88a52ef7f5": true
+		},
+		"MeshStandardMaterial_3": {
+			"1b6e550ab10c4b99afde95da490e7928": true
+		},
+		"MeshStandardMaterial_4": {
+			"3ba26cc8bcf1499f8d52b6d97d0e43b8": true
+		},
+		"MeshStandardMaterial_5": {
+			"ca924693d1d14c1cad121d3747126acb": true
+		},
+		"MeshStandardMaterial_6": {
+			"6e0af755157247098ef881c563fe44be": true
+		},
+		"MeshStandardMaterial_7": {
+			"0dd90d75beb548fcbbc3f4e63b79137a": true
+		},
+		"MeshStandardMaterial_8": {
+			"f66a011b0cc14713b3b9213dfb5267b4": true
 		},
 		"PerspectiveCamera": {
 			"b0dfb6b646e34453ae49db6ce5071d59": true
@@ -216,11 +322,23 @@
 		},
 		"0c4ebdc7633941dca542c9ae9cd90aca": {
 		},
+		"0dd90d75beb548fcbbc3f4e63b79137a": {
+		},
 		"1a58dc40b496466b880e7a51cea0328f": {
+		},
+		"1b6e550ab10c4b99afde95da490e7928": {
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
 		},
+		"345e47aa1ff0427e85381633c5f2bc01": {
+		},
+		"366246262b7d47e1b9980f88a52ef7f5": {
+		},
+		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
+		},
 		"401bbc457e964ecbb07fc65fad867438": {
+		},
+		"4f044f8ce02442d3a5df4f5387683d07": {
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
 		},
@@ -233,6 +351,8 @@
 			"allowRightHandControllers": false,
 			"allowUnspecifiedHandControllers": false
 		},
+		"6e0af755157247098ef881c563fe44be": {
+		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 		},
 		"7b6fb4d895774174b5d151eec86b704c": {
@@ -242,9 +362,15 @@
 		},
 		"857f9901b65b42c89a3ff04470d70738": {
 		},
+		"8c594047ea674c3bab3a2f22961e60b2": {
+		},
 		"9256d579f67744baa35da13378520884": {
 		},
+		"a30ef6a438e84eaa9e5139fdf7a4f095": {
+		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
+		},
+		"adc5e2842ba646719918b60749b09c74": {
 		},
 		"b0dfb6b646e34453ae49db6ce5071d59": {
 		},
@@ -254,11 +380,27 @@
 		},
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
 		},
+		"c087e89d60b044ef8e93b81b6b1ac95d": {
+		},
+		"c2ae3c5bbbcd46799c0897bb0643203f": {
+			"event": "onIntersectionEnter",
+			"runAtEditTime": true
+		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 		},
+		"ca924693d1d14c1cad121d3747126acb": {
+		},
 		"d4d4440532bd43718d14775551748351": {
+		},
+		"ef9bcc68042d406f9093054448afcbb9": {
+		},
+		"f4be4ad085ae4331bad804c99dc0fe88": {
+		},
+		"f66a011b0cc14713b3b9213dfb5267b4": {
+		},
+		"f8bc763e629544c2a9734325736a3835": {
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 		}
@@ -316,13 +458,27 @@
 		},
 		"0c4ebdc7633941dca542c9ae9cd90aca": {
 		},
+		"0dd90d75beb548fcbbc3f4e63b79137a": {
+			"color": [
+				0.9294117647058824,
+				0.9882352941176471,
+				0
+			]
+		},
 		"1a58dc40b496466b880e7a51cea0328f": {
 			"forceGroundPlane": true,
 			"notPlacingLayerClip": "60477e43538a41709ba5c801556aef2e",
 			"placingLayerClip": "9762b682a3fc49a78c9ab2b8cd29d70f"
 		},
+		"1b6e550ab10c4b99afde95da490e7928": {
+			"color": [
+				0.8901960784313725,
+				0,
+				0.9882352941176471
+			]
+		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				-10.261203555790917,
 				-5.875577273401237,
@@ -330,9 +486,9 @@
 			],
 			"rateOfChange": 1,
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.6392156862745098,
@@ -342,23 +498,41 @@
 			"shapeScale": 0.25,
 			"spikeFrequency": 1.2
 		},
+		"345e47aa1ff0427e85381633c5f2bc01": {
+			"bevelEnabled": false,
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Amusement\n\n\n"
+		},
+		"366246262b7d47e1b9980f88a52ef7f5": {
+			"color": [
+				0.4117647058823529,
+				0,
+				0
+			]
+		},
+		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
+			"color": [
+				0.10196078431372549,
+				0,
+				0.8745098039215686
+			]
+		},
 		"401bbc457e964ecbb07fc65fad867438": {
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				-13.004726214242394,
 				2.6489265614697826,
 				-27.99556867829518
 			],
 			"rateOfChange": 1,
-			"rotation": [
-				-0.8790211501425027,
-				0.23349901900236578,
-				-2.962021127898799
-			],
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				1,
@@ -368,8 +542,16 @@
 			"shapeScale": 0.6,
 			"spikeFrequency": 3
 		},
+		"4f044f8ce02442d3a5df4f5387683d07": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Surprise\n\n\n\n"
+		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				-0.9364192819457235,
 				-7.558031194574154,
@@ -377,9 +559,9 @@
 			],
 			"rateOfChange": 0.4,
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.023529411764705882,
@@ -408,9 +590,16 @@
 				0
 			]
 		},
+		"6e0af755157247098ef881c563fe44be": {
+			"color": [
+				0.8745098039215686,
+				0.48627450980392156,
+				0
+			]
+		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"castShadow": true,
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				-1.3298832720943112,
 				12.985123495711095,
@@ -419,9 +608,9 @@
 			"rateOfChange": 2,
 			"receiveShadow": true,
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.9686274509803922,
@@ -445,9 +634,17 @@
 				0
 			]
 		},
+		"8c594047ea674c3bab3a2f22961e60b2": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Joy\n\n\n"
+		},
 		"9256d579f67744baa35da13378520884": {
 			"castShadow": true,
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				10.816176236898592,
 				2.7123714668922756,
@@ -461,9 +658,9 @@
 				0
 			],
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.050980392156862744,
@@ -474,7 +671,23 @@
 			"spikeFrequency": 7,
 			"visible": true
 		},
+		"a30ef6a438e84eaa9e5139fdf7a4f095": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Fear\n\n\n"
+		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
+		},
+		"adc5e2842ba646719918b60749b09c74": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Love\n\n\n"
 		},
 		"b0dfb6b646e34453ae49db6ce5071d59": {
 			"rotation": [
@@ -492,6 +705,23 @@
 		},
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
 		},
+		"c087e89d60b044ef8e93b81b6b1ac95d": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Sadness\n\n\n"
+		},
+		"c2ae3c5bbbcd46799c0897bb0643203f": {
+			"eventToEmit": {
+				"_zfn": true,
+				"args": {
+				},
+				"prop": "OnIntersectionEvent",
+				"t": "emitcomponentevent"
+			}
+		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
 			"position": [
 				0,
@@ -502,7 +732,7 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"castShadow": true,
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				8.110049838456142,
 				11.237319359032272,
@@ -516,9 +746,9 @@
 				0
 			],
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.24705882352941178,
@@ -529,9 +759,16 @@
 			"spikeFrequency": 0.25,
 			"visible": true
 		},
+		"ca924693d1d14c1cad121d3747126acb": {
+			"color": [
+				0.21176470588235294,
+				1,
+				0.4
+			]
+		},
 		"d4d4440532bd43718d14775551748351": {
 			"castShadow": true,
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				8.196566924529597,
 				-5.940490388843481,
@@ -545,9 +782,9 @@
 				0
 			],
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				0.5333333333333333,
@@ -558,9 +795,39 @@
 			"spikeFrequency": 0.5,
 			"visible": true
 		},
+		"ef9bcc68042d406f9093054448afcbb9": {
+			"color": [
+				0,
+				0.08627450980392157,
+				0
+			]
+		},
+		"f4be4ad085ae4331bad804c99dc0fe88": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Interest\n\n\n"
+		},
+		"f66a011b0cc14713b3b9213dfb5267b4": {
+			"color": [
+				0,
+				0.8235294117647058,
+				0.7137254901960784
+			]
+		},
+		"f8bc763e629544c2a9734325736a3835": {
+			"position": [
+				0,
+				0,
+				0
+			],
+			"text": "Anger\n\n\n"
+		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"castShadow": true,
-			"opacity": 0.01,
+			"opacity": 0.05,
 			"position": [
 				-10.731790793436957,
 				11.595450036403491,
@@ -569,9 +836,9 @@
 			"rateOfChange": 1,
 			"receiveShadow": true,
 			"scale": [
-				2.5,
-				2.5,
-				2.5
+				1,
+				1,
+				1
 			],
 			"shapeColor": [
 				1,
@@ -615,6 +882,16 @@
 			"scriptName": "XR_DefaultLoader",
 			"type": "@zcomponent/three-webxr/lib/components/XRDefaultLoader#XRDefaultLoader"
 		},
+		"0dd90d75beb548fcbbc3f4e63b79137a": {
+			"id": "0dd90d75beb548fcbbc3f4e63b79137a",
+			"label": "MeshStandardMaterial 7",
+			"parent": {
+				"id": "8c594047ea674c3bab3a2f22961e60b2",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_7",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
 		"1a58dc40b496466b880e7a51cea0328f": {
 			"id": "1a58dc40b496466b880e7a51cea0328f",
 			"label": "User Placement Manager",
@@ -624,6 +901,16 @@
 			},
 			"scriptName": "User_PlacementManager",
 			"type": "@zcomponent/three-webxr/lib/components/UserPlacementManager#UserPlacementManager"
+		},
+		"1b6e550ab10c4b99afde95da490e7928": {
+			"id": "1b6e550ab10c4b99afde95da490e7928",
+			"label": "MeshStandardMaterial 3",
+			"parent": {
+				"id": "345e47aa1ff0427e85381633c5f2bc01",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_3",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
 			"id": "1e9992bc9dcf44d3b01ced234f9f1235",
@@ -635,6 +922,36 @@
 			"scriptName": "EmotionAmusement",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
+		"345e47aa1ff0427e85381633c5f2bc01": {
+			"id": "345e47aa1ff0427e85381633c5f2bc01",
+			"label": "ExtrudedText 3",
+			"parent": {
+				"id": "1e9992bc9dcf44d3b01ced234f9f1235",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText_2",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
+		"366246262b7d47e1b9980f88a52ef7f5": {
+			"id": "366246262b7d47e1b9980f88a52ef7f5",
+			"label": "MeshStandardMaterial 2",
+			"parent": {
+				"id": "f8bc763e629544c2a9734325736a3835",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_2",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
+		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
+			"id": "3ba26cc8bcf1499f8d52b6d97d0e43b8",
+			"label": "MeshStandardMaterial 4",
+			"parent": {
+				"id": "c087e89d60b044ef8e93b81b6b1ac95d",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_4",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
 		"401bbc457e964ecbb07fc65fad867438": {
 			"id": "401bbc457e964ecbb07fc65fad867438",
 			"label": "EmotionAnger",
@@ -644,6 +961,16 @@
 			},
 			"scriptName": "EmotionAnger",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"4f044f8ce02442d3a5df4f5387683d07": {
+			"id": "4f044f8ce02442d3a5df4f5387683d07",
+			"label": "ExtrudedText 5",
+			"parent": {
+				"id": "d4d4440532bd43718d14775551748351",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText_30",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
 			"id": "4fb98c6ff1ce4103b135fbf08eac1b15",
@@ -674,6 +1001,16 @@
 			},
 			"scriptName": "Left_Controller",
 			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"6e0af755157247098ef881c563fe44be": {
+			"id": "6e0af755157247098ef881c563fe44be",
+			"label": "MeshStandardMaterial 6",
+			"parent": {
+				"id": "f4be4ad085ae4331bad804c99dc0fe88",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_6",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
 		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"id": "78ee6b0a2e294857a2beb22f0c6e0b40",
@@ -715,6 +1052,16 @@
 			"scriptName": "DirectionalLight",
 			"type": "@zcomponent/three/lib/components/lights/DirectionalLight#DirectionalLight"
 		},
+		"8c594047ea674c3bab3a2f22961e60b2": {
+			"id": "8c594047ea674c3bab3a2f22961e60b2",
+			"label": "ExtrudedText",
+			"parent": {
+				"id": "78ee6b0a2e294857a2beb22f0c6e0b40",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
 		"9256d579f67744baa35da13378520884": {
 			"id": "9256d579f67744baa35da13378520884",
 			"label": "EmotionFear",
@@ -725,6 +1072,16 @@
 			"scriptName": "EmotionFear",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
+		"a30ef6a438e84eaa9e5139fdf7a4f095": {
+			"id": "a30ef6a438e84eaa9e5139fdf7a4f095",
+			"label": "ExtrudedText 6",
+			"parent": {
+				"id": "9256d579f67744baa35da13378520884",
+				"order": "a0l"
+			},
+			"scriptName": "ExtrudedText_5",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
 			"id": "a57f5d58e38e4a0b918dcf605ea12736",
 			"label": "DefaultEnvironment",
@@ -734,6 +1091,16 @@
 			},
 			"scriptName": "DefaultEnvironment",
 			"type": "@zcomponent/three/lib/components/environments/DefaultEnvironment#DefaultEnvironment"
+		},
+		"adc5e2842ba646719918b60749b09c74": {
+			"id": "adc5e2842ba646719918b60749b09c74",
+			"label": "ExtrudedText 2",
+			"parent": {
+				"id": "c63d8679256943a28e93c624c570f65f",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText0",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
 		},
 		"b0dfb6b646e34453ae49db6ce5071d59": {
 			"id": "b0dfb6b646e34453ae49db6ce5071d59",
@@ -765,6 +1132,16 @@
 			"scriptName": "Content_Group",
 			"type": "@zcomponent/three/lib/components/Group#Group"
 		},
+		"c087e89d60b044ef8e93b81b6b1ac95d": {
+			"id": "c087e89d60b044ef8e93b81b6b1ac95d",
+			"label": "ExtrudedText 7",
+			"parent": {
+				"id": "4fb98c6ff1ce4103b135fbf08eac1b15",
+				"order": "a0V"
+			},
+			"scriptName": "ExtrudedText_31",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
 			"id": "c37977ec906344f3802cdca1d6ac24d5",
 			"label": "XR Camera",
@@ -785,6 +1162,16 @@
 			"scriptName": "EmotionLove",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
+		"ca924693d1d14c1cad121d3747126acb": {
+			"id": "ca924693d1d14c1cad121d3747126acb",
+			"label": "MeshStandardMaterial 5",
+			"parent": {
+				"id": "adc5e2842ba646719918b60749b09c74",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_5",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
 		"d4d4440532bd43718d14775551748351": {
 			"id": "d4d4440532bd43718d14775551748351",
 			"label": "EmotionSurprise",
@@ -794,6 +1181,46 @@
 			},
 			"scriptName": "EmotionSurprise",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"ef9bcc68042d406f9093054448afcbb9": {
+			"id": "ef9bcc68042d406f9093054448afcbb9",
+			"label": "MeshStandardMaterial",
+			"parent": {
+				"id": "a30ef6a438e84eaa9e5139fdf7a4f095",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
+		"f4be4ad085ae4331bad804c99dc0fe88": {
+			"id": "f4be4ad085ae4331bad804c99dc0fe88",
+			"label": "ExtrudedText 4",
+			"parent": {
+				"id": "ff64ed3f08874d968f71e3afa3bb4b1e",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText_3",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
+		"f66a011b0cc14713b3b9213dfb5267b4": {
+			"id": "f66a011b0cc14713b3b9213dfb5267b4",
+			"label": "MeshStandardMaterial 8",
+			"parent": {
+				"id": "4f044f8ce02442d3a5df4f5387683d07",
+				"order": "a0"
+			},
+			"scriptName": "MeshStandardMaterial_8",
+			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
+		"f8bc763e629544c2a9734325736a3835": {
+			"id": "f8bc763e629544c2a9734325736a3835",
+			"label": "ExtrudedText 8",
+			"parent": {
+				"id": "401bbc457e964ecbb07fc65fad867438",
+				"order": "a0"
+			},
+			"scriptName": "ExtrudedText_7",
+			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"id": "ff64ed3f08874d968f71e3afa3bb4b1e",
