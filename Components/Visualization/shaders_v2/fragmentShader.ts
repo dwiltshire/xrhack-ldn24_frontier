@@ -12,7 +12,7 @@ void main() {
     float distort = 2.0 * vDisplacement * u_intensity * sin(vUv.y * 10.0 + u_time);
     
     // Ensure distort is in the range [0.0, 1.0] for darkening
-    float darkenAmount = clamp(distort, 0.0, 1.0);
+    float darkenAmount = clamp(distort, 0.0, 0.35);
     
     // Base color from user-provided color
     vec3 baseColor = u_color;

@@ -89,29 +89,29 @@
 		"DirectionalLight": {
 			"857f9901b65b42c89a3ff04470d70738": true
 		},
-		"Emotion1": {
+		"EmotionAmusement": {
 			"1e9992bc9dcf44d3b01ced234f9f1235": true
 		},
-		"Emotion2": {
+		"EmotionAnger": {
 			"401bbc457e964ecbb07fc65fad867438": true
 		},
-		"Emotion3": {
-			"4fb98c6ff1ce4103b135fbf08eac1b15": true
-		},
-		"Emotion4": {
-			"d4d4440532bd43718d14775551748351": true
-		},
-		"Emotion5": {
+		"EmotionFear": {
 			"9256d579f67744baa35da13378520884": true
 		},
-		"Emotion6": {
+		"EmotionInterest": {
 			"ff64ed3f08874d968f71e3afa3bb4b1e": true
 		},
-		"Emotion7": {
+		"EmotionJoy": {
+			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		},
+		"EmotionLove": {
 			"c63d8679256943a28e93c624c570f65f": true
 		},
-		"Emotion8": {
-			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		"EmotionSadness": {
+			"4fb98c6ff1ce4103b135fbf08eac1b15": true
+		},
+		"EmotionSurprise": {
+			"d4d4440532bd43718d14775551748351": true
 		},
 		"Group": {
 			"root": true
@@ -160,29 +160,29 @@
 		"DirectionalLight": {
 			"857f9901b65b42c89a3ff04470d70738": true
 		},
-		"Emotion1": {
+		"EmotionAmusement": {
 			"1e9992bc9dcf44d3b01ced234f9f1235": true
 		},
-		"Emotion10": {
+		"EmotionAnger": {
 			"401bbc457e964ecbb07fc65fad867438": true
 		},
-		"Emotion2": {
-			"4fb98c6ff1ce4103b135fbf08eac1b15": true
-		},
-		"Emotion3": {
-			"d4d4440532bd43718d14775551748351": true
-		},
-		"Emotion4": {
+		"EmotionFear": {
 			"9256d579f67744baa35da13378520884": true
 		},
-		"Emotion5": {
+		"EmotionInterest": {
 			"ff64ed3f08874d968f71e3afa3bb4b1e": true
 		},
-		"Emotion50": {
+		"EmotionJoy": {
+			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		},
+		"EmotionLove": {
 			"c63d8679256943a28e93c624c570f65f": true
 		},
-		"Emotion6": {
-			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		"EmotionSadness": {
+			"4fb98c6ff1ce4103b135fbf08eac1b15": true
+		},
+		"EmotionSurprise": {
+			"d4d4440532bd43718d14775551748351": true
 		},
 		"Left_Controller": {
 			"69c513aa1eb04439afdc5e25c9742e8b": true
@@ -249,6 +249,7 @@
 		"b0dfb6b646e34453ae49db6ce5071d59": {
 		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
+			"allowHands": true,
 			"allowLeftHandControllers": false
 		},
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
@@ -321,15 +322,13 @@
 			"placingLayerClip": "9762b682a3fc49a78c9ab2b8cd29d70f"
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
-			"maxSpikeFactor": 0.4,
-			"opacity": 1,
-			"oscillationType": 0,
+			"opacity": 0.01,
 			"position": [
-				-9.910398811272376,
-				-6.318519485445739,
+				-10.261203555790917,
+				-5.875577273401237,
 				-27.076327337660707
 			],
-			"rateOfChange": 0.5,
+			"rateOfChange": 1,
 			"scale": [
 				2.5,
 				2.5,
@@ -340,17 +339,17 @@
 				0.09803921568627451,
 				0.9294117647058824
 			],
-			"spikeFrequency": 0.25
+			"shapeScale": 0.25,
+			"spikeFrequency": 1.2
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
-			"maxSpikeFactor": 0.4,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
-				-13.153716668949157,
-				2.166496835109697,
-				-28.395177222641735
+				-13.004726214242394,
+				2.6489265614697826,
+				-27.99556867829518
 			],
-			"rateOfChange": 0.1,
+			"rateOfChange": 1,
 			"rotation": [
 				-0.8790211501425027,
 				0.23349901900236578,
@@ -366,16 +365,17 @@
 				0,
 				0
 			],
-			"spikeFrequency": 2
+			"shapeScale": 0.6,
+			"spikeFrequency": 3
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
-			"maxSpikeFactor": 0.4,
+			"opacity": 0.01,
 			"position": [
-				-0.5533223063792736,
+				-0.9364192819457235,
 				-7.558031194574154,
 				-28.400346026271272
 			],
-			"rateOfChange": 1.8,
+			"rateOfChange": 0.4,
 			"scale": [
 				2.5,
 				2.5,
@@ -386,15 +386,16 @@
 				0,
 				0.7647058823529411
 			],
-			"spikeFrequency": 2
+			"shapeScale": 0.9,
+			"spikeFrequency": 0.1
 		},
 		"52148d8eafe3426085e700e049662c07": {
 		},
 		"59cba062b83d4eeaabee591728946232": {
 			"function": {
 				"_zfn": true,
-				"args": [
-				],
+				"args": {
+				},
 				"entityID": "1a58dc40b496466b880e7a51cea0328f",
 				"fn": "restartPlacement",
 				"t": "entity"
@@ -409,14 +410,13 @@
 		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"castShadow": true,
-			"maxSpikeFactor": 0.35,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
-				-1.8019399771548388,
+				-1.3298832720943112,
 				12.985123495711095,
 				-28.400346026271272
 			],
-			"rateOfChange": 0.4,
+			"rateOfChange": 2,
 			"receiveShadow": true,
 			"scale": [
 				2.5,
@@ -424,11 +424,12 @@
 				2.5
 			],
 			"shapeColor": [
-				0.8901960784313725,
-				0.9176470588235294,
-				0.03529411764705882
+				0.9686274509803922,
+				1,
+				0
 			],
-			"spikeFrequency": 5,
+			"shapeScale": 0.09,
+			"spikeFrequency": 0.5,
 			"visible": true
 		},
 		"7b6fb4d895774174b5d151eec86b704c": {
@@ -446,14 +447,13 @@
 		},
 		"9256d579f67744baa35da13378520884": {
 			"castShadow": true,
-			"maxSpikeFactor": 0.4,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
 				10.816176236898592,
 				2.7123714668922756,
 				-28.400346026271272
 			],
-			"rateOfChange": 1.5,
+			"rateOfChange": 4.9,
 			"receiveShadow": true,
 			"rotation": [
 				0,
@@ -466,11 +466,12 @@
 				2.5
 			],
 			"shapeColor": [
-				0.10196078431372549,
-				0.6039215686274509,
+				0.050980392156862744,
+				0.3058823529411765,
 				0
 			],
-			"spikeFrequency": 6,
+			"shapeScale": 0.25,
+			"spikeFrequency": 7,
 			"visible": true
 		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
@@ -501,14 +502,13 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"castShadow": true,
-			"maxSpikeFactor": 0.4,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
 				8.110049838456142,
-				10.514033994037336,
+				11.237319359032272,
 				-28.357170522930783
 			],
-			"rateOfChange": 0.7,
+			"rateOfChange": 1,
 			"receiveShadow": true,
 			"rotation": [
 				0,
@@ -521,23 +521,23 @@
 				2.5
 			],
 			"shapeColor": [
-				0.5176470588235295,
-				1,
-				0.5882352941176471
+				0.24705882352941178,
+				0.9882352941176471,
+				0.3568627450980392
 			],
-			"spikeFrequency": 0.5,
+			"shapeScale": 0.8,
+			"spikeFrequency": 0.25,
 			"visible": true
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"castShadow": true,
-			"maxSpikeFactor": 0.8,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
 				8.196566924529597,
 				-5.940490388843481,
 				-28.33450255456378
 			],
-			"rateOfChange": 0.69,
+			"rateOfChange": 1,
 			"receiveShadow": true,
 			"rotation": [
 				0,
@@ -550,23 +550,23 @@
 				2.5
 			],
 			"shapeColor": [
-				0.7647058823529411,
-				1,
-				0.9686274509803922
+				0.5333333333333333,
+				0.6862745098039216,
+				0.9647058823529412
 			],
-			"spikeFrequency": 0.2,
+			"shapeScale": 0.25,
+			"spikeFrequency": 0.5,
 			"visible": true
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"castShadow": true,
-			"maxSpikeFactor": 0.3,
-			"opacity": 1,
+			"opacity": 0.01,
 			"position": [
-				-11.20495803511561,
+				-10.731790793436957,
 				11.595450036403491,
 				-28.400346026271272
 			],
-			"rateOfChange": 0.4,
+			"rateOfChange": 1,
 			"receiveShadow": true,
 			"scale": [
 				2.5,
@@ -578,7 +578,8 @@
 				0.6666666666666666,
 				0
 			],
-			"spikeFrequency": 1,
+			"shapeScale": 0.35,
+			"spikeFrequency": 0.9,
 			"visible": true
 		}
 	},
@@ -626,32 +627,32 @@
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
 			"id": "1e9992bc9dcf44d3b01ced234f9f1235",
-			"label": "Emotion1",
+			"label": "EmotionAmusement",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a0"
 			},
-			"scriptName": "Emotion1",
+			"scriptName": "EmotionAmusement",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
 			"id": "401bbc457e964ecbb07fc65fad867438",
-			"label": "Emotion2",
+			"label": "EmotionAnger",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a0V"
 			},
-			"scriptName": "Emotion10",
+			"scriptName": "EmotionAnger",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
 			"id": "4fb98c6ff1ce4103b135fbf08eac1b15",
-			"label": "Emotion3",
+			"label": "EmotionSadness",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a0l"
 			},
-			"scriptName": "Emotion2",
+			"scriptName": "EmotionSadness",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"52148d8eafe3426085e700e049662c07": {
@@ -676,12 +677,12 @@
 		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"id": "78ee6b0a2e294857a2beb22f0c6e0b40",
-			"label": "Emotion8",
+			"label": "EmotionJoy",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a2"
 			},
-			"scriptName": "Emotion6",
+			"scriptName": "EmotionJoy",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"7b6fb4d895774174b5d151eec86b704c": {
@@ -716,12 +717,12 @@
 		},
 		"9256d579f67744baa35da13378520884": {
 			"id": "9256d579f67744baa35da13378520884",
-			"label": "Emotion5",
+			"label": "EmotionFear",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a1"
 			},
-			"scriptName": "Emotion4",
+			"scriptName": "EmotionFear",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
@@ -776,32 +777,32 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"id": "c63d8679256943a28e93c624c570f65f",
-			"label": "Emotion7",
+			"label": "EmotionLove",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a18"
 			},
-			"scriptName": "Emotion50",
+			"scriptName": "EmotionLove",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"id": "d4d4440532bd43718d14775551748351",
-			"label": "Emotion4",
+			"label": "EmotionSurprise",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a0t"
 			},
-			"scriptName": "Emotion3",
+			"scriptName": "EmotionSurprise",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"id": "ff64ed3f08874d968f71e3afa3bb4b1e",
-			"label": "Emotion6",
+			"label": "EmotionInterest",
 			"parent": {
 				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
 				"order": "a1V"
 			},
-			"scriptName": "Emotion5",
+			"scriptName": "EmotionInterest",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
 		"root": {

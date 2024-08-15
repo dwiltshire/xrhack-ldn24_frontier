@@ -5,15 +5,15 @@ import { DefaultCookieConsent as DefaultCookieConsent_1 } from "@zcomponent/core
 import { DefaultEnvironment as DefaultEnvironment_2 } from "@zcomponent/three/lib/components/environments/DefaultEnvironment";
 import { DefaultLoader as DefaultLoader_3 } from "@zcomponent/core/lib/components/DefaultLoader";
 import { DirectionalLight as DirectionalLight_4 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
-import { EmotionMeshComponent as EmotionMeshComponent_5 } from "./Components/Visualization/EmotionMeshComponent";
-import { XRController as XRController_6 } from "@zcomponent/three-webxr/lib/components/XRController";
+import { XRController as XRController_5 } from "@zcomponent/three-webxr/lib/components/XRController";
+import { PerspectiveCamera as PerspectiveCamera_6 } from "@zcomponent/three/lib/components/cameras/PerspectiveCamera";
 import { CallFunction as CallFunction_7 } from "@zcomponent/core/lib/behaviors/CallFunction";
 import { UserPlacementManager as UserPlacementManager_8 } from "@zcomponent/three-webxr/lib/components/UserPlacementManager";
 import { XRRigARUserPlacement as XRRigARUserPlacement_9 } from "@zcomponent/three-webxr/lib/components/XRRigARUserPlacement";
 import { XRCamera as XRCamera_10 } from "@zcomponent/three-webxr/lib/components/XRCamera";
 import { XRDefaultLoader as XRDefaultLoader_11 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
 import { XRManager as XRManager_12 } from "@zcomponent/three-webxr/lib/components/XRManager";
-import { PerspectiveCamera as PerspectiveCamera_13 } from "@zcomponent/three/lib/components/cameras/PerspectiveCamera";
+import { EmotionMeshComponent as EmotionMeshComponent_13 } from "./Components/Visualization/EmotionMeshComponent";
 
 interface ConstructorProps {
 
@@ -58,37 +58,17 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		Emotion1: EmotionMeshComponent_5 & {
+		Left_Controller: XRController_5 & {
 			behaviors: {
 
 			}
 		},
-		Emotion10: EmotionMeshComponent_5 & {
+		PerspectiveCamera: PerspectiveCamera_6 & {
 			behaviors: {
 
 			}
 		},
-		Emotion2: EmotionMeshComponent_5 & {
-			behaviors: {
-
-			}
-		},
-		Emotion3: EmotionMeshComponent_5 & {
-			behaviors: {
-
-			}
-		},
-		Emotion4: EmotionMeshComponent_5 & {
-			behaviors: {
-
-			}
-		},
-		Left_Controller: XRController_6 & {
-			behaviors: {
-
-			}
-		},
-		Right_Controller: XRController_6 & {
+		Right_Controller: XRController_5 & {
 			behaviors: {
 				0: CallFunction_7,
 				Call_UserPlacementManager_restartPlacement: CallFunction_7,
@@ -119,22 +99,42 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		PerspectiveCamera: PerspectiveCamera_13 & {
+		EmotionAnger: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		Emotion5: EmotionMeshComponent_5 & {
+		EmotionFear: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		Emotion50: EmotionMeshComponent_5 & {
+		EmotionJoy: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		Emotion6: EmotionMeshComponent_5 & {
+		EmotionSurprise: EmotionMeshComponent_13 & {
+			behaviors: {
+
+			}
+		},
+		EmotionLove: EmotionMeshComponent_13 & {
+			behaviors: {
+
+			}
+		},
+		EmotionInterest: EmotionMeshComponent_13 & {
+			behaviors: {
+
+			}
+		},
+		EmotionSadness: EmotionMeshComponent_13 & {
+			behaviors: {
+
+			}
+		},
+		EmotionAmusement: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}

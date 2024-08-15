@@ -29,7 +29,7 @@ export class EmotionMeshComponent extends Group {
     * @zui
     * @zdefault 1
     */
-    public maxSpikeFactor: number;
+    public shapeScale: number;
     /**
     * @zui
     * @zdefault 1
@@ -57,7 +57,7 @@ export class EmotionMeshComponent extends Group {
         this.parentGroupElement = constructorProps.groupElement;
 
         this.clock = new THREE.Clock();
-        this.maxSpikeFactor = 2;
+        this.shapeScale = 2;
         this.spikeFrequency = 2;
         this.rateOfChange = 1;
         this.opacity = 1;
@@ -75,7 +75,7 @@ export class EmotionMeshComponent extends Group {
           
                 this.mesh.material.uniforms.u_intensity.value = THREE.MathUtils.lerp(
                     this.mesh.material.uniforms.u_intensity.value,
-                    this.maxSpikeFactor,
+                    this.shapeScale,
                     0.02
                 );
 
@@ -103,8 +103,8 @@ export class EmotionMeshComponent extends Group {
 
         const geometry = new THREE.IcosahedronGeometry(2, 20);
 
-        console.log(this.maxSpikeFactor);
-        console.log(this.spikeFrequency);
+        // console.log(this.shapeScale);
+        // console.log(this.spikeFrequency);
 
         var material = new THREE.ShaderMaterial(
             {
@@ -113,7 +113,7 @@ export class EmotionMeshComponent extends Group {
                 uniforms: {
                     u_time: { value: 0 },
                     u_intensity: { value: 0.5 },
-                    u_spikeFactor: { value: this.maxSpikeFactor },
+                    u_spikeFactor: { value: this.shapeScale },
                     u_frequency: { value: this.spikeFrequency },
                     u_color: { value: new THREE.Color(0x00ff00) }, // Example: Green color
                     u_opacity: { value: 1.0 }
