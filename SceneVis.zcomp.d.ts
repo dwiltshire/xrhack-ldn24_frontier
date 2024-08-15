@@ -7,17 +7,15 @@ import { DefaultEnvironment as DefaultEnvironment_3 } from "@zcomponent/three/li
 import { DefaultLoader as DefaultLoader_4 } from "@zcomponent/core/lib/components/DefaultLoader";
 import { DirectionalLight as DirectionalLight_5 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
 import { XRController as XRController_6 } from "@zcomponent/three-webxr/lib/components/XRController";
-import { EmitComponentPropEvent as EmitComponentPropEvent_7 } from "@zcomponent/core/lib/behaviors/EmitComponentPropEvent";
-import { CallFunction as CallFunction_8 } from "@zcomponent/core/lib/behaviors/CallFunction";
-import { UserPlacementManager as UserPlacementManager_9 } from "@zcomponent/three-webxr/lib/components/UserPlacementManager";
-import { XRRigARUserPlacement as XRRigARUserPlacement_10 } from "@zcomponent/three-webxr/lib/components/XRRigARUserPlacement";
-import { XRCamera as XRCamera_11 } from "@zcomponent/three-webxr/lib/components/XRCamera";
-import { XRDefaultLoader as XRDefaultLoader_12 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
-import { XRManager as XRManager_13 } from "@zcomponent/three-webxr/lib/components/XRManager";
-import { EmotionMeshComponent as EmotionMeshComponent_14 } from "./Components/Visualization/EmotionMeshComponent";
-import { ExtrudedText as ExtrudedText_15 } from "@zcomponent/three/lib/components/meshes/ExtrudedText";
-import { MeshStandardMaterial as MeshStandardMaterial_16 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
-import { XRControllerTransform as XRControllerTransform_17 } from "@zcomponent/three-webxr/lib/components/XRControllerTransform";
+import { CallFunction as CallFunction_7 } from "@zcomponent/core/lib/behaviors/CallFunction";
+import { UserPlacementManager as UserPlacementManager_8 } from "@zcomponent/three-webxr/lib/components/UserPlacementManager";
+import { XRRigARUserPlacement as XRRigARUserPlacement_9 } from "@zcomponent/three-webxr/lib/components/XRRigARUserPlacement";
+import { XRCamera as XRCamera_10 } from "@zcomponent/three-webxr/lib/components/XRCamera";
+import { XRDefaultLoader as XRDefaultLoader_11 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
+import { XRManager as XRManager_12 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { EmotionMeshComponent as EmotionMeshComponent_13 } from "./Components/Visualization/EmotionMeshComponent";
+import { ExtrudedText as ExtrudedText_14 } from "@zcomponent/three/lib/components/meshes/ExtrudedText";
+import { MeshStandardMaterial as MeshStandardMaterial_15 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
 
 interface ConstructorProps {
 
@@ -65,162 +63,156 @@ declare class Comp extends ZComponent {
 		},
 		Left_Controller: XRController_6 & {
 			behaviors: {
-				0: EmitComponentPropEvent_7,
-				EmitComponentPropEvent: EmitComponentPropEvent_7,
+
 			}
 		},
 		Right_Controller: XRController_6 & {
 			behaviors: {
-				0: CallFunction_8,
-				Call_UserPlacementManager_restartPlacement: CallFunction_8,
+				0: CallFunction_7,
+				Call_UserPlacementManager_restartPlacement: CallFunction_7,
 			}
 		},
-		User_PlacementManager: UserPlacementManager_9 & {
+		User_PlacementManager: UserPlacementManager_8 & {
 			behaviors: {
 
 			}
 		},
-		XRRigARUserPlacement0: XRRigARUserPlacement_10 & {
+		XRRigARUserPlacement0: XRRigARUserPlacement_9 & {
 			behaviors: {
 
 			}
 		},
-		XR_Camera: XRCamera_11 & {
+		XR_Camera: XRCamera_10 & {
 			behaviors: {
 
 			}
 		},
-		XR_DefaultLoader: XRDefaultLoader_12 & {
+		XR_DefaultLoader: XRDefaultLoader_11 & {
 			behaviors: {
 
 			}
 		},
-		XR_Manager: XRManager_13 & {
+		XR_Manager: XRManager_12 & {
 			behaviors: {
 
 			}
 		},
-		EmotionAnger: EmotionMeshComponent_14 & {
+		EmotionAnger: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionFear: EmotionMeshComponent_14 & {
+		EmotionFear: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionJoy: EmotionMeshComponent_14 & {
+		EmotionJoy: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionSurprise: EmotionMeshComponent_14 & {
+		EmotionSurprise: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionLove: EmotionMeshComponent_14 & {
+		EmotionLove: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionInterest: EmotionMeshComponent_14 & {
+		EmotionInterest: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionSadness: EmotionMeshComponent_14 & {
+		EmotionSadness: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		EmotionAmusement: EmotionMeshComponent_14 & {
+		EmotionAmusement: EmotionMeshComponent_13 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText: ExtrudedText_15 & {
+		ExtrudedText: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText0: ExtrudedText_15 & {
+		ExtrudedText0: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_2: ExtrudedText_15 & {
+		ExtrudedText_2: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_3: ExtrudedText_15 & {
+		ExtrudedText_3: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_30: ExtrudedText_15 & {
+		ExtrudedText_30: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_5: ExtrudedText_15 & {
+		ExtrudedText_5: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_31: ExtrudedText_15 & {
+		ExtrudedText_31: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial: MeshStandardMaterial_16 & {
+		MeshStandardMaterial: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		ExtrudedText_7: ExtrudedText_15 & {
+		ExtrudedText_7: ExtrudedText_14 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_2: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_2: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_3: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_3: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_4: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_4: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_5: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_5: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_6: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_6: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_7: MeshStandardMaterial_16 & {
+		MeshStandardMaterial_7: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_8: MeshStandardMaterial_16 & {
-			behaviors: {
-
-			}
-		},
-		XRControllerTransform: XRControllerTransform_17 & {
+		MeshStandardMaterial_8: MeshStandardMaterial_15 & {
 			behaviors: {
 
 			}

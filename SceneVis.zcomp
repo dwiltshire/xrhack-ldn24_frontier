@@ -67,16 +67,6 @@
 			},
 			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
 		},
-		"c2ae3c5bbbcd46799c0897bb0643203f": {
-			"id": "c2ae3c5bbbcd46799c0897bb0643203f",
-			"label": "EmitComponentPropEvent",
-			"parent": {
-				"id": "69c513aa1eb04439afdc5e25c9742e8b",
-				"order": "a0",
-				"scriptName": "EmitComponentPropEvent"
-			},
-			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
-		},
 		"dc6dc211baef4a19877886367be44e21": {
 			"id": "dc6dc211baef4a19877886367be44e21",
 			"label": "EmotionAnalyzer",
@@ -202,9 +192,6 @@
 		"XR Manager": {
 			"80d719b3dd9e4d56bd40efd3757ca0a3": true
 		},
-		"XRControllerTransform": {
-			"c980061a9cbe483fab862573a5ab4888": true
-		},
 		"XRRigARUserPlacement": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
 		}
@@ -309,9 +296,6 @@
 		"User_PlacementManager": {
 			"1a58dc40b496466b880e7a51cea0328f": true
 		},
-		"XRControllerTransform": {
-			"c980061a9cbe483fab862573a5ab4888": true
-		},
 		"XRRigARUserPlacement0": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
 		},
@@ -390,15 +374,9 @@
 		},
 		"c087e89d60b044ef8e93b81b6b1ac95d": {
 		},
-		"c2ae3c5bbbcd46799c0897bb0643203f": {
-			"event": "onIntersectionEnter",
-			"runAtEditTime": true
-		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
 		},
 		"c63d8679256943a28e93c624c570f65f": {
-		},
-		"c980061a9cbe483fab862573a5ab4888": {
 		},
 		"ca924693d1d14c1cad121d3747126acb": {
 		},
@@ -494,11 +472,16 @@
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
 			"opacity": 0.5,
 			"position": [
-				-10.261203555790917,
+				-7.593326542209019,
 				-5.875577273401237,
 				-27.076327337660707
 			],
 			"rateOfChange": 1,
+			"rotation": [
+				0,
+				0,
+				0
+			],
 			"scale": [
 				1,
 				1,
@@ -543,11 +526,16 @@
 		"401bbc457e964ecbb07fc65fad867438": {
 			"opacity": 0.5,
 			"position": [
-				-13.004726214242394,
+				-11.40049861031077,
 				2.6489265614697826,
 				-27.99556867829518
 			],
 			"rateOfChange": 1,
+			"rotation": [
+				0,
+				0,
+				0
+			],
 			"scale": [
 				1,
 				1,
@@ -572,11 +560,16 @@
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
 			"opacity": 0.5,
 			"position": [
-				-0.6488590920761705,
+				1.8255126532952906,
 				-10.229779018857124,
 				-28.400346026271272
 			],
 			"rateOfChange": 0.4,
+			"rotation": [
+				0,
+				0,
+				0
+			],
 			"scale": [
 				1,
 				1,
@@ -593,6 +586,7 @@
 		"52148d8eafe3426085e700e049662c07": {
 		},
 		"59cba062b83d4eeaabee591728946232": {
+			"enabled": false,
 			"function": {
 				"_zfn": true,
 				"args": {
@@ -620,7 +614,7 @@
 			"castShadow": true,
 			"opacity": 0.5,
 			"position": [
-				-1.3398364878853743,
+				0.9460715377983542,
 				17.098361498335382,
 				-28.40032419175318
 			],
@@ -628,7 +622,7 @@
 			"receiveShadow": true,
 			"rotation": [
 				0,
-				0.002193711411622612,
+				0,
 				0
 			],
 			"scale": [
@@ -670,7 +664,7 @@
 			"castShadow": true,
 			"opacity": 0.5,
 			"position": [
-				10.816176236898592,
+				14.622264218653164,
 				2.7123714668922756,
 				-28.400346026271272
 			],
@@ -714,6 +708,7 @@
 			"text": "Love\n\n\n"
 		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
+			"enabled": true,
 			"position": [
 				0.3,
 				1.3,
@@ -721,7 +716,22 @@
 			]
 		},
 		"bf59aa4eac3f4628bcd8579ee35fae3c": {
-			"enabled": true
+			"enabled": true,
+			"position": [
+				0,
+				0,
+				20
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"scale": [
+				0.25,
+				0.25,
+				0.25
+			]
 		},
 		"c087e89d60b044ef8e93b81b6b1ac95d": {
 			"position": [
@@ -730,15 +740,6 @@
 				0
 			],
 			"text": "Sadness\n\n\n"
-		},
-		"c2ae3c5bbbcd46799c0897bb0643203f": {
-			"eventToEmit": {
-				"_zfn": true,
-				"args": {
-				},
-				"prop": "OnIntersectionEvent",
-				"t": "emitcomponentevent"
-			}
 		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
 			"position": [
@@ -752,7 +753,7 @@
 			"castShadow": true,
 			"opacity": 0.5,
 			"position": [
-				8.110049838456142,
+				9.003778242686838,
 				11.237319359032272,
 				-28.357170522930783
 			],
@@ -760,7 +761,7 @@
 			"receiveShadow": true,
 			"rotation": [
 				0,
-				0.022812544534540624,
+				0,
 				0
 			],
 			"scale": [
@@ -777,8 +778,6 @@
 			"spikeFrequency": 0.25,
 			"visible": true
 		},
-		"c980061a9cbe483fab862573a5ab4888": {
-		},
 		"ca924693d1d14c1cad121d3747126acb": {
 			"color": [
 				0.21176470588235294,
@@ -790,7 +789,7 @@
 			"castShadow": true,
 			"opacity": 0.5,
 			"position": [
-				8.196566924529597,
+				9.94864027356694,
 				-5.940490388843481,
 				-28.33450255456378
 			],
@@ -798,7 +797,7 @@
 			"receiveShadow": true,
 			"rotation": [
 				0,
-				0.014980505856481141,
+				0,
 				0
 			],
 			"scale": [
@@ -852,12 +851,17 @@
 			"castShadow": true,
 			"opacity": 0.5,
 			"position": [
-				-10.731790793436957,
+				-9.400856351841858,
 				11.595450036403491,
 				-28.400346026271272
 			],
 			"rateOfChange": 1,
 			"receiveShadow": true,
+			"rotation": [
+				0,
+				0,
+				0
+			],
 			"scale": [
 				1,
 				1,
@@ -1174,16 +1178,6 @@
 			},
 			"scriptName": "EmotionLove",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
-		},
-		"c980061a9cbe483fab862573a5ab4888": {
-			"id": "c980061a9cbe483fab862573a5ab4888",
-			"label": "XRControllerTransform",
-			"parent": {
-				"id": "1e9992bc9dcf44d3b01ced234f9f1235",
-				"order": "Zz"
-			},
-			"scriptName": "XRControllerTransform",
-			"type": "@zcomponent/three-webxr/lib/components/XRControllerTransform#XRControllerTransform"
 		},
 		"ca924693d1d14c1cad121d3747126acb": {
 			"id": "ca924693d1d14c1cad121d3747126acb",
