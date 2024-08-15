@@ -1,10 +1,7 @@
-import { ContextManager, Observable, registerLoadable } from "@zcomponent/core";
+import { ContextManager, Observable, registerLoadable, ZComponent } from '@zcomponent/core';
 import { Group } from "@zcomponent/three/lib/components/Group";
 import * as THREE from "three";
 import {useOnBeforeRender } from "@zcomponent/core";
-
-// To get the renderer
-import { useRenderer  } from '@zcomponent/three/lib/context';
 
 import vertexShader from "./shaders_v2/vertexShader";
 import fragmentShader from "./shaders_v2/fragmentShader";
@@ -65,7 +62,7 @@ export class EmotionMeshComponent extends Group {
 
         registerLoadable(contextManager, this._load());
 
-        console.log('EmotionMeshComponent::constructor');
+        // console.log('EmotionMeshComponent::constructor');
 
         this.register(useOnBeforeRender(contextManager), dt => {
             if (this.mesh) {
@@ -80,11 +77,8 @@ export class EmotionMeshComponent extends Group {
                 );
 
                 this.mesh.material.uniforms.u_spikeFactor.value = Math.sin(elapsedTime) + 0.5;
-
                 this.mesh.material.uniforms.u_frequency.value = this.spikeFrequency;
-
                 this.mesh.material.uniforms.u_color.value = this.shapeColor;
-
                 this.mesh.material.uniforms.u_opacity.value = this.opacity;
             }
         });
@@ -93,13 +87,13 @@ export class EmotionMeshComponent extends Group {
 
     private async _load() {
         
-        console.log('EmotionMeshComponent::_load');
+        // console.log('EmotionMeshComponent::_load');
 
         this.createEmotionMesh();
     }
 
     private createEmotionMesh() {
-        console.log('EmotionMeshComponent::createEmotionMesh');
+        // console.log('EmotionMeshComponent::createEmotionMesh');
 
         const geometry = new THREE.IcosahedronGeometry(2, 20);
 
