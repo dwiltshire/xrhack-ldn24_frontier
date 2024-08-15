@@ -57,6 +57,16 @@
 		}
 	},
 	"behaviors": {
+		"259ece5827fe40128368a51aceee7d97": {
+			"id": "259ece5827fe40128368a51aceee7d97",
+			"label": "CallFunction",
+			"parent": {
+				"id": "8d7d1c3137e243e5bbe5280bc7259b8a",
+				"order": "a0",
+				"scriptName": "CallFunction"
+			},
+			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
+		},
 		"59cba062b83d4eeaabee591728946232": {
 			"id": "59cba062b83d4eeaabee591728946232",
 			"label": "Call User Placement Manager.restartPlacement",
@@ -81,8 +91,14 @@
 	"constructorProps": {
 	},
 	"entitiesByLabel": {
+		"Button": {
+			"8d7d1c3137e243e5bbe5280bc7259b8a": true
+		},
 		"Content Group": {
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"ContextSetup": {
+			"415dc3c7ee204e699abc9597d6610c11": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -180,6 +196,12 @@
 		"Right Controller": {
 			"be4d21ff928c48e48553efb8ec9aa26c": true
 		},
+		"Text": {
+			"5d206b59420e4ecca151274ea8b0ca22": true
+		},
+		"UI": {
+			"8e16061cc30c46139699514381c58f8a": true
+		},
 		"User Placement Manager": {
 			"1a58dc40b496466b880e7a51cea0328f": true
 		},
@@ -197,8 +219,14 @@
 		}
 	},
 	"entitiesByScriptName": {
+		"Button": {
+			"8d7d1c3137e243e5bbe5280bc7259b8a": true
+		},
 		"Content_Group": {
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"ContextSetup": {
+			"415dc3c7ee204e699abc9597d6610c11": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -293,6 +321,12 @@
 		"Right_Controller": {
 			"be4d21ff928c48e48553efb8ec9aa26c": true
 		},
+		"Text": {
+			"5d206b59420e4ecca151274ea8b0ca22": true
+		},
+		"UI": {
+			"8e16061cc30c46139699514381c58f8a": true
+		},
 		"User_PlacementManager": {
 			"1a58dc40b496466b880e7a51cea0328f": true
 		},
@@ -324,6 +358,9 @@
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
 		},
+		"259ece5827fe40128368a51aceee7d97": {
+			"event": "onButtonClick"
+		},
 		"345e47aa1ff0427e85381633c5f2bc01": {
 		},
 		"366246262b7d47e1b9980f88a52ef7f5": {
@@ -331,6 +368,8 @@
 		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
+		},
+		"415dc3c7ee204e699abc9597d6610c11": {
 		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
 		},
@@ -340,6 +379,8 @@
 		},
 		"59cba062b83d4eeaabee591728946232": {
 			"event": "onButtonAPressed"
+		},
+		"5d206b59420e4ecca151274ea8b0ca22": {
 		},
 		"69c513aa1eb04439afdc5e25c9742e8b": {
 			"allowRightHandControllers": false,
@@ -357,6 +398,10 @@
 		"857f9901b65b42c89a3ff04470d70738": {
 		},
 		"8c594047ea674c3bab3a2f22961e60b2": {
+		},
+		"8d7d1c3137e243e5bbe5280bc7259b8a": {
+		},
+		"8e16061cc30c46139699514381c58f8a": {
 		},
 		"9256d579f67744baa35da13378520884": {
 		},
@@ -439,10 +484,42 @@
 			"isConstructorProp": false,
 			"propName": "visible",
 			"type": "componentprop"
+		},
+		"contextvalue:prop:5d206b59420e4ecca151274ea8b0ca22:text": {
+			"entityID": "5d206b59420e4ecca151274ea8b0ca22",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"text"
+			],
+			"id": "contextvalue:prop:5d206b59420e4ecca151274ea8b0ca22:text",
+			"imp": "./State/AudioAnalysisContext#AudioAnalysisContext",
+			"type": "contextvalue",
+			"val": "analysisState"
+		},
+		"contextvalue:prop:8d7d1c3137e243e5bbe5280bc7259b8a:text": {
+			"entityID": "8d7d1c3137e243e5bbe5280bc7259b8a",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"text"
+			],
+			"id": "contextvalue:prop:8d7d1c3137e243e5bbe5280bc7259b8a:text",
+			"imp": "./State/AudioAnalysisContext#AudioAnalysisContext",
+			"type": "contextvalue",
+			"val": "nextActionLabel"
 		}
 	},
 	"entityProps": {
 		"0369b09380e649aab87b180eb3aa4f1a": {
+			"position": [
+				0,
+				0,
+				20
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			]
 		},
 		"0ba8e27369df45ca897731dcb1e39bcf": {
 		},
@@ -494,6 +571,16 @@
 			],
 			"shapeScale": 0.25,
 			"spikeFrequency": 1.2
+		},
+		"259ece5827fe40128368a51aceee7d97": {
+			"function": {
+				"_zfn": true,
+				"args": {
+				},
+				"fn": "triggerNextAction",
+				"imp": "import://./State/AudioAnalysisContext#AudioAnalysisContext",
+				"t": "context"
+			}
 		},
 		"345e47aa1ff0427e85381633c5f2bc01": {
 			"bevelEnabled": false,
@@ -549,6 +636,8 @@
 			"shapeScale": 0.6,
 			"spikeFrequency": 3
 		},
+		"415dc3c7ee204e699abc9597d6610c11": {
+		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
 			"position": [
 				2.4585391434542445,
@@ -595,6 +684,18 @@
 				"fn": "restartPlacement",
 				"t": "entity"
 			}
+		},
+		"5d206b59420e4ecca151274ea8b0ca22": {
+			"position": [
+				-0.2749435772369141,
+				1.4895762612583163,
+				0.3068733056313313
+			],
+			"scale": [
+				2.5511162939933505,
+				2.5511162939933505,
+				2.5511162939933505
+			]
 		},
 		"69c513aa1eb04439afdc5e25c9742e8b": {
 			"position": [
@@ -659,6 +760,27 @@
 				0
 			],
 			"text": "Joy\n\n\n"
+		},
+		"8d7d1c3137e243e5bbe5280bc7259b8a": {
+			"position": [
+				0.144427397705348,
+				0.8142528761185195,
+				0
+			],
+			"scale": [
+				1,
+				1,
+				1
+			],
+			"text": "Hello\n",
+			"visible": true
+		},
+		"8e16061cc30c46139699514381c58f8a": {
+			"position": [
+				0,
+				0,
+				13.397977414468983
+			]
 		},
 		"9256d579f67744baa35da13378520884": {
 			"castShadow": true,
@@ -989,6 +1111,16 @@
 			"scriptName": "EmotionAnger",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
 		},
+		"415dc3c7ee204e699abc9597d6610c11": {
+			"id": "415dc3c7ee204e699abc9597d6610c11",
+			"label": "ContextSetup",
+			"parent": {
+				"id": "8e16061cc30c46139699514381c58f8a",
+				"order": "a0"
+			},
+			"scriptName": "ContextSetup",
+			"type": "./ContextSetup#ContextSetup"
+		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
 			"id": "4f044f8ce02442d3a5df4f5387683d07",
 			"label": "ExtrudedText 5",
@@ -1018,6 +1150,16 @@
 			},
 			"scriptName": "DefaultLoader",
 			"type": "@zcomponent/core/lib/components/DefaultLoader#DefaultLoader"
+		},
+		"5d206b59420e4ecca151274ea8b0ca22": {
+			"id": "5d206b59420e4ecca151274ea8b0ca22",
+			"label": "Text",
+			"parent": {
+				"id": "8e16061cc30c46139699514381c58f8a",
+				"order": "Zz"
+			},
+			"scriptName": "Text",
+			"type": "@zcomponent/three/lib/components/text/Text#Text"
 		},
 		"69c513aa1eb04439afdc5e25c9742e8b": {
 			"id": "69c513aa1eb04439afdc5e25c9742e8b",
@@ -1088,6 +1230,26 @@
 			},
 			"scriptName": "ExtrudedText",
 			"type": "@zcomponent/three/lib/components/meshes/ExtrudedText#ExtrudedText"
+		},
+		"8d7d1c3137e243e5bbe5280bc7259b8a": {
+			"id": "8d7d1c3137e243e5bbe5280bc7259b8a",
+			"label": "Button",
+			"parent": {
+				"id": "8e16061cc30c46139699514381c58f8a",
+				"order": "a2"
+			},
+			"scriptName": "Button",
+			"type": "./Components/UI/Button/Button.zcomp#default"
+		},
+		"8e16061cc30c46139699514381c58f8a": {
+			"id": "8e16061cc30c46139699514381c58f8a",
+			"label": "UI",
+			"parent": {
+				"id": "root",
+				"order": "Zt"
+			},
+			"scriptName": "UI",
+			"type": "@zcomponent/three/lib/components/Group#Group"
 		},
 		"9256d579f67744baa35da13378520884": {
 			"id": "9256d579f67744baa35da13378520884",

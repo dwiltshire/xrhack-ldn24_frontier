@@ -17,6 +17,11 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
+		add_button: Image_0 & {
+			behaviors: {
+
+			}
+		},
 		background: Image_0 & {
 			behaviors: {
 				0: PlayLayerClip_1,
@@ -28,17 +33,12 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		add_button: Image_0 & {
+		emotion_back: Image_0 & {
 			behaviors: {
 
 			}
 		},
 		emotion_sample: Image_0 & {
-			behaviors: {
-
-			}
-		},
-		emotion_back: Image_0 & {
 			behaviors: {
 
 			}
@@ -52,14 +52,22 @@ declare class Comp extends ZComponent {
 	}};
 
 	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
 	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
+	 * @zdefault false
 	 */
-	public visible: Observable<boolean>;
+	public Add: Observable<boolean>;
+
+	/**
+	 * @zprop
+	 * @zdefault 0
+	 */
+	public Date: Observable<number>;
+
+	/**
+	 * @zprop
+	 * @zdefault false
+	 */
+	public HasEmotion: Observable<boolean>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -92,22 +100,14 @@ declare class Comp extends ZComponent {
 	public scale: Observable<[x: number, y: number, z: number]>;
 
 	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
 	 * @zprop
-	 * @zdefault 0
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
 	 */
-	public Date: Observable<number>;
-
-	/**
-	 * @zprop
-	 * @zdefault false
-	 */
-	public HasEmotion: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 * @zdefault false
-	 */
-	public Add: Observable<boolean>;
+	public visible: Observable<boolean>;
 }
 
 export default Comp;

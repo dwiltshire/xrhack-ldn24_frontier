@@ -1,5 +1,5 @@
 import { initialize } from "@zcomponent/three";
-import { default as Scene } from "./Scene.zcomp";
+import { default as Scene } from "./SceneVis.zcomp";
 
 initialize(Scene, {}, {
     launchButton: document.getElementById('launchButton'),

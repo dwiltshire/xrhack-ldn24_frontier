@@ -60,7 +60,7 @@ type Emotion =
   | "Tiredness"
   | "Triumph";
 
-type Prosody = Record<Emotion, number>;
+export type Prosody = Record<Emotion, number>;
 
 interface ConstructionProps {}
 

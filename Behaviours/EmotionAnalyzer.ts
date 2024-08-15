@@ -2,6 +2,7 @@ import { Component, Behavior, BehaviorConstructorProps, ContextManager, register
 import { Group as Group } from "@zcomponent/three/lib/components/Group";
 import { default as SceneVis} from "../SceneVis.zcomp";
 import { EmotionMeshComponent } from '../Components/Visualization/EmotionMeshComponent';
+import { AudioAnalysisContext, Prosody } from "../State/AudioAnalysisContext";
 
 
 // Define the emotion groups
@@ -65,10 +66,14 @@ export class EmotionAnalyzer extends Behavior<Group> {
 
 	protected zcomponent = this.getZComponentInstance(SceneVis);
 	private intervalId: number | null = null;
+    protected prosodyMap: Prosody;
+    protected audioContext: AudioAnalysisContext;
 
 	constructor(contextManager: ContextManager, instance: Group, protected constructorProps: ConstructionProps) {
 		super(contextManager, instance);
 
+        this.audioContext = this.contextManager.get(AudioAnalysisContext);
+        
         console.log("MY BEHAVIOUR");
 
         if (this.intervalId === null) {
@@ -85,11 +90,13 @@ export class EmotionAnalyzer extends Behavior<Group> {
 	updateEmotionScoresAndBoxHeights() {
         // Generate mock data and update the emotion scores
         const mockData = generateMock();
-        const emotionScores = mockData.models.prosody.scores;
+        const emotionScores = this.audioContext.lastSentiment.value; // mockData.models.prosody.scores;
+
+        console.log(emotionScores);
 
         // Calculate the sum of emotion scores for each group and add to cumulative sums
         for (const group in EMOTION_GROUPS) {
-            if (EMOTION_GROUPS.hasOwnProperty(group)) {
+            if (EMOTION_GROUPS.hasOwnProperty(group) && emotionScores) {
                 let roundSum = 0;
                 EMOTION_GROUPS[group].forEach(emotion => {
                     roundSum += emotionScores[emotion] || 0;
