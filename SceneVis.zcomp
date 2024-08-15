@@ -1,0 +1,962 @@
+{
+	"animation": {
+		"clips": {
+			"0cb21ec10fb045e5a7c192bb3cbf24ca": {
+				"id": "0cb21ec10fb045e5a7c192bb3cbf24ca",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "Placing",
+				"order": "a2",
+				"scriptName": "Placing",
+				"tracks": {
+				},
+				"type": "state"
+			},
+			"302aadc245b743798bc721c240da64bc": {
+				"id": "302aadc245b743798bc721c240da64bc",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "Placed",
+				"order": "a3",
+				"scriptName": "Placed",
+				"tracks": {
+				},
+				"type": "state"
+			}
+		},
+		"curves": {
+		},
+		"layers": {
+			"edb4e147e0b542b988042ffb02f6338e": {
+				"clips": {
+					"60477e43538a41709ba5c801556aef2e": {
+						"clipId": "302aadc245b743798bc721c240da64bc",
+						"id": "60477e43538a41709ba5c801556aef2e",
+						"order": "a3",
+						"scriptName": "Placed0"
+					},
+					"9762b682a3fc49a78c9ab2b8cd29d70f": {
+						"clipId": "0cb21ec10fb045e5a7c192bb3cbf24ca",
+						"id": "9762b682a3fc49a78c9ab2b8cd29d70f",
+						"order": "a2",
+						"scriptName": "Placing0"
+					}
+				},
+				"defaultClip": null,
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "edb4e147e0b542b988042ffb02f6338e",
+				"name": "Placement",
+				"order": "a2",
+				"scriptName": "Placement"
+			}
+		}
+	},
+	"behaviors": {
+		"59cba062b83d4eeaabee591728946232": {
+			"id": "59cba062b83d4eeaabee591728946232",
+			"label": "Call User Placement Manager.restartPlacement",
+			"parent": {
+				"id": "be4d21ff928c48e48553efb8ec9aa26c",
+				"order": "a0",
+				"scriptName": "Call_UserPlacementManager_restartPlacement"
+			},
+			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
+		}
+	},
+	"constructorProps": {
+	},
+	"entitiesByLabel": {
+		"Content Group": {
+			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"DefaultCookieConsent": {
+			"0ba8e27369df45ca897731dcb1e39bcf": true
+		},
+		"DefaultEnvironment": {
+			"a57f5d58e38e4a0b918dcf605ea12736": true
+		},
+		"DefaultLoader": {
+			"52148d8eafe3426085e700e049662c07": true
+		},
+		"Defaults": {
+			"7b6fb4d895774174b5d151eec86b704c": true
+		},
+		"DirectionalLight": {
+			"857f9901b65b42c89a3ff04470d70738": true
+		},
+		"Emotion1": {
+			"1e9992bc9dcf44d3b01ced234f9f1235": true
+		},
+		"Emotion2": {
+			"401bbc457e964ecbb07fc65fad867438": true
+		},
+		"Emotion3": {
+			"4fb98c6ff1ce4103b135fbf08eac1b15": true
+		},
+		"Emotion4": {
+			"d4d4440532bd43718d14775551748351": true
+		},
+		"Emotion5": {
+			"9256d579f67744baa35da13378520884": true
+		},
+		"Emotion6": {
+			"ff64ed3f08874d968f71e3afa3bb4b1e": true
+		},
+		"Emotion7": {
+			"c63d8679256943a28e93c624c570f65f": true
+		},
+		"Emotion8": {
+			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		},
+		"Group": {
+			"root": true
+		},
+		"Left Controller": {
+			"69c513aa1eb04439afdc5e25c9742e8b": true
+		},
+		"PerspectiveCamera": {
+			"b0dfb6b646e34453ae49db6ce5071d59": true
+		},
+		"Right Controller": {
+			"be4d21ff928c48e48553efb8ec9aa26c": true
+		},
+		"User Placement Manager": {
+			"1a58dc40b496466b880e7a51cea0328f": true
+		},
+		"XR Camera": {
+			"c37977ec906344f3802cdca1d6ac24d5": true
+		},
+		"XR Default Loader": {
+			"0c4ebdc7633941dca542c9ae9cd90aca": true
+		},
+		"XR Manager": {
+			"80d719b3dd9e4d56bd40efd3757ca0a3": true
+		},
+		"XRRigARUserPlacement": {
+			"0369b09380e649aab87b180eb3aa4f1a": true
+		}
+	},
+	"entitiesByScriptName": {
+		"Content_Group": {
+			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"DefaultCookieConsent": {
+			"0ba8e27369df45ca897731dcb1e39bcf": true
+		},
+		"DefaultEnvironment": {
+			"a57f5d58e38e4a0b918dcf605ea12736": true
+		},
+		"DefaultLoader": {
+			"52148d8eafe3426085e700e049662c07": true
+		},
+		"Defaults": {
+			"7b6fb4d895774174b5d151eec86b704c": true
+		},
+		"DirectionalLight": {
+			"857f9901b65b42c89a3ff04470d70738": true
+		},
+		"Emotion1": {
+			"1e9992bc9dcf44d3b01ced234f9f1235": true
+		},
+		"Emotion10": {
+			"401bbc457e964ecbb07fc65fad867438": true
+		},
+		"Emotion2": {
+			"4fb98c6ff1ce4103b135fbf08eac1b15": true
+		},
+		"Emotion3": {
+			"d4d4440532bd43718d14775551748351": true
+		},
+		"Emotion4": {
+			"9256d579f67744baa35da13378520884": true
+		},
+		"Emotion5": {
+			"ff64ed3f08874d968f71e3afa3bb4b1e": true
+		},
+		"Emotion50": {
+			"c63d8679256943a28e93c624c570f65f": true
+		},
+		"Emotion6": {
+			"78ee6b0a2e294857a2beb22f0c6e0b40": true
+		},
+		"Left_Controller": {
+			"69c513aa1eb04439afdc5e25c9742e8b": true
+		},
+		"PerspectiveCamera": {
+			"b0dfb6b646e34453ae49db6ce5071d59": true
+		},
+		"Right_Controller": {
+			"be4d21ff928c48e48553efb8ec9aa26c": true
+		},
+		"User_PlacementManager": {
+			"1a58dc40b496466b880e7a51cea0328f": true
+		},
+		"XRRigARUserPlacement0": {
+			"0369b09380e649aab87b180eb3aa4f1a": true
+		},
+		"XR_Camera": {
+			"c37977ec906344f3802cdca1d6ac24d5": true
+		},
+		"XR_DefaultLoader": {
+			"0c4ebdc7633941dca542c9ae9cd90aca": true
+		},
+		"XR_Manager": {
+			"80d719b3dd9e4d56bd40efd3757ca0a3": true
+		}
+	},
+	"entityConstructorProps": {
+		"0369b09380e649aab87b180eb3aa4f1a": {
+		},
+		"0ba8e27369df45ca897731dcb1e39bcf": {
+		},
+		"0c4ebdc7633941dca542c9ae9cd90aca": {
+		},
+		"1a58dc40b496466b880e7a51cea0328f": {
+		},
+		"1e9992bc9dcf44d3b01ced234f9f1235": {
+		},
+		"401bbc457e964ecbb07fc65fad867438": {
+		},
+		"4fb98c6ff1ce4103b135fbf08eac1b15": {
+		},
+		"52148d8eafe3426085e700e049662c07": {
+		},
+		"59cba062b83d4eeaabee591728946232": {
+			"event": "onButtonAPressed"
+		},
+		"69c513aa1eb04439afdc5e25c9742e8b": {
+			"allowRightHandControllers": false,
+			"allowUnspecifiedHandControllers": false
+		},
+		"78ee6b0a2e294857a2beb22f0c6e0b40": {
+		},
+		"7b6fb4d895774174b5d151eec86b704c": {
+		},
+		"80d719b3dd9e4d56bd40efd3757ca0a3": {
+			"startOnLaunch": "immersive-ar"
+		},
+		"857f9901b65b42c89a3ff04470d70738": {
+		},
+		"9256d579f67744baa35da13378520884": {
+		},
+		"a57f5d58e38e4a0b918dcf605ea12736": {
+		},
+		"b0dfb6b646e34453ae49db6ce5071d59": {
+		},
+		"be4d21ff928c48e48553efb8ec9aa26c": {
+			"allowLeftHandControllers": false
+		},
+		"bf59aa4eac3f4628bcd8579ee35fae3c": {
+		},
+		"c37977ec906344f3802cdca1d6ac24d5": {
+		},
+		"c63d8679256943a28e93c624c570f65f": {
+		},
+		"d4d4440532bd43718d14775551748351": {
+		},
+		"ff64ed3f08874d968f71e3afa3bb4b1e": {
+		}
+	},
+	"entityPropOverrides": {
+		"componentprop:prop:root:position": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"position"
+			],
+			"id": "componentprop:prop:root:position",
+			"isConstructorProp": false,
+			"propName": "position",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:rotation": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"rotation"
+			],
+			"id": "componentprop:prop:root:rotation",
+			"isConstructorProp": false,
+			"propName": "rotation",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:scale": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"scale"
+			],
+			"id": "componentprop:prop:root:scale",
+			"isConstructorProp": false,
+			"propName": "scale",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:visible": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"visible"
+			],
+			"id": "componentprop:prop:root:visible",
+			"isConstructorProp": false,
+			"propName": "visible",
+			"type": "componentprop"
+		}
+	},
+	"entityProps": {
+		"0369b09380e649aab87b180eb3aa4f1a": {
+		},
+		"0ba8e27369df45ca897731dcb1e39bcf": {
+		},
+		"0c4ebdc7633941dca542c9ae9cd90aca": {
+		},
+		"1a58dc40b496466b880e7a51cea0328f": {
+			"forceGroundPlane": true,
+			"notPlacingLayerClip": "60477e43538a41709ba5c801556aef2e",
+			"placingLayerClip": "9762b682a3fc49a78c9ab2b8cd29d70f"
+		},
+		"1e9992bc9dcf44d3b01ced234f9f1235": {
+			"maxSpikeFactor": 0.4,
+			"opacity": 1,
+			"oscillationType": 0,
+			"position": [
+				-9.910398811272376,
+				-6.318519485445739,
+				-27.076327337660707
+			],
+			"rateOfChange": 0.5,
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.6392156862745098,
+				0.09803921568627451,
+				0.9294117647058824
+			],
+			"spikeFrequency": 0.25
+		},
+		"401bbc457e964ecbb07fc65fad867438": {
+			"maxSpikeFactor": 0.4,
+			"opacity": 1,
+			"position": [
+				-13.153716668949157,
+				2.166496835109697,
+				-28.395177222641735
+			],
+			"rateOfChange": 0.1,
+			"rotation": [
+				-0.8790211501425027,
+				0.23349901900236578,
+				-2.962021127898799
+			],
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				1,
+				0,
+				0
+			],
+			"spikeFrequency": 2
+		},
+		"4fb98c6ff1ce4103b135fbf08eac1b15": {
+			"maxSpikeFactor": 0.4,
+			"position": [
+				-0.5533223063792736,
+				-7.558031194574154,
+				-28.400346026271272
+			],
+			"rateOfChange": 1.8,
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.023529411764705882,
+				0,
+				0.7647058823529411
+			],
+			"spikeFrequency": 2
+		},
+		"52148d8eafe3426085e700e049662c07": {
+		},
+		"59cba062b83d4eeaabee591728946232": {
+			"function": {
+				"_zfn": true,
+				"args": [
+				],
+				"entityID": "1a58dc40b496466b880e7a51cea0328f",
+				"fn": "restartPlacement",
+				"t": "entity"
+			}
+		},
+		"69c513aa1eb04439afdc5e25c9742e8b": {
+			"position": [
+				-0.3,
+				1.3,
+				0
+			]
+		},
+		"78ee6b0a2e294857a2beb22f0c6e0b40": {
+			"castShadow": true,
+			"maxSpikeFactor": 0.35,
+			"opacity": 1,
+			"position": [
+				-1.8019399771548388,
+				12.985123495711095,
+				-28.400346026271272
+			],
+			"rateOfChange": 0.4,
+			"receiveShadow": true,
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.8901960784313725,
+				0.9176470588235294,
+				0.03529411764705882
+			],
+			"spikeFrequency": 5,
+			"visible": true
+		},
+		"7b6fb4d895774174b5d151eec86b704c": {
+		},
+		"80d719b3dd9e4d56bd40efd3757ca0a3": {
+		},
+		"857f9901b65b42c89a3ff04470d70738": {
+			"castShadow": true,
+			"enabled": true,
+			"position": [
+				0,
+				3.822578351542651,
+				0
+			]
+		},
+		"9256d579f67744baa35da13378520884": {
+			"castShadow": true,
+			"maxSpikeFactor": 0.4,
+			"opacity": 1,
+			"position": [
+				10.816176236898592,
+				2.7123714668922756,
+				-28.400346026271272
+			],
+			"rateOfChange": 1.5,
+			"receiveShadow": true,
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.10196078431372549,
+				0.6039215686274509,
+				0
+			],
+			"spikeFrequency": 6,
+			"visible": true
+		},
+		"a57f5d58e38e4a0b918dcf605ea12736": {
+		},
+		"b0dfb6b646e34453ae49db6ce5071d59": {
+			"rotation": [
+				0,
+				6.315876140562566,
+				0
+			]
+		},
+		"be4d21ff928c48e48553efb8ec9aa26c": {
+			"position": [
+				0.3,
+				1.3,
+				0
+			]
+		},
+		"bf59aa4eac3f4628bcd8579ee35fae3c": {
+		},
+		"c37977ec906344f3802cdca1d6ac24d5": {
+			"position": [
+				0,
+				0.007621294646991572,
+				0
+			],
+			"visible": true
+		},
+		"c63d8679256943a28e93c624c570f65f": {
+			"castShadow": true,
+			"maxSpikeFactor": 0.4,
+			"opacity": 1,
+			"position": [
+				8.110049838456142,
+				10.514033994037336,
+				-28.357170522930783
+			],
+			"rateOfChange": 0.7,
+			"receiveShadow": true,
+			"rotation": [
+				0,
+				0.022812544534540624,
+				0
+			],
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.5176470588235295,
+				1,
+				0.5882352941176471
+			],
+			"spikeFrequency": 0.5,
+			"visible": true
+		},
+		"d4d4440532bd43718d14775551748351": {
+			"castShadow": true,
+			"maxSpikeFactor": 0.8,
+			"opacity": 1,
+			"position": [
+				8.196566924529597,
+				-5.940490388843481,
+				-28.33450255456378
+			],
+			"rateOfChange": 0.69,
+			"receiveShadow": true,
+			"rotation": [
+				0,
+				0.014980505856481141,
+				0
+			],
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				0.7647058823529411,
+				1,
+				0.9686274509803922
+			],
+			"spikeFrequency": 0.2,
+			"visible": true
+		},
+		"ff64ed3f08874d968f71e3afa3bb4b1e": {
+			"castShadow": true,
+			"maxSpikeFactor": 0.3,
+			"opacity": 1,
+			"position": [
+				-11.20495803511561,
+				11.595450036403491,
+				-28.400346026271272
+			],
+			"rateOfChange": 0.4,
+			"receiveShadow": true,
+			"scale": [
+				2.5,
+				2.5,
+				2.5
+			],
+			"shapeColor": [
+				1,
+				0.6666666666666666,
+				0
+			],
+			"spikeFrequency": 1,
+			"visible": true
+		}
+	},
+	"id": "5d4513e843574c04847bf1474912090f",
+	"nodes": {
+		"0369b09380e649aab87b180eb3aa4f1a": {
+			"id": "0369b09380e649aab87b180eb3aa4f1a",
+			"label": "XRRigARUserPlacement",
+			"parent": {
+				"id": "root",
+				"order": "Zy"
+			},
+			"scriptName": "XRRigARUserPlacement0",
+			"type": "@zcomponent/three-webxr/lib/components/XRRigARUserPlacement#XRRigARUserPlacement"
+		},
+		"0ba8e27369df45ca897731dcb1e39bcf": {
+			"id": "0ba8e27369df45ca897731dcb1e39bcf",
+			"label": "DefaultCookieConsent",
+			"parent": {
+				"id": "7b6fb4d895774174b5d151eec86b704c",
+				"order": "a4"
+			},
+			"scriptName": "DefaultCookieConsent",
+			"type": "@zcomponent/core/lib/components/DefaultCookieConsent#DefaultCookieConsent"
+		},
+		"0c4ebdc7633941dca542c9ae9cd90aca": {
+			"id": "0c4ebdc7633941dca542c9ae9cd90aca",
+			"label": "XR Default Loader",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a5"
+			},
+			"scriptName": "XR_DefaultLoader",
+			"type": "@zcomponent/three-webxr/lib/components/XRDefaultLoader#XRDefaultLoader"
+		},
+		"1a58dc40b496466b880e7a51cea0328f": {
+			"id": "1a58dc40b496466b880e7a51cea0328f",
+			"label": "User Placement Manager",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a3"
+			},
+			"scriptName": "User_PlacementManager",
+			"type": "@zcomponent/three-webxr/lib/components/UserPlacementManager#UserPlacementManager"
+		},
+		"1e9992bc9dcf44d3b01ced234f9f1235": {
+			"id": "1e9992bc9dcf44d3b01ced234f9f1235",
+			"label": "Emotion1",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a0"
+			},
+			"scriptName": "Emotion1",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"401bbc457e964ecbb07fc65fad867438": {
+			"id": "401bbc457e964ecbb07fc65fad867438",
+			"label": "Emotion2",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a0V"
+			},
+			"scriptName": "Emotion10",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"4fb98c6ff1ce4103b135fbf08eac1b15": {
+			"id": "4fb98c6ff1ce4103b135fbf08eac1b15",
+			"label": "Emotion3",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a0l"
+			},
+			"scriptName": "Emotion2",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"52148d8eafe3426085e700e049662c07": {
+			"id": "52148d8eafe3426085e700e049662c07",
+			"label": "DefaultLoader",
+			"parent": {
+				"id": "7b6fb4d895774174b5d151eec86b704c",
+				"order": "a3"
+			},
+			"scriptName": "DefaultLoader",
+			"type": "@zcomponent/core/lib/components/DefaultLoader#DefaultLoader"
+		},
+		"69c513aa1eb04439afdc5e25c9742e8b": {
+			"id": "69c513aa1eb04439afdc5e25c9742e8b",
+			"label": "Left Controller",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a0"
+			},
+			"scriptName": "Left_Controller",
+			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"78ee6b0a2e294857a2beb22f0c6e0b40": {
+			"id": "78ee6b0a2e294857a2beb22f0c6e0b40",
+			"label": "Emotion8",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a2"
+			},
+			"scriptName": "Emotion6",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"7b6fb4d895774174b5d151eec86b704c": {
+			"id": "7b6fb4d895774174b5d151eec86b704c",
+			"label": "Defaults",
+			"parent": {
+				"id": "root",
+				"order": "a0"
+			},
+			"scriptName": "Defaults",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"80d719b3dd9e4d56bd40efd3757ca0a3": {
+			"id": "80d719b3dd9e4d56bd40efd3757ca0a3",
+			"label": "XR Manager",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a4"
+			},
+			"scriptName": "XR_Manager",
+			"type": "@zcomponent/three-webxr/lib/components/XRManager#XRManager"
+		},
+		"857f9901b65b42c89a3ff04470d70738": {
+			"id": "857f9901b65b42c89a3ff04470d70738",
+			"label": "DirectionalLight",
+			"parent": {
+				"id": "7b6fb4d895774174b5d151eec86b704c",
+				"order": "a2"
+			},
+			"scriptName": "DirectionalLight",
+			"type": "@zcomponent/three/lib/components/lights/DirectionalLight#DirectionalLight"
+		},
+		"9256d579f67744baa35da13378520884": {
+			"id": "9256d579f67744baa35da13378520884",
+			"label": "Emotion5",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a1"
+			},
+			"scriptName": "Emotion4",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"a57f5d58e38e4a0b918dcf605ea12736": {
+			"id": "a57f5d58e38e4a0b918dcf605ea12736",
+			"label": "DefaultEnvironment",
+			"parent": {
+				"id": "7b6fb4d895774174b5d151eec86b704c",
+				"order": "a1V"
+			},
+			"scriptName": "DefaultEnvironment",
+			"type": "@zcomponent/three/lib/components/environments/DefaultEnvironment#DefaultEnvironment"
+		},
+		"b0dfb6b646e34453ae49db6ce5071d59": {
+			"id": "b0dfb6b646e34453ae49db6ce5071d59",
+			"label": "PerspectiveCamera",
+			"parent": {
+				"id": "c37977ec906344f3802cdca1d6ac24d5",
+				"order": "a0"
+			},
+			"scriptName": "PerspectiveCamera",
+			"type": "@zcomponent/three/lib/components/cameras/PerspectiveCamera#PerspectiveCamera"
+		},
+		"be4d21ff928c48e48553efb8ec9aa26c": {
+			"id": "be4d21ff928c48e48553efb8ec9aa26c",
+			"label": "Right Controller",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a1"
+			},
+			"scriptName": "Right_Controller",
+			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"bf59aa4eac3f4628bcd8579ee35fae3c": {
+			"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+			"label": "Content Group",
+			"parent": {
+				"id": "root",
+				"order": "Zx"
+			},
+			"scriptName": "Content_Group",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"c37977ec906344f3802cdca1d6ac24d5": {
+			"id": "c37977ec906344f3802cdca1d6ac24d5",
+			"label": "XR Camera",
+			"parent": {
+				"id": "0369b09380e649aab87b180eb3aa4f1a",
+				"order": "a2"
+			},
+			"scriptName": "XR_Camera",
+			"type": "@zcomponent/three-webxr/lib/components/XRCamera#XRCamera"
+		},
+		"c63d8679256943a28e93c624c570f65f": {
+			"id": "c63d8679256943a28e93c624c570f65f",
+			"label": "Emotion7",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a18"
+			},
+			"scriptName": "Emotion50",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"d4d4440532bd43718d14775551748351": {
+			"id": "d4d4440532bd43718d14775551748351",
+			"label": "Emotion4",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a0t"
+			},
+			"scriptName": "Emotion3",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"ff64ed3f08874d968f71e3afa3bb4b1e": {
+			"id": "ff64ed3f08874d968f71e3afa3bb4b1e",
+			"label": "Emotion6",
+			"parent": {
+				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
+				"order": "a1V"
+			},
+			"scriptName": "Emotion5",
+			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"root": {
+			"id": "root",
+			"label": "Group",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		}
+	},
+	"preview": "@zcomponent/three/lib/preview#default",
+	"propEntityOverrides": {
+		"position": {
+			"root": {
+				"position": true
+			}
+		}
+	},
+	"props": {
+		"position": {
+			"comments": [
+				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "position",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"rotation": {
+			"comments": [
+				"The rotation, in three dimensions, of this node relative to its parent. The three elements of the array correspond to Euler angles - yaw, pitch and roll."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "rotation",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"scale": {
+			"comments": [
+				"The scale, in three dimensions, of this node relative to its parent. The three elements of the array correspond to scales in the the `x`, `y`, and `z` axis."
+			],
+			"default": [
+				1,
+				1,
+				1
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "scale",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"visible": {
+			"comments": [
+				"Determines if this object and its children are rendered to the screen."
+			],
+			"default": true,
+			"group": "Appearance",
+			"groupPriority": 11,
+			"name": "visible",
+			"type": {
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "boolean"
+			}
+		}
+	},
+	"root": "root"
+}
