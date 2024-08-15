@@ -10,6 +10,58 @@ import {
   VoiceClient,
 } from "@humeai/voice";
 
+type Emotion =
+  | "Admiration"
+  | "Adoration"
+  | "Aesthetic Appreciation"
+  | "Amusement"
+  | "Anger"
+  | "Anxiety"
+  | "Awe"
+  | "Awkwardness"
+  | "Boredom"
+  | "Calmness"
+  | "Concentration"
+  | "Confusion"
+  | "Contemplation"
+  | "Contempt"
+  | "Contentment"
+  | "Craving"
+  | "Desire"
+  | "Determination"
+  | "Disappointment"
+  | "Disgust"
+  | "Distress"
+  | "Doubt"
+  | "Ecstasy"
+  | "Embarrassment"
+  | "Empathic Pain"
+  | "Entrancement"
+  | "Envy"
+  | "Excitement"
+  | "Fear"
+  | "Guilt"
+  | "Horror"
+  | "Interest"
+  | "Joy"
+  | "Love"
+  | "Nostalgia"
+  | "Pain"
+  | "Pride"
+  | "Realization"
+  | "Relief"
+  | "Romance"
+  | "Sadness"
+  | "Satisfaction"
+  | "Shame"
+  | "Surprise (negative)"
+  | "Surprise (positive)"
+  | "Sympathy"
+  | "Tiredness"
+  | "Triumph";
+
+type Prosody = Record<Emotion, number>;
+
 interface ConstructionProps {}
 
 type AnalysisState =
@@ -39,6 +91,12 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
   /** @zui */
   public nextActionLabel = new Observable<string>("Connect");
 
+  /** @zui */
+  public lastMessage = new Observable<string>("...");
+
+  /** @zui */
+  public lastSentiment = new Observable<Prosody | undefined>(undefined);
+
   constructor(
     contextManager: ContextManager,
     constructorProps: ConstructionProps
@@ -55,7 +113,7 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
 
       switch (value) {
         case "Pending":
-          this.nextActionLabel.value = "Authenticate";
+          this.nextActionLabel.value = "Connect";
           break;
         case "Authentication Error":
           this.nextActionLabel.value = "Retry authentication";
@@ -72,49 +130,17 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
 
   /** @zui */
   triggerNextAction() {
+    console.log("triggerNextAction", this.analysisState.value);
     switch (this.analysisState.value) {
-      //   case "Pending":
-      //     this.authenticate();
-      //     break;
-      case "Authentication Error":
-        this.authenticate();
-        break;
-      case "Listening":
-        this.stopAudio();
-        break;
       case "Pending":
-      case "Ready":
         this.connect();
         break;
-    }
-  }
-
-  async authenticate(): Promise<void> {
-    const authString = `${HUME_AI.API_KEY}:${HUME_AI.SECRET_KEY}`;
-    const encoded = btoa(authString);
-
-    try {
-      this.analysisState.value = "Authenticating";
-      // see proxy configuration within the vite.config.js file
-      const res = await fetch("https://api.hume.ai/oauth2-cc/token", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Authorization: `Basic ${encoded}`,
-        },
-        body: new URLSearchParams({
-          grant_type: "this.client_credentials",
-        }).toString(),
-        cache: "no-cache",
-      });
-      const data = (await res.json()) as { access_token: string };
-      this.accessToken = String(data["access_token"]);
-
-      // update ui state
-      this.analysisState.value = "Ready";
-    } catch (e) {
-      console.error("Failed to authenticate:", e);
-      this.analysisState.value = "Authentication Error";
+      case "Listening":
+        this.stopCapture();
+        break;
+      case "Ready":
+        this.captureAudio();
+        break;
     }
   }
 
@@ -122,26 +148,29 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
     // creates minimal EVI configuration
     const config = createSocketConfig({
       auth: {
-        // type: "accessToken",
-        // value: this.accessToken,
         type: "apiKey",
         value: HUME_AI.API_KEY,
       },
     });
     // instantiates the VoiceClient with configuration
     this.client = VoiceClient.create(config);
+
     // handler for Web Socket open event, triggered when connection is first established
     this.client.on("open", async () => {
       console.log("Web socket connection opened");
-      await this.captureAudio();
+      this.analysisState.value = "Ready";
     });
+
     // handler for Web Socket message event, triggered whenever a message is received from the server through the Web Socket
     this.client.on("message", async (message) => {
       console.log("message", message);
       switch (message.type) {
+        // case "assistant_message":
         case "user_message":
-        case "assistant_message":
           const { role, content } = message.message;
+
+          this.lastSentiment.value = message.models.prosody?.scores as Prosody;
+
           this.onMessageReceived(role, content);
           break;
 
@@ -155,7 +184,7 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
           break;
 
         case "user_interruption":
-          this.stopAudio();
+          this.stopPlayback();
           break;
       }
     });
@@ -165,15 +194,15 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
     });
     // establish secure Web Socket connection
     this.client.connect();
-
-    // update ui state
-    this.analysisState.value = "Listening";
   }
 
   /**
    * captures and records audio stream
    */
   async captureAudio(): Promise<void> {
+    // update ui state
+    this.analysisState.value = "Listening";
+
     this.audioStream = await getAudioStream();
     // ensure there is only one audio audio track in the stream
     checkForAudioTracks(this.audioStream);
@@ -190,6 +219,7 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
         this.client?.sendAudio(buffer);
       }
     };
+
     // capture audio input at a rate of 100ms (recommended)
     this.recorder.start(100);
   }
@@ -221,16 +251,25 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
     }
   }
 
+  stopCapture() {
+    this.recorder.stop();
+    this.analysisState.value = "Ready";
+    this.stopPlayback();
+  }
+
   /**
    * stops audio playback
    */
-  stopAudio(): void {
-    this.recorder.stop();
+  stopPlayback(): void {
     this.currentAudio?.pause();
     this.currentAudio = null;
     this.isPlaying = false;
     this.audioQueue.length = 0;
   }
 
-  onMessageReceived(role: "assistant" | "system" | "user", content: string) {}
+  onMessageReceived(role: "assistant" | "system" | "user", content: string) {
+    if (role === "assistant") {
+      this.lastMessage.value = content;
+    }
+  }
 }
