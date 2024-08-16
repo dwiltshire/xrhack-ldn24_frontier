@@ -44,6 +44,11 @@
 						"entityID": "742597121815415f8f7bc59f1d1a24b9",
 						"id": "701c7eef43cd44ebbffdb14d192a26c7",
 						"keyframes": {
+							"3db5eab386d54434954cb5c9cb33761f": {
+								"id": "3db5eab386d54434954cb5c9cb33761f",
+								"t": 0,
+								"v": true
+							}
 						},
 						"order": "Zz",
 						"property": [
@@ -121,16 +126,6 @@
 				"scriptName": "ToggleLayerClips"
 			},
 			"type": "@zcomponent/core/lib/behaviors/ToggleLayerClips#ToggleLayerClips"
-		},
-		"9c8cdcfa0fba4183bed291623f7f7544": {
-			"id": "9c8cdcfa0fba4183bed291623f7f7544",
-			"label": "EmitComponentPropEvent",
-			"parent": {
-				"id": "fa57de8301bb4c448980180e6e8157ef",
-				"order": "a0",
-				"scriptName": "EmitComponentPropEvent"
-			},
-			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
 		}
 	},
 	"behaviorsByNode": {
@@ -182,9 +177,6 @@
 		},
 		"742597121815415f8f7bc59f1d1a24b9": {
 			"source": "file://./Resources/background.png"
-		},
-		"9c8cdcfa0fba4183bed291623f7f7544": {
-			"event": "onClick"
 		},
 		"9d03203d4bb440e4b7d8ca45522b5473": {
 			"font": ""
@@ -258,15 +250,6 @@
 		"742597121815415f8f7bc59f1d1a24b9": {
 			"visible": false
 		},
-		"9c8cdcfa0fba4183bed291623f7f7544": {
-			"eventToEmit": {
-				"_zfn": true,
-				"args": {
-				},
-				"prop": "_On360ButtonPressed",
-				"t": "emitcomponentevent"
-			}
-		},
 		"9d03203d4bb440e4b7d8ca45522b5473": {
 			"anchorX": "center",
 			"doubleSide": true,
@@ -286,7 +269,8 @@
 				0.1,
 				0.1,
 				0.1
-			]
+			],
+			"visible": true
 		}
 	},
 	"id": "e1e4d2b6775848e5b54706359777b50f",
