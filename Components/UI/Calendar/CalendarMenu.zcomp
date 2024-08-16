@@ -57,17 +57,14 @@
 		"DirectionalLight": {
 			"64eaa6df25bb49d696c5180d65bca8ca": true
 		},
+		"DockBarMenu": {
+			"a9c914439a6b48628648eb9f3f8d2890": true
+		},
 		"HDREnvironment": {
 			"667849678013424b91a73971b8bb8054": true
 		},
 		"Left Controller": {
 			"c3598646278d4462a3611c0dd1a90363": true
-		},
-		"MeshStandardMaterial": {
-			"de97c0586a564eaa90ff64e7087da3e6": true
-		},
-		"PlaceholderSphere": {
-			"43f0d259d177401491ad7961645fd512": true
 		},
 		"Right Controller": {
 			"784372b138c040faa090347d09ed52ee": true
@@ -146,17 +143,14 @@
 		"DirectionalLight": {
 			"64eaa6df25bb49d696c5180d65bca8ca": true
 		},
+		"DockBarMenu": {
+			"a9c914439a6b48628648eb9f3f8d2890": true
+		},
 		"HDREnvironment": {
 			"667849678013424b91a73971b8bb8054": true
 		},
 		"Left_Controller": {
 			"c3598646278d4462a3611c0dd1a90363": true
-		},
-		"MeshStandardMaterial": {
-			"de97c0586a564eaa90ff64e7087da3e6": true
-		},
-		"PlaceholderSphere": {
-			"43f0d259d177401491ad7961645fd512": true
 		},
 		"Right_Controller": {
 			"784372b138c040faa090347d09ed52ee": true
@@ -192,8 +186,6 @@
 		},
 		"41426860a1634f009521f3821beca22f": {
 		},
-		"43f0d259d177401491ad7961645fd512": {
-		},
 		"4f3a6061986544eaa2d63c54b6da329d": {
 		},
 		"51f00a875efa4d04b3b330e27fc5670b": {
@@ -222,6 +214,8 @@
 		},
 		"a5f6d50fa18e40dc8fce2fdccc8272e2": {
 		},
+		"a9c914439a6b48628648eb9f3f8d2890": {
+		},
 		"bb010b99aca94a2a9d5774bb7632351f": {
 		},
 		"c3598646278d4462a3611c0dd1a90363": {
@@ -233,8 +227,6 @@
 		"db9fca09e5ab46fd915de2f09869a6a1": {
 		},
 		"ddafbc56db7b475d9077daaa54653486": {
-		},
-		"de97c0586a564eaa90ff64e7087da3e6": {
 		},
 		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
 		},
@@ -321,18 +313,6 @@
 		},
 		"41426860a1634f009521f3821beca22f": {
 		},
-		"43f0d259d177401491ad7961645fd512": {
-			"position": [
-				0,
-				1.0169628400234525,
-				-2.5677998297287896
-			],
-			"scale": [
-				1,
-				1,
-				1
-			]
-		},
 		"4f3a6061986544eaa2d63c54b6da329d": {
 			"Add": false,
 			"Date": 5,
@@ -348,6 +328,11 @@
 				0.11194781319333202,
 				-0.15619569836524838,
 				-1.1256899169139003
+			],
+			"scale": [
+				0.8841796838070396,
+				0.8841796838070396,
+				0.8841796838070396
 			]
 		},
 		"574e8f21c06d404992a5e822b0afa626": {
@@ -398,9 +383,14 @@
 		},
 		"7ecf6f20bfdc45b0a2ced7b8b7695e38": {
 			"position": [
-				-3.3135171735495303,
-				1.2006388114159212,
-				0
+				-0.8746789765177982,
+				1.3644497623921974,
+				-0.6609818699849949
+			],
+			"scale": [
+				0.26807708035546485,
+				0.26807708035546485,
+				0.26807708035546485
 			]
 		},
 		"86e7f7702533461289ce7d4ff9ad8889": {
@@ -433,6 +423,18 @@
 				-2
 			]
 		},
+		"a9c914439a6b48628648eb9f3f8d2890": {
+			"position": [
+				-0.006697231379850566,
+				1.2418191089053774,
+				-1.0503054174298825
+			],
+			"scale": [
+				0.18162456342470257,
+				0.18162456342470257,
+				0.18162456342470257
+			]
+		},
 		"bb010b99aca94a2a9d5774bb7632351f": {
 		},
 		"c3598646278d4462a3611c0dd1a90363": {
@@ -455,10 +457,6 @@
 				2,
 				-2
 			]
-		},
-		"de97c0586a564eaa90ff64e7087da3e6": {
-			"metalness": 1,
-			"roughness": 0
 		},
 		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
 			"Add": true,
@@ -546,16 +544,6 @@
 			},
 			"scriptName": "Teleport_Manager",
 			"type": "@zcomponent/three-webxr/lib/components/TeleportManager#TeleportManager"
-		},
-		"43f0d259d177401491ad7961645fd512": {
-			"id": "43f0d259d177401491ad7961645fd512",
-			"label": "PlaceholderSphere",
-			"parent": {
-				"id": "root",
-				"order": "a5"
-			},
-			"scriptName": "PlaceholderSphere",
-			"type": "@zcomponent/three/lib/components/meshes/Sphere#Sphere"
 		},
 		"4f3a6061986544eaa2d63c54b6da329d": {
 			"id": "4f3a6061986544eaa2d63c54b6da329d",
@@ -677,6 +665,16 @@
 			"scriptName": "AddNewButton_42",
 			"type": "./AddNewButton.zcomp#default"
 		},
+		"a9c914439a6b48628648eb9f3f8d2890": {
+			"id": "a9c914439a6b48628648eb9f3f8d2890",
+			"label": "DockBarMenu",
+			"parent": {
+				"id": "root",
+				"order": "a9"
+			},
+			"scriptName": "DockBarMenu",
+			"type": "../DockBar/DockBarMenu.zcomp#default"
+		},
 		"bb010b99aca94a2a9d5774bb7632351f": {
 			"id": "bb010b99aca94a2a9d5774bb7632351f",
 			"label": "XR Default Loader",
@@ -726,16 +724,6 @@
 			},
 			"scriptName": "AddNewButton_5",
 			"type": "./AddNewButton.zcomp#default"
-		},
-		"de97c0586a564eaa90ff64e7087da3e6": {
-			"id": "de97c0586a564eaa90ff64e7087da3e6",
-			"label": "MeshStandardMaterial",
-			"parent": {
-				"id": "43f0d259d177401491ad7961645fd512",
-				"order": "a0"
-			},
-			"scriptName": "MeshStandardMaterial",
-			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
 		},
 		"e52efb5b2c5e4f0da8a88e7ef5626a85": {
 			"id": "e52efb5b2c5e4f0da8a88e7ef5626a85",

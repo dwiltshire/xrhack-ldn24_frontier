@@ -1,11 +1,6 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
-import { default as CalendarButton_zcomp_0 } from "./CalendarButton.zcomp";
-import { default as CreateButton_zcomp_1 } from "./CreateButton.zcomp";
-import { Group as Group_2 } from "@zcomponent/three/lib/components/Group";
-import { default as Dock_zcomp_3 } from "./Dock.zcomp";
-import { default as ShareButton_zcomp_4 } from "./ShareButton.zcomp";
-import { default as UserAccount_zcomp_5 } from "./UserAccount.zcomp";
+import { Image as Image_0 } from "@zcomponent/three/lib/components/Image";
 
 interface ConstructorProps {
 
@@ -20,32 +15,7 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
-		CalendarButton: CalendarButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		CreateButton: CreateButton_zcomp_1 & {
-			behaviors: {
-
-			}
-		},
-		Dock: Group_2 & {
-			behaviors: {
-
-			}
-		},
-		Dock_2: Dock_zcomp_3 & {
-			behaviors: {
-
-			}
-		},
-		ShareButton: ShareButton_zcomp_4 & {
-			behaviors: {
-
-			}
-		},
-		UserAccount: UserAccount_zcomp_5 & {
+		Image: Image_0 & {
 			behaviors: {
 
 			}
