@@ -207,154 +207,34 @@
 		"CalendarMenu": {
 			"d3f139b63edc466b9bbd5405a72bcbbb": true
 		},
-		"Content Group": {
-			"bf59aa4eac3f4628bcd8579ee35fae3c": true
-		},
-		"ContextSetup": {
-			"982c78ba948641e2a64e732eda46c9d5": true
-		},
-		"DefaultCookieConsent": {
-			"0ba8e27369df45ca897731dcb1e39bcf": true
-		},
-		"DefaultEnvironment": {
-			"a57f5d58e38e4a0b918dcf605ea12736": true
-		},
-		"DefaultLoader": {
-			"52148d8eafe3426085e700e049662c07": true
-		},
-		"Defaults": {
-			"7b6fb4d895774174b5d151eec86b704c": true
-		},
-		"DirectionalLight": {
-			"857f9901b65b42c89a3ff04470d70738": true
-		},
 		"DockBarMenu": {
 			"387f51b495bf42d4a40356a4e5582c89": true
 		},
 		"Group": {
 			"root": true
 		},
-		"Left Controller": {
-			"8b5eb2e54e94493a9dfe311ba1f0d0ab": true
-		},
-		"Mesh Group (Delete Me)": {
-			"6ef7d30d3e044b6f806dac36e63a857d": true
-		},
-		"MeshStandardMaterial 2": {
-			"aca73192c64842aba2138a6c01994452": true
-		},
-		"Right Controller": {
-			"93d863ce631c4e7fa9e246d771ea370e": true
-		},
-		"ShadowPlane": {
-			"bf1d127bf7234511b3cdc3d5a98af7b0": true
-		},
-		"Sphere": {
-			"77a68218309245289c411d5da417fab9": true
-		},
-		"Teleport Manager": {
-			"8270e91820284e8b8e55cec027f0d78a": true
-		},
-		"Turn Manager": {
-			"78b306b6a3bc4a2badcdcb844a684766": true
-		},
 		"UI": {
 			"747969f055334066832fae3254d8bec5": true
 		},
 		"VoiceChatbox": {
 			"3518cf72754a4a8ca574d019ce109a87": true
-		},
-		"XR Camera": {
-			"f82f3ce18b9e4f6985431ebf8ee9f60d": true
-		},
-		"XR Default Loader": {
-			"1aeb29f67f3a43ca9e13e92f7a8c48b9": true
-		},
-		"XR Manager": {
-			"d00105d4f4dc4897b014577ba2fae6fd": true
-		},
-		"XRRigVRPassthrough": {
-			"1cc708d8a74849a3970861a8c786ddf3": true
 		}
 	},
 	"entitiesByScriptName": {
 		"CalendarMenu": {
 			"d3f139b63edc466b9bbd5405a72bcbbb": true
 		},
-		"Content_Group": {
-			"bf59aa4eac3f4628bcd8579ee35fae3c": true
-		},
-		"ContextSetup": {
-			"982c78ba948641e2a64e732eda46c9d5": true
-		},
-		"DefaultCookieConsent": {
-			"0ba8e27369df45ca897731dcb1e39bcf": true
-		},
-		"DefaultEnvironment": {
-			"a57f5d58e38e4a0b918dcf605ea12736": true
-		},
-		"DefaultLoader": {
-			"52148d8eafe3426085e700e049662c07": true
-		},
-		"Defaults": {
-			"7b6fb4d895774174b5d151eec86b704c": true
-		},
-		"DirectionalLight": {
-			"857f9901b65b42c89a3ff04470d70738": true
-		},
 		"DockBarMenu": {
 			"387f51b495bf42d4a40356a4e5582c89": true
-		},
-		"Left_Controller": {
-			"8b5eb2e54e94493a9dfe311ba1f0d0ab": true
-		},
-		"MeshStandardMaterial0": {
-			"aca73192c64842aba2138a6c01994452": true
-		},
-		"Mesh_GroupDeleteMe0": {
-			"6ef7d30d3e044b6f806dac36e63a857d": true
-		},
-		"Right_Controller": {
-			"93d863ce631c4e7fa9e246d771ea370e": true
-		},
-		"ShadowPlane": {
-			"bf1d127bf7234511b3cdc3d5a98af7b0": true
-		},
-		"Sphere": {
-			"77a68218309245289c411d5da417fab9": true
-		},
-		"Teleport_Manager": {
-			"8270e91820284e8b8e55cec027f0d78a": true
-		},
-		"Turn_Manager": {
-			"78b306b6a3bc4a2badcdcb844a684766": true
 		},
 		"UI": {
 			"747969f055334066832fae3254d8bec5": true
 		},
 		"VoiceChatbox": {
 			"3518cf72754a4a8ca574d019ce109a87": true
-		},
-		"XRRigVRPassthrough": {
-			"1cc708d8a74849a3970861a8c786ddf3": true
-		},
-		"XR_Camera": {
-			"f82f3ce18b9e4f6985431ebf8ee9f60d": true
-		},
-		"XR_DefaultLoader": {
-			"1aeb29f67f3a43ca9e13e92f7a8c48b9": true
-		},
-		"XR_Manager": {
-			"d00105d4f4dc4897b014577ba2fae6fd": true
 		}
 	},
 	"entityConstructorProps": {
-		"0ba8e27369df45ca897731dcb1e39bcf": {
-		},
-		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
-		},
-		"1cc708d8a74849a3970861a8c786ddf3": {
-		},
 		"3518cf72754a4a8ca574d019ce109a87": {
 		},
 		"387f51b495bf42d4a40356a4e5582c89": {
@@ -362,46 +242,9 @@
 		"45986a74b9e84499a5a9b506dfc686bd": {
 			"event": "OnCreateButtonPressed"
 		},
-		"52148d8eafe3426085e700e049662c07": {
-		},
-		"6ef7d30d3e044b6f806dac36e63a857d": {
-		},
 		"747969f055334066832fae3254d8bec5": {
 		},
-		"77a68218309245289c411d5da417fab9": {
-		},
-		"78b306b6a3bc4a2badcdcb844a684766": {
-		},
-		"7b6fb4d895774174b5d151eec86b704c": {
-		},
-		"8270e91820284e8b8e55cec027f0d78a": {
-		},
-		"857f9901b65b42c89a3ff04470d70738": {
-		},
-		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
-			"allowRightHandControllers": false,
-			"allowUnspecifiedHandControllers": false
-		},
-		"93d863ce631c4e7fa9e246d771ea370e": {
-			"allowLeftHandControllers": false
-		},
-		"982c78ba948641e2a64e732eda46c9d5": {
-		},
-		"a57f5d58e38e4a0b918dcf605ea12736": {
-		},
-		"aca73192c64842aba2138a6c01994452": {
-		},
-		"bf1d127bf7234511b3cdc3d5a98af7b0": {
-		},
-		"bf59aa4eac3f4628bcd8579ee35fae3c": {
-		},
-		"d00105d4f4dc4897b014577ba2fae6fd": {
-			"fallbackSessionMode": "immersive-vr",
-			"startOnLaunch": "immersive-ar"
-		},
 		"d3f139b63edc466b9bbd5405a72bcbbb": {
-		},
-		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
 		},
 		"fb75a4e03a5144dea0ba761dfa5608d1": {
 			"event": "onCalendarPressed"
@@ -454,12 +297,6 @@
 		}
 	},
 	"entityProps": {
-		"0ba8e27369df45ca897731dcb1e39bcf": {
-		},
-		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
-		},
-		"1cc708d8a74849a3970861a8c786ddf3": {
-		},
 		"3518cf72754a4a8ca574d019ce109a87": {
 			"position": [
 				0,
@@ -488,70 +325,7 @@
 			"layerClipA": "ab690bdc255a4d4aab977d08c828c5cf",
 			"layerClipB": "437fc7538cdf44c18ffebb88db0a97d5"
 		},
-		"52148d8eafe3426085e700e049662c07": {
-		},
-		"6ef7d30d3e044b6f806dac36e63a857d": {
-		},
 		"747969f055334066832fae3254d8bec5": {
-		},
-		"77a68218309245289c411d5da417fab9": {
-			"position": [
-				-0.0528818553195346,
-				0.19534313787252522,
-				-0.39003114239461895
-			],
-			"scale": [
-				0.2,
-				0.2,
-				0.2
-			]
-		},
-		"78b306b6a3bc4a2badcdcb844a684766": {
-		},
-		"7b6fb4d895774174b5d151eec86b704c": {
-		},
-		"8270e91820284e8b8e55cec027f0d78a": {
-		},
-		"857f9901b65b42c89a3ff04470d70738": {
-			"castShadow": true,
-			"position": [
-				0,
-				3.822578351542651,
-				0
-			]
-		},
-		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
-			"position": [
-				-0.3,
-				1.3,
-				0
-			]
-		},
-		"93d863ce631c4e7fa9e246d771ea370e": {
-			"position": [
-				0.3,
-				1.3,
-				0
-			]
-		},
-		"982c78ba948641e2a64e732eda46c9d5": {
-		},
-		"a57f5d58e38e4a0b918dcf605ea12736": {
-		},
-		"aca73192c64842aba2138a6c01994452": {
-			"color": [
-				0.1568627450980392,
-				0.07058823529411765,
-				1
-			],
-			"metalness": 0.364955357142857,
-			"roughness": 0.492606026785714
-		},
-		"bf1d127bf7234511b3cdc3d5a98af7b0": {
-		},
-		"bf59aa4eac3f4628bcd8579ee35fae3c": {
-		},
-		"d00105d4f4dc4897b014577ba2fae6fd": {
 		},
 		"d3f139b63edc466b9bbd5405a72bcbbb": {
 			"position": [
@@ -565,8 +339,6 @@
 				0
 			]
 		},
-		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
-		},
 		"fb75a4e03a5144dea0ba761dfa5608d1": {
 			"layerClipA": "71688543b4a3455abc5ede8416678427",
 			"layerClipB": "16530773cde34efba0b78c3737c3a596"
@@ -574,36 +346,6 @@
 	},
 	"id": "5d4513e843574c04847bf1474912090f",
 	"nodes": {
-		"0ba8e27369df45ca897731dcb1e39bcf": {
-			"id": "0ba8e27369df45ca897731dcb1e39bcf",
-			"label": "DefaultCookieConsent",
-			"parent": {
-				"id": "7b6fb4d895774174b5d151eec86b704c",
-				"order": "a4"
-			},
-			"scriptName": "DefaultCookieConsent",
-			"type": "@zcomponent/core/lib/components/DefaultCookieConsent#DefaultCookieConsent"
-		},
-		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
-			"id": "1aeb29f67f3a43ca9e13e92f7a8c48b9",
-			"label": "XR Default Loader",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a6"
-			},
-			"scriptName": "XR_DefaultLoader",
-			"type": "@zcomponent/three-webxr/lib/components/XRDefaultLoader#XRDefaultLoader"
-		},
-		"1cc708d8a74849a3970861a8c786ddf3": {
-			"id": "1cc708d8a74849a3970861a8c786ddf3",
-			"label": "XRRigVRPassthrough",
-			"parent": {
-				"id": "root",
-				"order": "Zy"
-			},
-			"scriptName": "XRRigVRPassthrough",
-			"type": "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough#XRRigVRPassthrough"
-		},
 		"3518cf72754a4a8ca574d019ce109a87": {
 			"id": "3518cf72754a4a8ca574d019ce109a87",
 			"label": "VoiceChatbox",
@@ -624,26 +366,6 @@
 			"scriptName": "DockBarMenu",
 			"type": "./Components/UI/DockBar/DockBarMenu.zcomp#default"
 		},
-		"52148d8eafe3426085e700e049662c07": {
-			"id": "52148d8eafe3426085e700e049662c07",
-			"label": "DefaultLoader",
-			"parent": {
-				"id": "7b6fb4d895774174b5d151eec86b704c",
-				"order": "a3"
-			},
-			"scriptName": "DefaultLoader",
-			"type": "@zcomponent/core/lib/components/DefaultLoader#DefaultLoader"
-		},
-		"6ef7d30d3e044b6f806dac36e63a857d": {
-			"id": "6ef7d30d3e044b6f806dac36e63a857d",
-			"label": "Mesh Group (Delete Me)",
-			"parent": {
-				"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
-				"order": "Zz"
-			},
-			"scriptName": "Mesh_GroupDeleteMe0",
-			"type": "@zcomponent/three/lib/components/Group#Group"
-		},
 		"747969f055334066832fae3254d8bec5": {
 			"id": "747969f055334066832fae3254d8bec5",
 			"label": "UI",
@@ -654,137 +376,6 @@
 			"scriptName": "UI",
 			"type": "@zcomponent/three/lib/components/Group#Group"
 		},
-		"77a68218309245289c411d5da417fab9": {
-			"id": "77a68218309245289c411d5da417fab9",
-			"label": "Sphere",
-			"parent": {
-				"id": "6ef7d30d3e044b6f806dac36e63a857d",
-				"order": "a1"
-			},
-			"scriptName": "Sphere",
-			"type": "@zcomponent/three/lib/components/meshes/Sphere#Sphere"
-		},
-		"78b306b6a3bc4a2badcdcb844a684766": {
-			"id": "78b306b6a3bc4a2badcdcb844a684766",
-			"label": "Turn Manager",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a4"
-			},
-			"scriptName": "Turn_Manager",
-			"type": "@zcomponent/three-webxr/lib/components/TurnManager#TurnManager"
-		},
-		"7b6fb4d895774174b5d151eec86b704c": {
-			"id": "7b6fb4d895774174b5d151eec86b704c",
-			"label": "Defaults",
-			"parent": {
-				"id": "root",
-				"order": "a0"
-			},
-			"scriptName": "Defaults",
-			"type": "@zcomponent/three/lib/components/Group#Group"
-		},
-		"8270e91820284e8b8e55cec027f0d78a": {
-			"id": "8270e91820284e8b8e55cec027f0d78a",
-			"label": "Teleport Manager",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a3"
-			},
-			"scriptName": "Teleport_Manager",
-			"type": "@zcomponent/three-webxr/lib/components/TeleportManager#TeleportManager"
-		},
-		"857f9901b65b42c89a3ff04470d70738": {
-			"id": "857f9901b65b42c89a3ff04470d70738",
-			"label": "DirectionalLight",
-			"parent": {
-				"id": "7b6fb4d895774174b5d151eec86b704c",
-				"order": "a2"
-			},
-			"scriptName": "DirectionalLight",
-			"type": "@zcomponent/three/lib/components/lights/DirectionalLight#DirectionalLight"
-		},
-		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
-			"id": "8b5eb2e54e94493a9dfe311ba1f0d0ab",
-			"label": "Left Controller",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a0"
-			},
-			"scriptName": "Left_Controller",
-			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
-		},
-		"93d863ce631c4e7fa9e246d771ea370e": {
-			"id": "93d863ce631c4e7fa9e246d771ea370e",
-			"label": "Right Controller",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a1"
-			},
-			"scriptName": "Right_Controller",
-			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
-		},
-		"982c78ba948641e2a64e732eda46c9d5": {
-			"id": "982c78ba948641e2a64e732eda46c9d5",
-			"label": "ContextSetup",
-			"parent": {
-				"id": "root",
-				"order": "a5"
-			},
-			"scriptName": "ContextSetup",
-			"type": "./State/utils/ContextSetup#ContextSetup"
-		},
-		"a57f5d58e38e4a0b918dcf605ea12736": {
-			"id": "a57f5d58e38e4a0b918dcf605ea12736",
-			"label": "DefaultEnvironment",
-			"parent": {
-				"id": "7b6fb4d895774174b5d151eec86b704c",
-				"order": "a1"
-			},
-			"scriptName": "DefaultEnvironment",
-			"type": "@zcomponent/three/lib/components/environments/DefaultEnvironment#DefaultEnvironment"
-		},
-		"aca73192c64842aba2138a6c01994452": {
-			"id": "aca73192c64842aba2138a6c01994452",
-			"label": "MeshStandardMaterial 2",
-			"parent": {
-				"id": "77a68218309245289c411d5da417fab9",
-				"order": "a0"
-			},
-			"scriptName": "MeshStandardMaterial0",
-			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
-		},
-		"bf1d127bf7234511b3cdc3d5a98af7b0": {
-			"id": "bf1d127bf7234511b3cdc3d5a98af7b0",
-			"label": "ShadowPlane",
-			"locked": true,
-			"parent": {
-				"id": "7b6fb4d895774174b5d151eec86b704c",
-				"order": "a0"
-			},
-			"scriptName": "ShadowPlane",
-			"type": "@zcomponent/three/lib/components/meshes/ShadowPlane#ShadowPlane"
-		},
-		"bf59aa4eac3f4628bcd8579ee35fae3c": {
-			"id": "bf59aa4eac3f4628bcd8579ee35fae3c",
-			"label": "Content Group",
-			"parent": {
-				"id": "root",
-				"order": "Zx"
-			},
-			"scriptName": "Content_Group",
-			"type": "@zcomponent/three/lib/components/Group#Group"
-		},
-		"d00105d4f4dc4897b014577ba2fae6fd": {
-			"id": "d00105d4f4dc4897b014577ba2fae6fd",
-			"label": "XR Manager",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a5"
-			},
-			"scriptName": "XR_Manager",
-			"type": "@zcomponent/three-webxr/lib/components/XRManager#XRManager"
-		},
 		"d3f139b63edc466b9bbd5405a72bcbbb": {
 			"id": "d3f139b63edc466b9bbd5405a72bcbbb",
 			"label": "CalendarMenu",
@@ -794,16 +385,6 @@
 			},
 			"scriptName": "CalendarMenu",
 			"type": "./Components/UI/Calendar/CalendarMenu.zcomp#default"
-		},
-		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
-			"id": "f82f3ce18b9e4f6985431ebf8ee9f60d",
-			"label": "XR Camera",
-			"parent": {
-				"id": "1cc708d8a74849a3970861a8c786ddf3",
-				"order": "a2"
-			},
-			"scriptName": "XR_Camera",
-			"type": "@zcomponent/three-webxr/lib/components/XRCamera#XRCamera"
 		},
 		"root": {
 			"id": "root",

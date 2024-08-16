@@ -79,6 +79,16 @@
 			},
 			"type": "@zcomponent/core/lib/behaviors/SetLayerOff#SetLayerOff"
 		},
+		"5f3b0b5104e541bbb567a127841ff6bd": {
+			"id": "5f3b0b5104e541bbb567a127841ff6bd",
+			"label": "CallFunction",
+			"parent": {
+				"id": "root",
+				"order": "a0",
+				"scriptName": "CallFunction"
+			},
+			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
+		},
 		"6034150b23f14767a518f4dbbd6eddf4": {
 			"id": "6034150b23f14767a518f4dbbd6eddf4",
 			"label": "ActivateState",
@@ -146,6 +156,9 @@
 		},
 		"3b02e120b24a408b93f9c9f99e13b3e2": {
 		},
+		"5f3b0b5104e541bbb567a127841ff6bd": {
+			"event": "onClick"
+		},
 		"6034150b23f14767a518f4dbbd6eddf4": {
 			"event": "onPointerDown"
 		},
@@ -156,7 +169,7 @@
 			"event": "onPointerLeave"
 		},
 		"cd6c6ab329704bbc94fc7e82f14193d3": {
-			"source": "file://./../VocieChatbox/Resources/VocieBar_Speaking.png"
+			"source": "file://./../DockBar/Resources/create_button.png"
 		}
 	},
 	"entityPropOverrides": {
@@ -227,18 +240,29 @@
 			"anchorY": "middle",
 			"color": [
 				0,
-				0,
-				0
+				0.44313725490196076,
+				1
 			],
+			"fontSize": 0.05,
 			"position": [
 				0,
-				0,
+				-0.19431189809008803,
 				0.010284284054059442
 			],
 			"text": "Button",
 			"textAlign": "center"
 		},
 		"3b02e120b24a408b93f9c9f99e13b3e2": {
+		},
+		"5f3b0b5104e541bbb567a127841ff6bd": {
+			"function": {
+				"_zfn": true,
+				"args": {
+				},
+				"fn": "triggerNextAction",
+				"imp": "import://../../../State/AudioAnalysisContext#AudioAnalysisContext",
+				"t": "context"
+			}
 		},
 		"6034150b23f14767a518f4dbbd6eddf4": {
 			"state": "0d74ce59a83c44c3aad2e99c047a9882"
