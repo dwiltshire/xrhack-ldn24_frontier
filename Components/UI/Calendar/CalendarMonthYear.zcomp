@@ -1,0 +1,741 @@
+{
+	"animation": {
+		"clips": {
+			"10129dd3889b41e0a06996b35a705c19": {
+				"id": "10129dd3889b41e0a06996b35a705c19",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "Pressed 3",
+				"order": "a0",
+				"scriptName": "Pressed 3",
+				"tracks": {
+					"07e56a07ec2548c2982ec0fb4f891ac0": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "07e56a07ec2548c2982ec0fb4f891ac0",
+						"keyframes": {
+							"abcc34db2b6d4ea7bcdc5aaedddb8999": {
+								"easing": "linear",
+								"id": "abcc34db2b6d4ea7bcdc5aaedddb8999",
+								"t": 200,
+								"v": [
+									0.9,
+									0.9,
+									0.9
+								]
+							},
+							"b433496eed1b4e329c25b6f8d79127e2": {
+								"easing": "linear",
+								"id": "b433496eed1b4e329c25b6f8d79127e2",
+								"t": 10,
+								"v": [
+									1,
+									1,
+									1
+								]
+							},
+							"ddf9059ecdb54d3c97d8bf968b1ceb1c": {
+								"id": "ddf9059ecdb54d3c97d8bf968b1ceb1c",
+								"t": 500,
+								"v": [
+									1,
+									1,
+									1
+								]
+							}
+						},
+						"order": "Zz",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					},
+					"69847f2b084845e4ae744a8cf10dd129": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "69847f2b084845e4ae744a8cf10dd129",
+						"keyframes": {
+							"34d4853acfc245ed896bbb80be23467e": {
+								"easing": "linear",
+								"id": "34d4853acfc245ed896bbb80be23467e",
+								"t": 10,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							},
+							"5a6f47e8188a49c5906f65ce8c1b3fdf": {
+								"id": "5a6f47e8188a49c5906f65ce8c1b3fdf",
+								"t": 500,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							},
+							"8943635591cb405691331466165f123a": {
+								"easing": "linear",
+								"id": "8943635591cb405691331466165f123a",
+								"t": 220,
+								"v": [
+									0.5625811112795238,
+									0,
+									-0.14249574843841084
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"position"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			},
+			"76b7571141944d6aa47cee8111d63d51": {
+				"id": "76b7571141944d6aa47cee8111d63d51",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "Pressed",
+				"order": "a2",
+				"scriptName": "Pressed",
+				"tracks": {
+					"1aa5ae57392f429987e822cc82218d4c": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "1aa5ae57392f429987e822cc82218d4c",
+						"keyframes": {
+							"b1e430d0475649e29d3f42d8d5eabae2": {
+								"easing": "linear",
+								"id": "b1e430d0475649e29d3f42d8d5eabae2",
+								"t": 200,
+								"v": [
+									0.9,
+									0.9,
+									0.9
+								]
+							},
+							"d4afc091010b499a876c39708b70a166": {
+								"easing": "linear",
+								"id": "d4afc091010b499a876c39708b70a166",
+								"t": 10,
+								"v": [
+									1,
+									1,
+									1
+								]
+							},
+							"d8efb93478b34781ac7732b21f67fd1d": {
+								"id": "d8efb93478b34781ac7732b21f67fd1d",
+								"t": 500,
+								"v": [
+									1,
+									1,
+									1
+								]
+							}
+						},
+						"order": "Zz",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					},
+					"ebc3f10568194edd8cf083950c96952f": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "ebc3f10568194edd8cf083950c96952f",
+						"keyframes": {
+							"37e9ab2e9c5c4268913c452037415e08": {
+								"id": "37e9ab2e9c5c4268913c452037415e08",
+								"t": 500,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							},
+							"4e1c27759ab047d6b3f43b9f5b2566b1": {
+								"easing": "linear",
+								"id": "4e1c27759ab047d6b3f43b9f5b2566b1",
+								"t": 220,
+								"v": [
+									0.5625811112795238,
+									0,
+									-0.14249574843841084
+								]
+							},
+							"c009f2289b594ab6b7267c89ed7a665b": {
+								"easing": "linear",
+								"id": "c009f2289b594ab6b7267c89ed7a665b",
+								"t": 10,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"position"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			},
+			"f3a60811551749b890210060d7c159a0": {
+				"id": "f3a60811551749b890210060d7c159a0",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "Pressed 2",
+				"order": "a1",
+				"scriptName": "Pressed 2",
+				"tracks": {
+					"05bdf52bf55c4a8e8a0397c66f02107a": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "05bdf52bf55c4a8e8a0397c66f02107a",
+						"keyframes": {
+							"40ca3220db284f9a81899bfddbf0d0fd": {
+								"easing": "linear",
+								"id": "40ca3220db284f9a81899bfddbf0d0fd",
+								"t": 10,
+								"v": [
+									1,
+									1,
+									1
+								]
+							},
+							"4283973a351d4f23bcc2d422618e0ee1": {
+								"id": "4283973a351d4f23bcc2d422618e0ee1",
+								"t": 500,
+								"v": [
+									1,
+									1,
+									1
+								]
+							},
+							"d3c9bebd6d074fb4bedb53b5a8882359": {
+								"easing": "linear",
+								"id": "d3c9bebd6d074fb4bedb53b5a8882359",
+								"t": 200,
+								"v": [
+									0.9,
+									0.9,
+									0.9
+								]
+							}
+						},
+						"order": "Zz",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					},
+					"fe12a947570547028d04481469abce76": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "fe12a947570547028d04481469abce76",
+						"keyframes": {
+							"28115e58f158481e9419f27836b2b5d0": {
+								"easing": "linear",
+								"id": "28115e58f158481e9419f27836b2b5d0",
+								"t": 10,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							},
+							"2fcedf1616c445beb05cbcb63c9b0aa1": {
+								"easing": "linear",
+								"id": "2fcedf1616c445beb05cbcb63c9b0aa1",
+								"t": 220,
+								"v": [
+									0.5625811112795238,
+									0,
+									-0.14249574843841084
+								]
+							},
+							"e4001b74f984475eb2697116575a42ba": {
+								"id": "e4001b74f984475eb2697116575a42ba",
+								"t": 500,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"position"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			},
+			"fe4e98c85d63464b8854f8f4e65b21e2": {
+				"id": "fe4e98c85d63464b8854f8f4e65b21e2",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "Pressed 4",
+				"order": "Zz",
+				"scriptName": "Pressed 4",
+				"tracks": {
+					"7a51bad901e648f0a4bbbf67e9e15269": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "7a51bad901e648f0a4bbbf67e9e15269",
+						"keyframes": {
+							"336add13e3ab485f9ec2513a34fef186": {
+								"easing": "linear",
+								"id": "336add13e3ab485f9ec2513a34fef186",
+								"t": 220,
+								"v": [
+									0.5625811112795238,
+									0,
+									-0.14249574843841084
+								]
+							},
+							"40c438c83f6b453aa6bb0f0bc3707589": {
+								"id": "40c438c83f6b453aa6bb0f0bc3707589",
+								"t": 500,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							},
+							"f3fe8973e38747538ec84fe678cdcda5": {
+								"easing": "linear",
+								"id": "f3fe8973e38747538ec84fe678cdcda5",
+								"t": 10,
+								"v": [
+									0.5625811112795238,
+									0,
+									0
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"position"
+						],
+						"type": "property",
+						"weight": {
+						}
+					},
+					"aac3c5f38de0472490b2d337b5dd02a0": {
+						"blend": "overlay",
+						"entityID": "8f6e04178cf242db914bfe37bd1a361f",
+						"id": "aac3c5f38de0472490b2d337b5dd02a0",
+						"keyframes": {
+							"2f2fa3bdf8d94f1aaf5619dd3c0b0396": {
+								"easing": "linear",
+								"id": "2f2fa3bdf8d94f1aaf5619dd3c0b0396",
+								"t": 200,
+								"v": [
+									0.9,
+									0.9,
+									0.9
+								]
+							},
+							"5503ada331cb40b8a425f26ba85f5484": {
+								"id": "5503ada331cb40b8a425f26ba85f5484",
+								"t": 500,
+								"v": [
+									1,
+									1,
+									1
+								]
+							},
+							"a297dc87706b435e9f2a9450f803d1e1": {
+								"easing": "linear",
+								"id": "a297dc87706b435e9f2a9450f803d1e1",
+								"t": 10,
+								"v": [
+									1,
+									1,
+									1
+								]
+							}
+						},
+						"order": "Zz",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			}
+		},
+		"curves": {
+		},
+		"layers": {
+		}
+	},
+	"behaviors": {
+	},
+	"behaviorsByNode": {
+	},
+	"constructorProps": {
+	},
+	"entitiesByLabel": {
+		"YearMonth": {
+			"f34238548dd149eba42bcada5c93772b": true
+		},
+		"month": {
+			"8f6e04178cf242db914bfe37bd1a361f": true
+		},
+		"next-button": {
+			"0a024deb8a364fecb732067af513b025": true
+		},
+		"previous-button": {
+			"9f22b87d16a9437d8b573bd86d68385f": true
+		},
+		"year": {
+			"40ea131cd65b4215a04584125620bb4c": true
+		}
+	},
+	"entitiesByScriptName": {
+		"YearMonth": {
+			"f34238548dd149eba42bcada5c93772b": true
+		},
+		"month": {
+			"8f6e04178cf242db914bfe37bd1a361f": true
+		},
+		"next_button": {
+			"0a024deb8a364fecb732067af513b025": true
+		},
+		"previous_button": {
+			"9f22b87d16a9437d8b573bd86d68385f": true
+		},
+		"year": {
+			"40ea131cd65b4215a04584125620bb4c": true
+		}
+	},
+	"entityConstructorProps": {
+		"0a024deb8a364fecb732067af513b025": {
+			"source": "file://./Resources/right_button.png"
+		},
+		"40ea131cd65b4215a04584125620bb4c": {
+			"source": "file://./Resources/year_button.png"
+		},
+		"8f6e04178cf242db914bfe37bd1a361f": {
+			"source": "file://./Resources/month.png"
+		},
+		"9f22b87d16a9437d8b573bd86d68385f": {
+			"source": "file://./Resources/left_button.png"
+		},
+		"f34238548dd149eba42bcada5c93772b": {
+		}
+	},
+	"entityPropOverrides": {
+		"componentprop:prop:root:position": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"position"
+			],
+			"id": "componentprop:prop:root:position",
+			"isConstructorProp": false,
+			"propName": "position",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:rotation": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"rotation"
+			],
+			"id": "componentprop:prop:root:rotation",
+			"isConstructorProp": false,
+			"propName": "rotation",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:scale": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"scale"
+			],
+			"id": "componentprop:prop:root:scale",
+			"isConstructorProp": false,
+			"propName": "scale",
+			"type": "componentprop"
+		},
+		"componentprop:prop:root:visible": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"visible"
+			],
+			"id": "componentprop:prop:root:visible",
+			"isConstructorProp": false,
+			"propName": "visible",
+			"type": "componentprop"
+		}
+	},
+	"entityProps": {
+		"0a024deb8a364fecb732067af513b025": {
+			"position": [
+				2.350248011563461,
+				0,
+				0
+			]
+		},
+		"40ea131cd65b4215a04584125620bb4c": {
+			"position": [
+				-3.7833465422209063,
+				0,
+				0
+			]
+		},
+		"8f6e04178cf242db914bfe37bd1a361f": {
+			"position": [
+				0.5141627758321488,
+				0,
+				0
+			]
+		},
+		"9f22b87d16a9437d8b573bd86d68385f": {
+			"position": [
+				-1.234494980327467,
+				0,
+				0
+			]
+		},
+		"f34238548dd149eba42bcada5c93772b": {
+			"position": [
+				-0.0477465414746375,
+				0,
+				0
+			],
+			"scale": [
+				0.1,
+				0.1,
+				1
+			]
+		}
+	},
+	"id": "16760785580d418e97d5efef51c350e5",
+	"nodes": {
+		"0a024deb8a364fecb732067af513b025": {
+			"id": "0a024deb8a364fecb732067af513b025",
+			"label": "next-button",
+			"parent": {
+				"id": "f34238548dd149eba42bcada5c93772b",
+				"order": "a0"
+			},
+			"scriptName": "next_button",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"40ea131cd65b4215a04584125620bb4c": {
+			"id": "40ea131cd65b4215a04584125620bb4c",
+			"label": "year",
+			"parent": {
+				"id": "f34238548dd149eba42bcada5c93772b",
+				"order": "Zz"
+			},
+			"scriptName": "year",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"8f6e04178cf242db914bfe37bd1a361f": {
+			"id": "8f6e04178cf242db914bfe37bd1a361f",
+			"label": "month",
+			"parent": {
+				"id": "f34238548dd149eba42bcada5c93772b",
+				"order": "a2"
+			},
+			"scriptName": "month",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"9f22b87d16a9437d8b573bd86d68385f": {
+			"id": "9f22b87d16a9437d8b573bd86d68385f",
+			"label": "previous-button",
+			"parent": {
+				"id": "f34238548dd149eba42bcada5c93772b",
+				"order": "a1"
+			},
+			"scriptName": "previous_button",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"f34238548dd149eba42bcada5c93772b": {
+			"id": "f34238548dd149eba42bcada5c93772b",
+			"label": "YearMonth",
+			"parent": {
+				"id": "root",
+				"order": "a3"
+			},
+			"scriptName": "YearMonth",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"root": {
+			"id": "root",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		}
+	},
+	"preview": "@zcomponent/three/lib/preview#default",
+	"props": {
+		"position": {
+			"comments": [
+				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "position",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"rotation": {
+			"comments": [
+				"The rotation, in three dimensions, of this node relative to its parent. The three elements of the array correspond to Euler angles - yaw, pitch and roll."
+			],
+			"default": [
+				0,
+				0,
+				0
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "rotation",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"scale": {
+			"comments": [
+				"The scale, in three dimensions, of this node relative to its parent. The three elements of the array correspond to scales in the the `x`, `y`, and `z` axis."
+			],
+			"default": [
+				1,
+				1,
+				1
+			],
+			"group": "Transform",
+			"groupPriority": 10,
+			"name": "scale",
+			"type": {
+				"children": [
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					},
+					{
+						"comments": [
+						],
+						"name": "number"
+					}
+				],
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "tuple",
+				"names": [
+					"x",
+					"y",
+					"z"
+				]
+			}
+		},
+		"visible": {
+			"comments": [
+				"Determines if this object and its children are rendered to the screen."
+			],
+			"default": true,
+			"group": "Appearance",
+			"groupPriority": 11,
+			"name": "visible",
+			"type": {
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "boolean"
+			}
+		}
+	},
+	"root": "root"
+}

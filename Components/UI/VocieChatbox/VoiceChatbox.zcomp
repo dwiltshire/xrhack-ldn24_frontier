@@ -1,20 +1,176 @@
 {
-	"behaviors": {},
-	"behaviorsByNode": {},
-	"constructorProps": {},
-	"entitiesByLabel": {},
-	"entitiesByScriptName": {},
-	"entityConstructorProps": {},
+	"animation": {
+		"clips": {
+			"d20f99cdce014886a943074504666561": {
+				"id": "d20f99cdce014886a943074504666561",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "Pressed",
+				"order": "a2",
+				"scriptName": "Pressed",
+				"tracks": {
+					"8bc7d574e4de433f81c289c0a627f88c": {
+						"blend": "overlay",
+						"entityID": "f830fe155a5444af840596ed68b64141",
+						"id": "8bc7d574e4de433f81c289c0a627f88c",
+						"keyframes": {
+						},
+						"order": "a0",
+						"property": [
+							"position"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			},
+			"e5e2776828834d5884273e54ab7b4fd1": {
+				"id": "e5e2776828834d5884273e54ab7b4fd1",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "pressed",
+				"order": "a3",
+				"scriptName": "pressed",
+				"tracks": {
+				},
+				"type": "timeline"
+			}
+		},
+		"curves": {
+		},
+		"layers": {
+			"0350e87d4d574610bc74438a6bd840ce": {
+				"clips": {
+					"d51c0bc457be49e1beb0ea3dbf8d7dc5": {
+						"clipId": "e5e2776828834d5884273e54ab7b4fd1",
+						"id": "d51c0bc457be49e1beb0ea3dbf8d7dc5",
+						"order": "a2",
+						"scriptName": "pressed0"
+					}
+				},
+				"defaultClip": null,
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "0350e87d4d574610bc74438a6bd840ce",
+				"name": "AI Button",
+				"order": "a3",
+				"scriptName": "AI_Button"
+			},
+			"2ebc5d6816824056a7473049ba8836d6": {
+				"clips": {
+					"99c9deeb85a14d5e89571b79c1da70a7": {
+						"clipId": "d20f99cdce014886a943074504666561",
+						"id": "99c9deeb85a14d5e89571b79c1da70a7",
+						"order": "a2",
+						"scriptName": "Pressed0"
+					}
+				},
+				"defaultClip": null,
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "2ebc5d6816824056a7473049ba8836d6",
+				"name": "VoiceBarPressed",
+				"order": "a2",
+				"scriptName": "VoiceBarPressed"
+			},
+			"3c8069d988be41baaad223937b06cf3c": {
+				"clips": {
+					"deac66bc957a47f2b590f19339da1f8b": {
+						"clipId": "d20f99cdce014886a943074504666561",
+						"id": "deac66bc957a47f2b590f19339da1f8b",
+						"order": "a2",
+						"scriptName": "Pressed"
+					}
+				},
+				"defaultClip": "deac66bc957a47f2b590f19339da1f8b",
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "3c8069d988be41baaad223937b06cf3c",
+				"name": "AudioButton",
+				"order": "a4",
+				"scriptName": "AudioButton"
+			}
+		}
+	},
+	"behaviors": {
+	},
+	"behaviorsByNode": {
+	},
+	"constructorProps": {
+	},
+	"entitiesByLabel": {
+		"AI 2": {
+			"f7e274635284452fbfde049ccb711735": true
+		},
+		"Chatbox": {
+			"436262e96ca449179464846a1957cd06": true
+		},
+		"Text": {
+			"1a425d5bb3c84886a3b9c851158cdcd3": true
+		},
+		"record": {
+			"f830fe155a5444af840596ed68b64141": true
+		},
+		"voice_bar 2": {
+			"2a341216f6a5419aa1bdcbd00f36ca59": true
+		}
+	},
+	"entitiesByScriptName": {
+		"AI0": {
+			"f7e274635284452fbfde049ccb711735": true
+		},
+		"Chatbox": {
+			"436262e96ca449179464846a1957cd06": true
+		},
+		"Text": {
+			"1a425d5bb3c84886a3b9c851158cdcd3": true
+		},
+		"record": {
+			"f830fe155a5444af840596ed68b64141": true
+		},
+		"voice_bar0": {
+			"2a341216f6a5419aa1bdcbd00f36ca59": true
+		}
+	},
+	"entityConstructorProps": {
+		"1a425d5bb3c84886a3b9c851158cdcd3": {
+		},
+		"2a341216f6a5419aa1bdcbd00f36ca59": {
+			"source": "file://./Resources/VocieBar.png"
+		},
+		"436262e96ca449179464846a1957cd06": {
+		},
+		"f7e274635284452fbfde049ccb711735": {
+			"source": "file://./Resources/AI_VoiceIcon_Speaking.png"
+		},
+		"f830fe155a5444af840596ed68b64141": {
+			"source": "file://./Resources/RecordButton.png"
+		}
+	},
 	"entityPropOverrides": {
-		"componentprop:prop:root:visible": {
-			"entityID": "root",
+		"componentprop:prop:1a425d5bb3c84886a3b9c851158cdcd3:text": {
+			"entityID": "1a425d5bb3c84886a3b9c851158cdcd3",
 			"entityPropIsConstructor": false,
 			"entityPropPath": [
-				"visible"
+				"text"
 			],
-			"id": "componentprop:prop:root:visible",
+			"id": "componentprop:prop:1a425d5bb3c84886a3b9c851158cdcd3:text",
 			"isConstructorProp": false,
-			"propName": "visible",
+			"propName": "InputText",
 			"type": "componentprop"
 		},
 		"componentprop:prop:root:position": {
@@ -49,11 +205,126 @@
 			"isConstructorProp": false,
 			"propName": "scale",
 			"type": "componentprop"
+		},
+		"componentprop:prop:root:visible": {
+			"entityID": "root",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"visible"
+			],
+			"id": "componentprop:prop:root:visible",
+			"isConstructorProp": false,
+			"propName": "visible",
+			"type": "componentprop"
 		}
 	},
-	"entityProps": {},
+	"entityProps": {
+		"1a425d5bb3c84886a3b9c851158cdcd3": {
+			"position": [
+				-1.1273910128995333,
+				0.06800894086142295,
+				0.059213368922801046
+			],
+			"text": ""
+		},
+		"2a341216f6a5419aa1bdcbd00f36ca59": {
+			"rotation": [
+				0,
+				0,
+				0
+			]
+		},
+		"436262e96ca449179464846a1957cd06": {
+			"scale": [
+				0.1,
+				0.1,
+				0.1
+			]
+		},
+		"f7e274635284452fbfde049ccb711735": {
+			"castShadow": false,
+			"position": [
+				-1.869268543541983,
+				0,
+				0.05544829089643599
+			],
+			"receiveShadow": false,
+			"rotation": [
+				0,
+				0,
+				0
+			]
+		},
+		"f830fe155a5444af840596ed68b64141": {
+			"position": [
+				1.8715919676121382,
+				0,
+				0.055915241081186506
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"scale": [
+				0.7280763497664221,
+				0.7280763497664221,
+				0.7280763497664221
+			]
+		}
+	},
 	"id": "7585b7bdd65e471d949c58bfcdfd5764",
 	"nodes": {
+		"1a425d5bb3c84886a3b9c851158cdcd3": {
+			"id": "1a425d5bb3c84886a3b9c851158cdcd3",
+			"label": "Text",
+			"parent": {
+				"id": "436262e96ca449179464846a1957cd06",
+				"order": "a3"
+			},
+			"scriptName": "Text",
+			"type": "@zcomponent/three/lib/components/text/Text#Text"
+		},
+		"2a341216f6a5419aa1bdcbd00f36ca59": {
+			"id": "2a341216f6a5419aa1bdcbd00f36ca59",
+			"label": "voice_bar 2",
+			"parent": {
+				"id": "436262e96ca449179464846a1957cd06",
+				"order": "a2"
+			},
+			"scriptName": "voice_bar0",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"436262e96ca449179464846a1957cd06": {
+			"id": "436262e96ca449179464846a1957cd06",
+			"label": "Chatbox",
+			"parent": {
+				"id": "root",
+				"order": "a3"
+			},
+			"scriptName": "Chatbox",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
+		"f7e274635284452fbfde049ccb711735": {
+			"id": "f7e274635284452fbfde049ccb711735",
+			"label": "AI 2",
+			"parent": {
+				"id": "436262e96ca449179464846a1957cd06",
+				"order": "a1"
+			},
+			"scriptName": "AI0",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
+		"f830fe155a5444af840596ed68b64141": {
+			"id": "f830fe155a5444af840596ed68b64141",
+			"label": "record",
+			"parent": {
+				"id": "436262e96ca449179464846a1957cd06",
+				"order": "a0"
+			},
+			"scriptName": "record",
+			"type": "@zcomponent/three/lib/components/Image#Image"
+		},
 		"root": {
 			"id": "root",
 			"type": "@zcomponent/three/lib/components/Group#Group"
@@ -61,18 +332,19 @@
 	},
 	"preview": "@zcomponent/three/lib/preview#default",
 	"props": {
-		"visible": {
-			"comments": [
-				"Determines if this object and its children are rendered to the screen."
-			],
-			"default": true,
-			"group": "Appearance",
-			"groupPriority": 11,
-			"name": "visible",
+		"InputText": {
+			"default": "Hey, how are you doing today?",
+			"group": "Text",
+			"groupPriority": 21,
+			"name": "InputText",
+			"order": 2,
+			"showInUI": false,
 			"type": {
-				"comments": [],
+				"comments": [
+				],
 				"isObservable": true,
-				"name": "boolean"
+				"name": "string",
+				"typeHint": "text-multiline"
 			}
 		},
 		"position": {
@@ -90,19 +362,23 @@
 			"type": {
 				"children": [
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					}
 				],
-				"comments": [],
+				"comments": [
+				],
 				"isObservable": true,
 				"name": "tuple",
 				"names": [
@@ -127,19 +403,23 @@
 			"type": {
 				"children": [
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					}
 				],
-				"comments": [],
+				"comments": [
+				],
 				"isObservable": true,
 				"name": "tuple",
 				"names": [
@@ -164,19 +444,23 @@
 			"type": {
 				"children": [
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					},
 					{
-						"comments": [],
+						"comments": [
+						],
 						"name": "number"
 					}
 				],
-				"comments": [],
+				"comments": [
+				],
 				"isObservable": true,
 				"name": "tuple",
 				"names": [
@@ -184,6 +468,21 @@
 					"y",
 					"z"
 				]
+			}
+		},
+		"visible": {
+			"comments": [
+				"Determines if this object and its children are rendered to the screen."
+			],
+			"default": true,
+			"group": "Appearance",
+			"groupPriority": 11,
+			"name": "visible",
+			"type": {
+				"comments": [
+				],
+				"isObservable": true,
+				"name": "boolean"
 			}
 		}
 	},

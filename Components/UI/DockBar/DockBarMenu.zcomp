@@ -127,6 +127,11 @@
 			]
 		},
 		"a9f103b33d1a442e81dfcac32aa22af2": {
+			"scale": [
+				0.1,
+				0.1,
+				0.1
+			]
 		},
 		"aad084934f1d47478f4b59a7a2122df7": {
 			"icon_text": "calendar",

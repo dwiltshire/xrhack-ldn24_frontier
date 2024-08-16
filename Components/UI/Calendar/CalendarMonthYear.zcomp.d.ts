@@ -1,19 +1,10 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
-import { Image as Image_0 } from "@zcomponent/three/lib/components/Image";
-import { PlayLayerClip as PlayLayerClip_1 } from "@zcomponent/core/lib/behaviors/PlayLayerClip";
-import { Text as Text_2 } from "@zcomponent/three/lib/components/text/Text";
-import { Group as Group_3 } from "@zcomponent/three/lib/components/Group";
+import { Group as Group_0 } from "@zcomponent/three/lib/components/Group";
+import { Image as Image_1 } from "@zcomponent/three/lib/components/Image";
 
 interface ConstructorProps {
-	/**
-	 * The image to display
-	 * 
-	 * @zprop
-	 * @zdefault ""
-	 * @zvalues files *.+(jpg|jpeg|png)
-	 */
-	ImageSource: string;
+
 }
 
 /**
@@ -25,33 +16,27 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
-		background: Image_0 & {
-			behaviors: {
-				0: PlayLayerClip_1,
-				PlayLayerClip: PlayLayerClip_1,
-			}
-		},
-		date: Text_2 & {
+		YearMonth: Group_0 & {
 			behaviors: {
 
 			}
 		},
-		add_button: Image_0 & {
+		next_button: Image_1 & {
 			behaviors: {
 
 			}
 		},
-		emotion_sample: Image_0 & {
+		previous_button: Image_1 & {
 			behaviors: {
 
 			}
 		},
-		emotion_back: Image_0 & {
+		month: Image_1 & {
 			behaviors: {
 
 			}
 		},
-		emotion_item: Group_3 & {
+		year: Image_1 & {
 			behaviors: {
 
 			}
@@ -59,9 +44,7 @@ declare class Comp extends ZComponent {
 	};
 
 	animation: Animation & { layers: {
-		OnButtonClick: Layer & { clips: {
-			Press0: LayerClip;
-		}};
+
 	}};
 
 	/**
@@ -103,29 +86,6 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 10
 	 */
 	public scale: Observable<[x: number, y: number, z: number]>;
-
-	/**
-	 * @zprop
-	 * @zdefault 0
-	 */
-	public Date: Observable<number>;
-
-	/**
-	 * @zprop
-	 * @zdefault false
-	 */
-	public HasEmotion: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 * @zdefault false
-	 */
-	public Add: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 */
-	public Image_: Observable<"">;
 }
 
 export default Comp;

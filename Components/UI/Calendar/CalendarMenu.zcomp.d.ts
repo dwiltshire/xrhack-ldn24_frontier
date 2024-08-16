@@ -1,18 +1,9 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
 import { default as AddNewButton_zcomp_0 } from "./AddNewButton.zcomp";
-import { ShadowPlane as ShadowPlane_1 } from "@zcomponent/three/lib/components/meshes/ShadowPlane";
-import { DirectionalLight as DirectionalLight_2 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
-import { XRRigVRPassthrough as XRRigVRPassthrough_3 } from "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough";
-import { XRController as XRController_4 } from "@zcomponent/three-webxr/lib/components/XRController";
-import { XRCamera as XRCamera_5 } from "@zcomponent/three-webxr/lib/components/XRCamera";
-import { TeleportManager as TeleportManager_6 } from "@zcomponent/three-webxr/lib/components/TeleportManager";
-import { TurnManager as TurnManager_7 } from "@zcomponent/three-webxr/lib/components/TurnManager";
-import { XRManager as XRManager_8 } from "@zcomponent/three-webxr/lib/components/XRManager";
-import { XRDefaultLoader as XRDefaultLoader_9 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
-import { Group as Group_10 } from "@zcomponent/three/lib/components/Group";
-import { HDREnvironment as HDREnvironment_11 } from "@zcomponent/three/lib/components/environments/HDREnvironment";
-import { default as DockBarMenu_zcomp_12 } from "../DockBar/DockBarMenu.zcomp";
+import { default as DateComponentCard_zcomp_1 } from "./DateComponentCard.zcomp";
+import { Group as Group_2 } from "@zcomponent/three/lib/components/Group";
+import { default as CalendarMonthYear_zcomp_3 } from "./CalendarMonthYear.zcomp";
 
 interface ConstructorProps {
 
@@ -27,6 +18,16 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
+		AddNewButton: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		DateComponentCard: DateComponentCard_zcomp_1 & {
+			behaviors: {
+
+			}
+		},
 		AddNewButton0: AddNewButton_zcomp_0 & {
 			behaviors: {
 
@@ -37,57 +38,37 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		ShadowPlane: ShadowPlane_1 & {
+		AddNewButton2: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		DirectionalLight: DirectionalLight_2 & {
+		AddNewButton3: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		AddNewButton_3: AddNewButton_zcomp_0 & {
+		AddNewButton4: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		AddNewButton_4: AddNewButton_zcomp_0 & {
+		AddNewButton5: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		AddNewButton_40: AddNewButton_zcomp_0 & {
+		week_1: Group_2 & {
 			behaviors: {
 
 			}
 		},
-		AddNewButton_41: AddNewButton_zcomp_0 & {
+		week_10: Group_2 & {
 			behaviors: {
 
 			}
 		},
-		AddNewButton_42: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_2: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_30: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_43: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_8: AddNewButton_zcomp_0 & {
+		AddNewButton6: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
@@ -107,62 +88,147 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		XRRigVRPassthrough: XRRigVRPassthrough_3 & {
+		AddNewButton_4: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		Left_Controller: XRController_4 & {
+		AddNewButton_3: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		Right_Controller: XRController_4 & {
+		AddNewButton_2: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		XR_Camera: XRCamera_5 & {
+		week_11: Group_2 & {
 			behaviors: {
 
 			}
 		},
-		Teleport_Manager: TeleportManager_6 & {
+		AddNewButton7: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		Turn_Manager: TurnManager_7 & {
+		AddNewButton_70: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		XR_Manager: XRManager_8 & {
+		AddNewButton_60: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		XR_DefaultLoader: XRDefaultLoader_9 & {
+		AddNewButton_50: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		Base: Group_10 & {
+		AddNewButton_40: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		CalendarUI: Group_10 & {
+		AddNewButton_30: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		HDREnvironment: HDREnvironment_11 & {
+		AddNewButton_20: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		DockBarMenu: DockBarMenu_zcomp_12 & {
+		week_12: Group_2 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton8: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_71: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_61: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_51: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_41: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_31: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_21: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		week_13: Group_2 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton9: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_72: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_62: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_52: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_42: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_32: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_22: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		all_weeks: Group_2 & {
+			behaviors: {
+
+			}
+		},
+		CalendarMonthYear_2: CalendarMonthYear_zcomp_3 & {
 			behaviors: {
 
 			}
@@ -172,16 +238,6 @@ declare class Comp extends ZComponent {
 	animation: Animation & { layers: {
 
 	}};
-
-	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
-	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
-	 */
-	public visible: Observable<boolean>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -212,6 +268,16 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 10
 	 */
 	public scale: Observable<[x: number, y: number, z: number]>;
+
+	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
+	 * @zprop
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
+	 */
+	public visible: Observable<boolean>;
 }
 
 export default Comp;

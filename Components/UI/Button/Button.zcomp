@@ -156,7 +156,7 @@
 			"event": "onPointerLeave"
 		},
 		"cd6c6ab329704bbc94fc7e82f14193d3": {
-			"source": "file://./ButtonTemplate.png"
+			"source": "file://./../VocieChatbox/Resources/VocieBar_Speaking.png"
 		}
 	},
 	"entityPropOverrides": {

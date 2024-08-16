@@ -140,6 +140,29 @@
 	"behaviorsByNode": {
 	},
 	"constructorProps": {
+		"ImageSource": {
+			"comments": [
+				"The image to display"
+			],
+			"default": "",
+			"isConstructorProp": true,
+			"name": "ImageSource",
+			"order": 0,
+			"readonly": false,
+			"showInUI": false,
+			"type": {
+				"comments": [
+				],
+				"isObservable": false,
+				"name": "string"
+			},
+			"values": [
+				{
+					"param": "*.+(jpg|jpeg|png)",
+					"type": "files"
+				}
+			]
+		}
 	},
 	"entitiesByLabel": {
 		"add_button": {
@@ -150,6 +173,9 @@
 		},
 		"date": {
 			"719950d69fad4edf9ff6d66512193948": true
+		},
+		"emotion-item": {
+			"ab8702f0f06a4cd0be94fda711f94426": true
 		},
 		"emotion_back": {
 			"cb27f8df539e4fb29792239a980af80d": true
@@ -171,6 +197,9 @@
 		"emotion_back": {
 			"cb27f8df539e4fb29792239a980af80d": true
 		},
+		"emotion_item": {
+			"ab8702f0f06a4cd0be94fda711f94426": true
+		},
 		"emotion_sample": {
 			"498cc010ed1b49fd833bd5232e9199a5": true
 		}
@@ -187,6 +216,8 @@
 		},
 		"719950d69fad4edf9ff6d66512193948": {
 		},
+		"ab8702f0f06a4cd0be94fda711f94426": {
+		},
 		"cb27f8df539e4fb29792239a980af80d": {
 			"source": "file://./Resources/emotion_btn_sample.png"
 		},
@@ -195,6 +226,17 @@
 		}
 	},
 	"entityPropOverrides": {
+		"componentprop:constructorprop:498cc010ed1b49fd833bd5232e9199a5:source": {
+			"entityID": "498cc010ed1b49fd833bd5232e9199a5",
+			"entityPropIsConstructor": true,
+			"entityPropPath": [
+				"source"
+			],
+			"id": "componentprop:constructorprop:498cc010ed1b49fd833bd5232e9199a5:source",
+			"isConstructorProp": true,
+			"propName": "ImageSource",
+			"type": "componentprop"
+		},
 		"componentprop:prop:719950d69fad4edf9ff6d66512193948:text": {
 			"entityID": "719950d69fad4edf9ff6d66512193948",
 			"entityPropIsConstructor": false,
@@ -278,6 +320,8 @@
 			"layerClip": "1dc32417dedd4a4693518ed4e1db1285"
 		},
 		"337404cd6aa24a5e9579860e86a07d9a": {
+			"castShadow": false,
+			"receiveShadow": false
 		},
 		"498cc010ed1b49fd833bd5232e9199a5": {
 			"position": [
@@ -316,11 +360,18 @@
 			],
 			"text": "01"
 		},
+		"ab8702f0f06a4cd0be94fda711f94426": {
+			"scale": [
+				0.15,
+				0.15,
+				0.15
+			]
+		},
 		"cb27f8df539e4fb29792239a980af80d": {
 			"position": [
 				0,
 				0,
-				0.015890105533339555
+				0.0347432595268404
 			]
 		},
 		"ffc7962ffa4b481bbc5ccaed01026be6": {
@@ -342,7 +393,7 @@
 			"id": "337404cd6aa24a5e9579860e86a07d9a",
 			"label": "background",
 			"parent": {
-				"id": "root",
+				"id": "ab8702f0f06a4cd0be94fda711f94426",
 				"order": "a0"
 			},
 			"scriptName": "background",
@@ -368,12 +419,22 @@
 			"scriptName": "date",
 			"type": "@zcomponent/three/lib/components/text/Text#Text"
 		},
+		"ab8702f0f06a4cd0be94fda711f94426": {
+			"id": "ab8702f0f06a4cd0be94fda711f94426",
+			"label": "emotion-item",
+			"parent": {
+				"id": "root",
+				"order": "a1"
+			},
+			"scriptName": "emotion_item",
+			"type": "@zcomponent/three/lib/components/Group#Group"
+		},
 		"cb27f8df539e4fb29792239a980af80d": {
 			"id": "cb27f8df539e4fb29792239a980af80d",
 			"label": "emotion_back",
 			"parent": {
-				"id": "root",
-				"order": "Zw"
+				"id": "337404cd6aa24a5e9579860e86a07d9a",
+				"order": "Zy"
 			},
 			"scriptName": "emotion_back",
 			"type": "@zcomponent/three/lib/components/Image#Image"
@@ -382,8 +443,8 @@
 			"id": "ffc7962ffa4b481bbc5ccaed01026be6",
 			"label": "add_button",
 			"parent": {
-				"id": "root",
-				"order": "Zy"
+				"id": "337404cd6aa24a5e9579860e86a07d9a",
+				"order": "Zz"
 			},
 			"scriptName": "add_button",
 			"type": "@zcomponent/three/lib/components/Image#Image"
@@ -420,6 +481,15 @@
 			"type": {
 				"isObservable": true,
 				"name": "boolean"
+			}
+		},
+		"Image_": {
+			"name": "Image_",
+			"order": 0,
+			"type": {
+				"isObservable": true,
+				"name": "literal",
+				"value": ""
 			}
 		},
 		"position": {
