@@ -1,39 +1,202 @@
 {
+	"animation": {
+		"clips": {
+			"05258129e630423c96db953637547e2c": {
+				"id": "05258129e630423c96db953637547e2c",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "Turn360OF",
+				"order": "a5",
+				"scriptName": "Turn360OF",
+				"tracks": {
+					"24724438c0a94e73b299b80f08d3e1de": {
+						"blend": "overlay",
+						"entityID": "742597121815415f8f7bc59f1d1a24b9",
+						"id": "24724438c0a94e73b299b80f08d3e1de",
+						"keyframes": {
+							"5f3b388e87304be9945174fe444c026c": {
+								"id": "5f3b388e87304be9945174fe444c026c",
+								"t": 0,
+								"v": false
+							}
+						},
+						"order": "a0",
+						"property": [
+							"visible"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "state"
+			},
+			"9283527842cc47f39a0a8816ab2b3ef7": {
+				"id": "9283527842cc47f39a0a8816ab2b3ef7",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "Turn360On",
+				"order": "a3",
+				"scriptName": "Turn360On",
+				"tracks": {
+					"701c7eef43cd44ebbffdb14d192a26c7": {
+						"blend": "overlay",
+						"entityID": "742597121815415f8f7bc59f1d1a24b9",
+						"id": "701c7eef43cd44ebbffdb14d192a26c7",
+						"keyframes": {
+							"3db5eab386d54434954cb5c9cb33761f": {
+								"id": "3db5eab386d54434954cb5c9cb33761f",
+								"t": 0,
+								"v": true
+							}
+						},
+						"order": "Zz",
+						"property": [
+							"visible"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "state"
+			},
+			"bb6ee26da15d4a7bae687a56a552d904": {
+				"id": "bb6ee26da15d4a7bae687a56a552d904",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "Turn360Off",
+				"order": "a4",
+				"scriptName": "Turn360Off",
+				"tracks": {
+				},
+				"type": "state"
+			},
+			"ef7dcdbb7a764ae7b8ab30641912644f": {
+				"id": "ef7dcdbb7a764ae7b8ab30641912644f",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "State_1",
+				"order": "a2",
+				"scriptName": "State_1",
+				"tracks": {
+				},
+				"type": "state"
+			}
+		},
+		"curves": {
+		},
+		"layers": {
+			"66dc7c7b698e4bfb925cc802fab72a58": {
+				"clips": {
+					"02491ad8e5134c75963995e772e421e9": {
+						"clipId": "9283527842cc47f39a0a8816ab2b3ef7",
+						"id": "02491ad8e5134c75963995e772e421e9",
+						"order": "a2",
+						"scriptName": "Turn360On0"
+					},
+					"ec3b116224c840978b2b9f075f7dd6c0": {
+						"clipId": "05258129e630423c96db953637547e2c",
+						"id": "ec3b116224c840978b2b9f075f7dd6c0",
+						"order": "a3",
+						"scriptName": "Turn360OF0"
+					}
+				},
+				"defaultClip": null,
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "66dc7c7b698e4bfb925cc802fab72a58",
+				"name": "Environment",
+				"order": "a2",
+				"scriptName": "Environment"
+			}
+		}
+	},
 	"behaviors": {
-		"9c8cdcfa0fba4183bed291623f7f7544": {
-			"id": "9c8cdcfa0fba4183bed291623f7f7544",
-			"label": "EmitComponentPropEvent",
+		"270a93f8a0cd4fada24f6fa9c871cb16": {
+			"id": "270a93f8a0cd4fada24f6fa9c871cb16",
+			"label": "ToggleLayerClips",
 			"parent": {
 				"id": "fa57de8301bb4c448980180e6e8157ef",
-				"order": "a0",
-				"scriptName": "EmitComponentPropEvent"
+				"order": "a1",
+				"scriptName": "ToggleLayerClips"
 			},
-			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+			"type": "@zcomponent/core/lib/behaviors/ToggleLayerClips#ToggleLayerClips"
 		}
 	},
 	"behaviorsByNode": {
 	},
 	"constructorProps": {
+		"ToggleEnvironment": {
+			"comments": [
+				"If true, the scene's environment map will be set to this HDR image"
+			],
+			"default": true,
+			"isConstructorProp": true,
+			"name": "ToggleEnvironment",
+			"order": 1,
+			"readonly": false,
+			"showInUI": false,
+			"type": {
+				"comments": [
+				],
+				"isObservable": false,
+				"name": "boolean"
+			}
+		}
 	},
 	"entitiesByLabel": {
 		"Image": {
 			"fa57de8301bb4c448980180e6e8157ef": true
+		},
+		"Image360": {
+			"742597121815415f8f7bc59f1d1a24b9": true
+		},
+		"Text": {
+			"9d03203d4bb440e4b7d8ca45522b5473": true
 		}
 	},
 	"entitiesByScriptName": {
 		"Image": {
 			"fa57de8301bb4c448980180e6e8157ef": true
+		},
+		"Image360": {
+			"742597121815415f8f7bc59f1d1a24b9": true
+		},
+		"Text": {
+			"9d03203d4bb440e4b7d8ca45522b5473": true
 		}
 	},
 	"entityConstructorProps": {
-		"9c8cdcfa0fba4183bed291623f7f7544": {
+		"270a93f8a0cd4fada24f6fa9c871cb16": {
 			"event": "onClick"
+		},
+		"742597121815415f8f7bc59f1d1a24b9": {
+			"source": "file://./Resources/background.png"
+		},
+		"9d03203d4bb440e4b7d8ca45522b5473": {
+			"font": ""
 		},
 		"fa57de8301bb4c448980180e6e8157ef": {
 			"source": "file://./Resources/turn_360_button.png"
 		}
 	},
 	"entityPropOverrides": {
+		"componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text": {
+			"entityID": "9d03203d4bb440e4b7d8ca45522b5473",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"text"
+			],
+			"id": "componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text",
+			"isConstructorProp": false,
+			"propName": "icon_text",
+			"type": "componentprop"
+		},
 		"componentprop:prop:root:position": {
 			"entityID": "root",
 			"entityPropIsConstructor": false,
@@ -80,25 +243,58 @@
 		}
 	},
 	"entityProps": {
-		"9c8cdcfa0fba4183bed291623f7f7544": {
-			"eventToEmit": {
-				"_zfn": true,
-				"args": {
-				},
-				"prop": "_On360ButtonPressed",
-				"t": "emitcomponentevent"
-			}
+		"270a93f8a0cd4fada24f6fa9c871cb16": {
+			"layerClipA": "02491ad8e5134c75963995e772e421e9",
+			"layerClipB": "ec3b116224c840978b2b9f075f7dd6c0"
+		},
+		"742597121815415f8f7bc59f1d1a24b9": {
+			"visible": false
+		},
+		"9d03203d4bb440e4b7d8ca45522b5473": {
+			"anchorX": "center",
+			"doubleSide": true,
+			"position": [
+				0,
+				-0.5658024197626985,
+				0
+			],
+			"scale": [
+				1.4712657157113116,
+				1.4712657157113116,
+				1.4712657157113116
+			]
 		},
 		"fa57de8301bb4c448980180e6e8157ef": {
 			"scale": [
 				0.1,
 				0.1,
 				0.1
-			]
+			],
+			"visible": true
 		}
 	},
 	"id": "e1e4d2b6775848e5b54706359777b50f",
 	"nodes": {
+		"742597121815415f8f7bc59f1d1a24b9": {
+			"id": "742597121815415f8f7bc59f1d1a24b9",
+			"label": "Image360",
+			"parent": {
+				"id": "root",
+				"order": "a2"
+			},
+			"scriptName": "Image360",
+			"type": "@zcomponent/three/lib/components/Image360#Image360"
+		},
+		"9d03203d4bb440e4b7d8ca45522b5473": {
+			"id": "9d03203d4bb440e4b7d8ca45522b5473",
+			"label": "Text",
+			"parent": {
+				"id": "fa57de8301bb4c448980180e6e8157ef",
+				"order": "a0"
+			},
+			"scriptName": "Text",
+			"type": "@zcomponent/three/lib/components/text/Text#Text"
+		},
 		"fa57de8301bb4c448980180e6e8157ef": {
 			"id": "fa57de8301bb4c448980180e6e8157ef",
 			"label": "Image",
@@ -124,6 +320,15 @@
 				],
 				"isObservable": true,
 				"name": "event"
+			}
+		},
+		"icon_text": {
+			"default": "icon_text",
+			"name": "icon_text",
+			"order": 0,
+			"type": {
+				"isObservable": true,
+				"name": "string"
 			}
 		},
 		"position": {
