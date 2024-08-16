@@ -6,60 +6,40 @@
 	"constructorProps": {
 	},
 	"entitiesByLabel": {
-		"CalendarButton": {
-			"aad084934f1d47478f4b59a7a2122df7": true
+		"Image": {
+			"b8677cba7c4142de9aeae93d0aa99d67": true
 		},
-		"CreateButton": {
-			"dd2648e5414e4cf1a942e80f9691d935": true
-		},
-		"Dock": {
-			"a9f103b33d1a442e81dfcac32aa22af2": true
-		},
-		"Dock 2": {
-			"17d7750e935f43b7a4884c8c14b6ab09": true
-		},
-		"ShareButton": {
-			"ad0aa64a9763456889f1c14faeef3ff4": true
-		},
-		"UserAccount": {
-			"a3f9996c65974edaafbe1552ac410968": true
+		"Text": {
+			"9d03203d4bb440e4b7d8ca45522b5473": true
 		}
 	},
 	"entitiesByScriptName": {
-		"CalendarButton": {
-			"aad084934f1d47478f4b59a7a2122df7": true
+		"Image": {
+			"b8677cba7c4142de9aeae93d0aa99d67": true
 		},
-		"CreateButton": {
-			"dd2648e5414e4cf1a942e80f9691d935": true
-		},
-		"Dock": {
-			"a9f103b33d1a442e81dfcac32aa22af2": true
-		},
-		"Dock_2": {
-			"17d7750e935f43b7a4884c8c14b6ab09": true
-		},
-		"ShareButton": {
-			"ad0aa64a9763456889f1c14faeef3ff4": true
-		},
-		"UserAccount": {
-			"a3f9996c65974edaafbe1552ac410968": true
+		"Text": {
+			"9d03203d4bb440e4b7d8ca45522b5473": true
 		}
 	},
 	"entityConstructorProps": {
-		"17d7750e935f43b7a4884c8c14b6ab09": {
+		"9d03203d4bb440e4b7d8ca45522b5473": {
 		},
-		"a3f9996c65974edaafbe1552ac410968": {
-		},
-		"a9f103b33d1a442e81dfcac32aa22af2": {
-		},
-		"aad084934f1d47478f4b59a7a2122df7": {
-		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
-		},
-		"dd2648e5414e4cf1a942e80f9691d935": {
+		"b8677cba7c4142de9aeae93d0aa99d67": {
+			"source": "file://./Resources/share_button.png"
 		}
 	},
 	"entityPropOverrides": {
+		"componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text": {
+			"entityID": "9d03203d4bb440e4b7d8ca45522b5473",
+			"entityPropIsConstructor": false,
+			"entityPropPath": [
+				"text"
+			],
+			"id": "componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text",
+			"isConstructorProp": false,
+			"propName": "icon_text",
+			"type": "componentprop"
+		},
 		"componentprop:prop:root:position": {
 			"entityID": "root",
 			"entityPropIsConstructor": false,
@@ -106,119 +86,44 @@
 		}
 	},
 	"entityProps": {
-		"17d7750e935f43b7a4884c8c14b6ab09": {
+		"9d03203d4bb440e4b7d8ca45522b5473": {
+			"anchorX": "center",
+			"doubleSide": true,
 			"position": [
 				0,
-				0,
-				-0.15967166081539486
+				-0.5658024197626985,
+				0
 			],
 			"scale": [
-				1.9239850362821809,
-				1.9239850362821809,
-				1.9239850362821809
+				1.4712657157113116,
+				1.4712657157113116,
+				1.4712657157113116
 			]
 		},
-		"a3f9996c65974edaafbe1552ac410968": {
-			"icon_text": "user",
-			"position": [
-				-1.853385557364359,
-				0,
-				0
-			]
-		},
-		"a9f103b33d1a442e81dfcac32aa22af2": {
-		},
-		"aad084934f1d47478f4b59a7a2122df7": {
-			"icon_text": "calendar",
-			"position": [
-				-0.6994411468434992,
-				0,
-				0
-			]
-		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
-			"icon_text": "share",
-			"position": [
-				1.7267595095894288,
-				0,
-				0
-			]
-		},
-		"dd2648e5414e4cf1a942e80f9691d935": {
-			"icon_text": "create",
-			"position": [
-				0.4821230313895779,
-				0,
-				0
-			],
-			"rotation": [
-				0,
-				0,
-				0
-			]
+		"b8677cba7c4142de9aeae93d0aa99d67": {
 		}
 	},
-	"id": "6fe6bd9ebc584f4e91e653e093fab70c",
+	"id": "9ff8c67a3310451292a20cdc997f893f",
 	"nodes": {
-		"17d7750e935f43b7a4884c8c14b6ab09": {
-			"id": "17d7750e935f43b7a4884c8c14b6ab09",
-			"label": "Dock 2",
+		"9d03203d4bb440e4b7d8ca45522b5473": {
+			"id": "9d03203d4bb440e4b7d8ca45522b5473",
+			"label": "Text",
 			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
-				"order": "Zy"
-			},
-			"scriptName": "Dock_2",
-			"type": "./Dock.zcomp#default"
-		},
-		"a3f9996c65974edaafbe1552ac410968": {
-			"id": "a3f9996c65974edaafbe1552ac410968",
-			"label": "UserAccount",
-			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
-				"order": "Zx"
-			},
-			"scriptName": "UserAccount",
-			"type": "./UserAccount.zcomp#default"
-		},
-		"a9f103b33d1a442e81dfcac32aa22af2": {
-			"id": "a9f103b33d1a442e81dfcac32aa22af2",
-			"label": "Dock",
-			"parent": {
-				"id": "root",
-				"order": "a3"
-			},
-			"scriptName": "Dock",
-			"type": "@zcomponent/three/lib/components/Group#Group"
-		},
-		"aad084934f1d47478f4b59a7a2122df7": {
-			"id": "aad084934f1d47478f4b59a7a2122df7",
-			"label": "CalendarButton",
-			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
+				"id": "b8677cba7c4142de9aeae93d0aa99d67",
 				"order": "a0"
 			},
-			"scriptName": "CalendarButton",
-			"type": "./CalendarButton.zcomp#default"
+			"scriptName": "Text",
+			"type": "@zcomponent/three/lib/components/text/Text#Text"
 		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
-			"id": "ad0aa64a9763456889f1c14faeef3ff4",
-			"label": "ShareButton",
+		"b8677cba7c4142de9aeae93d0aa99d67": {
+			"id": "b8677cba7c4142de9aeae93d0aa99d67",
+			"label": "Image",
 			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
+				"id": "root",
 				"order": "Zz"
 			},
-			"scriptName": "ShareButton",
-			"type": "./ShareButton.zcomp#default"
-		},
-		"dd2648e5414e4cf1a942e80f9691d935": {
-			"id": "dd2648e5414e4cf1a942e80f9691d935",
-			"label": "CreateButton",
-			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
-				"order": "a1"
-			},
-			"scriptName": "CreateButton",
-			"type": "./CreateButton.zcomp#default"
+			"scriptName": "Image",
+			"type": "@zcomponent/three/lib/components/Image#Image"
 		},
 		"root": {
 			"id": "root",
@@ -227,6 +132,15 @@
 	},
 	"preview": "@zcomponent/three/lib/preview#default",
 	"props": {
+		"icon_text": {
+			"default": "icon_text",
+			"name": "icon_text",
+			"order": 0,
+			"type": {
+				"isObservable": true,
+				"name": "string"
+			}
+		},
 		"position": {
 			"comments": [
 				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."

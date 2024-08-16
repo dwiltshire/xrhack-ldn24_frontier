@@ -1,19 +1,18 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
 import { default as AddNewButton_zcomp_0 } from "./AddNewButton.zcomp";
-import { Group as Group_1 } from "@zcomponent/three/lib/components/Group";
+import { ShadowPlane as ShadowPlane_1 } from "@zcomponent/three/lib/components/meshes/ShadowPlane";
 import { DirectionalLight as DirectionalLight_2 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
-import { HDREnvironment as HDREnvironment_3 } from "@zcomponent/three/lib/components/environments/HDREnvironment";
+import { XRRigVRPassthrough as XRRigVRPassthrough_3 } from "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough";
 import { XRController as XRController_4 } from "@zcomponent/three-webxr/lib/components/XRController";
-import { MeshStandardMaterial as MeshStandardMaterial_5 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
-import { Sphere as Sphere_6 } from "@zcomponent/three/lib/components/meshes/Sphere";
-import { ShadowPlane as ShadowPlane_7 } from "@zcomponent/three/lib/components/meshes/ShadowPlane";
-import { TeleportManager as TeleportManager_8 } from "@zcomponent/three-webxr/lib/components/TeleportManager";
-import { TurnManager as TurnManager_9 } from "@zcomponent/three-webxr/lib/components/TurnManager";
-import { XRRigVRPassthrough as XRRigVRPassthrough_10 } from "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough";
-import { XRCamera as XRCamera_11 } from "@zcomponent/three-webxr/lib/components/XRCamera";
-import { XRDefaultLoader as XRDefaultLoader_12 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
-import { XRManager as XRManager_13 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { XRCamera as XRCamera_5 } from "@zcomponent/three-webxr/lib/components/XRCamera";
+import { TeleportManager as TeleportManager_6 } from "@zcomponent/three-webxr/lib/components/TeleportManager";
+import { TurnManager as TurnManager_7 } from "@zcomponent/three-webxr/lib/components/TurnManager";
+import { XRManager as XRManager_8 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { XRDefaultLoader as XRDefaultLoader_9 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
+import { Group as Group_10 } from "@zcomponent/three/lib/components/Group";
+import { HDREnvironment as HDREnvironment_11 } from "@zcomponent/three/lib/components/environments/HDREnvironment";
+import { default as DockBarMenu_zcomp_12 } from "../DockBar/DockBarMenu.zcomp";
 
 interface ConstructorProps {
 
@@ -38,17 +37,17 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		AddNewButton_2: AddNewButton_zcomp_0 & {
+		ShadowPlane: ShadowPlane_1 & {
+			behaviors: {
+
+			}
+		},
+		DirectionalLight: DirectionalLight_2 & {
 			behaviors: {
 
 			}
 		},
 		AddNewButton_3: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_30: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
@@ -73,22 +72,17 @@ declare class Comp extends ZComponent {
 
 			}
 		},
+		AddNewButton_2: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
+		AddNewButton_30: AddNewButton_zcomp_0 & {
+			behaviors: {
+
+			}
+		},
 		AddNewButton_43: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_5: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_6: AddNewButton_zcomp_0 & {
-			behaviors: {
-
-			}
-		},
-		AddNewButton_7: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
@@ -98,22 +92,22 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		Base: Group_1 & {
+		AddNewButton_7: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		CalendarUI: Group_1 & {
+		AddNewButton_6: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		DirectionalLight: DirectionalLight_2 & {
+		AddNewButton_5: AddNewButton_zcomp_0 & {
 			behaviors: {
 
 			}
 		},
-		HDREnvironment: HDREnvironment_3 & {
+		XRRigVRPassthrough: XRRigVRPassthrough_3 & {
 			behaviors: {
 
 			}
@@ -123,52 +117,52 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		MeshStandardMaterial: MeshStandardMaterial_5 & {
-			behaviors: {
-
-			}
-		},
-		PlaceholderSphere: Sphere_6 & {
-			behaviors: {
-
-			}
-		},
 		Right_Controller: XRController_4 & {
 			behaviors: {
 
 			}
 		},
-		ShadowPlane: ShadowPlane_7 & {
+		XR_Camera: XRCamera_5 & {
 			behaviors: {
 
 			}
 		},
-		Teleport_Manager: TeleportManager_8 & {
+		Teleport_Manager: TeleportManager_6 & {
 			behaviors: {
 
 			}
 		},
-		Turn_Manager: TurnManager_9 & {
+		Turn_Manager: TurnManager_7 & {
 			behaviors: {
 
 			}
 		},
-		XRRigVRPassthrough: XRRigVRPassthrough_10 & {
+		XR_Manager: XRManager_8 & {
 			behaviors: {
 
 			}
 		},
-		XR_Camera: XRCamera_11 & {
+		XR_DefaultLoader: XRDefaultLoader_9 & {
 			behaviors: {
 
 			}
 		},
-		XR_DefaultLoader: XRDefaultLoader_12 & {
+		Base: Group_10 & {
 			behaviors: {
 
 			}
 		},
-		XR_Manager: XRManager_13 & {
+		CalendarUI: Group_10 & {
+			behaviors: {
+
+			}
+		},
+		HDREnvironment: HDREnvironment_11 & {
+			behaviors: {
+
+			}
+		},
+		DockBarMenu: DockBarMenu_zcomp_12 & {
 			behaviors: {
 
 			}
@@ -178,6 +172,16 @@ declare class Comp extends ZComponent {
 	animation: Animation & { layers: {
 
 	}};
+
+	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
+	 * @zprop
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
+	 */
+	public visible: Observable<boolean>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -208,16 +212,6 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 10
 	 */
 	public scale: Observable<[x: number, y: number, z: number]>;
-
-	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
-	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
-	 */
-	public visible: Observable<boolean>;
 }
 
 export default Comp;
