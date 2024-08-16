@@ -135,29 +135,16 @@ export class EmotionAnalyzer extends Behavior<Group> {
         // Calculate the sum of emotion scores for each group and add to cumulative sums
         for (const group in EMOTION_GROUPS) {
             if (EMOTION_GROUPS.hasOwnProperty(group) && emotionScores) {
-                // let roundSum = 0;
+                let roundSum = 0;
 
-                let roundSum = emotionScores[group];
-
-                cumulativeSums[group] = roundSum;
-
-                // EMOTION_GROUPS[group].forEach(emotion => {
-                //     roundSum += emotionScores[emotion] || 0;
-                // });
-                // cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
+                EMOTION_GROUPS[group].forEach(emotion => {
+                    roundSum += emotionScores[emotion] || 0;
+                });
+                cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
 
                 console.log('Group: ', group, '. Emotions group sum: ', roundSum);
-
-                // scoresText += `<strong>${group}:</strong><br>`;
-                // EMOTION_GROUPS[group].forEach(emotion => {
-                //     const score = emotionScores[emotion] !== undefined ? emotionScores[emotion].toFixed(6) : "N/A";
-                // });
             }
         }
-
-        // console.log('CHIILLLLDDREEN', this.zcomponent.nodes.Content_Group.children.length);
-
-        // var nodes = this.zcomponent.nodes.Content_Group.children;
 
         const EmotionToComponentMap = {
             Anger: this.zcomponent.nodes.EmotionAnger,
@@ -177,30 +164,7 @@ export class EmotionAnalyzer extends Behavior<Group> {
 
             component.opacity += opacity;
             component.element.scale.addScalar(opacity);
-           
         }
-
-       
-
-        // Update the heights of the boxes based on the cumulative sums, divided by 100
-        /*const boxOne = this.zcomponent.nodes.BoxOne.element;
-        const boxTwo = this.zcomponent.nodes.BoxTwo.element;
-        const boxThree = this.zcomponent.nodes.BoxThree.element;
-        const boxFour = this.zcomponent.nodes.BoxFour.element;
-        const boxFive = this.zcomponent.nodes.BoxFive.element;
-
-        boxOne.scale.setY(cumulativeSums["Joy"] / 100);
-        boxTwo.scale.setY(cumulativeSums["Love"] / 100);
-        boxThree.scale.setY(cumulativeSums["Interest"] / 100);
-        boxFour.scale.setY(cumulativeSums["Surprise"] / 100);
-        boxFive.scale.setY(cumulativeSums["Sadness"] / 100);
-
-        const emotionScoresElement = document.getElementById('emotionScores');
-        if (emotionScoresElement) {
-            emotionScoresElement.innerHTML = scoresText;
-        } else {
-            console.error("Element with id 'emotionScores' not found.");
-        }*/
     }
 
     private async updateRandomWord() {
