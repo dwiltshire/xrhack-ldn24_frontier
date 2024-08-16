@@ -18,6 +18,7 @@ import { XRRigARUserPlacement as XRRigARUserPlacement_14 } from "@zcomponent/thr
 import { XRCamera as XRCamera_15 } from "@zcomponent/three-webxr/lib/components/XRCamera";
 import { XRDefaultLoader as XRDefaultLoader_16 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
 import { XRManager as XRManager_17 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { default as Scene_zcomp_18 } from "./Scene.zcomp";
 
 interface ConstructorProps {
 
@@ -311,6 +312,11 @@ declare class Comp extends ZComponent {
 			}
 		},
 		XR_Manager: XRManager_17 & {
+			behaviors: {
+
+			}
+		},
+		Scene: Scene_zcomp_18 & {
 			behaviors: {
 
 			}

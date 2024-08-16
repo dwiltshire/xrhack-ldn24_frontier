@@ -241,6 +241,9 @@
 		"SadnessLabel": {
 			"39d8591407a64f75bf92a93739c41c67": true
 		},
+		"Scene": {
+			"c6126d2ada4a4589a5a9d543ba7319b8": true
+		},
 		"SurpriseLabel": {
 			"8c384edf40254bcab755f2e3a7161c7d": true
 		},
@@ -411,6 +414,9 @@
 		"SadnessLabel": {
 			"39d8591407a64f75bf92a93739c41c67": true
 		},
+		"Scene": {
+			"c6126d2ada4a4589a5a9d543ba7319b8": true
+		},
 		"SurpriseLabel": {
 			"8c384edf40254bcab755f2e3a7161c7d": true
 		},
@@ -528,6 +534,8 @@
 		"c087e89d60b044ef8e93b81b6b1ac95d": {
 		},
 		"c37977ec906344f3802cdca1d6ac24d5": {
+		},
+		"c6126d2ada4a4589a5a9d543ba7319b8": {
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 		},
@@ -922,21 +930,21 @@
 		},
 		"8d7d1c3137e243e5bbe5280bc7259b8a": {
 			"position": [
-				0.144427397705348,
-				0.8142528761185195,
+				0.2214718717029313,
+				1.0943899265995163,
 				0
 			],
 			"scale": [
-				1,
-				1,
-				1
+				1.2909477060039072,
+				1.2909477060039072,
+				1.2909477060039072
 			],
 			"text": "Hello\n",
 			"visible": true
 		},
 		"8e16061cc30c46139699514381c58f8a": {
 			"position": [
-				0,
+				-0.2378295647597488,
 				0,
 				-3.3569868455030507
 			]
@@ -1023,7 +1031,7 @@
 			"position": [
 				0,
 				0,
-				0.10835923914977297
+				2.80854361554568
 			],
 			"rotation": [
 				0,
@@ -1052,6 +1060,13 @@
 				0
 			],
 			"visible": true
+		},
+		"c6126d2ada4a4589a5a9d543ba7319b8": {
+			"position": [
+				0,
+				-0.8004034597941045,
+				-0.9740928534677971
+			]
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"castShadow": true,
@@ -1610,6 +1625,16 @@
 			},
 			"scriptName": "XR_Camera",
 			"type": "@zcomponent/three-webxr/lib/components/XRCamera#XRCamera"
+		},
+		"c6126d2ada4a4589a5a9d543ba7319b8": {
+			"id": "c6126d2ada4a4589a5a9d543ba7319b8",
+			"label": "Scene",
+			"parent": {
+				"id": "root",
+				"order": "a1"
+			},
+			"scriptName": "Scene",
+			"type": "./Scene.zcomp#default"
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"id": "c63d8679256943a28e93c624c570f65f",
