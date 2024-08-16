@@ -4,7 +4,7 @@ import {
   Observable,
   registerLoadable,
 } from "@zcomponent/core";
-import { AudioAnalysisContext } from "./State/AudioAnalysisContext";
+import { AudioAnalysisContext } from "../AudioAnalysisContext";
 
 interface ConstructorProps {}
 
