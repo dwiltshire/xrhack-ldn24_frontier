@@ -41,6 +41,11 @@ declare class Comp extends ZComponent {
 	public icon_text: Observable<string>;
 
 	/**
+	 * @zprop
+	 */
+	public onButtonPressed: Event<[]>;
+
+	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
 	 * 
 	 * @zprop
@@ -79,11 +84,6 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 11
 	 */
 	public visible: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 */
-	public onButtonPressed: Event<[]>;
 }
 
 export default Comp;

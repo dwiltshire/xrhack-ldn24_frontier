@@ -34,6 +34,11 @@ declare class Comp extends ZComponent {
 
 	/**
 	 * @zprop
+	 */
+	public _OnCreateButtonPressed: Event<[]>;
+
+	/**
+	 * @zprop
 	 * @zdefault "icon_text"
 	 */
 	public icon_text: Observable<string>;
@@ -77,11 +82,6 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 11
 	 */
 	public visible: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 */
-	public _OnCreateButtonPressed: Event<[]>;
 }
 
 export default Comp;

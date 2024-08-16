@@ -67,6 +67,16 @@
 			},
 			"type": "@zcomponent/core/lib/behaviors/CallFunction#CallFunction"
 		},
+		"49ecb5dc1beb4923bb88e89cae8c2057": {
+			"id": "49ecb5dc1beb4923bb88e89cae8c2057",
+			"label": "PlaySound",
+			"parent": {
+				"id": "8d7d1c3137e243e5bbe5280bc7259b8a",
+				"order": "a1",
+				"scriptName": "PlaySound"
+			},
+			"type": "@zcomponent/core/lib/behaviors/PlaySound#PlaySound"
+		},
 		"59cba062b83d4eeaabee591728946232": {
 			"id": "59cba062b83d4eeaabee591728946232",
 			"label": "Call User Placement Manager.restartPlacement",
@@ -96,6 +106,9 @@
 		},
 		"AngerLabel": {
 			"56110440042a4ad2af87c7b740c48852": true
+		},
+		"Audio": {
+			"d08a553b8287460086e7266cf0103047": true
 		},
 		"Button": {
 			"8d7d1c3137e243e5bbe5280bc7259b8a": true
@@ -272,6 +285,9 @@
 		},
 		"AngerLabel": {
 			"56110440042a4ad2af87c7b740c48852": true
+		},
+		"Audio": {
+			"d08a553b8287460086e7266cf0103047": true
 		},
 		"Button": {
 			"8d7d1c3137e243e5bbe5280bc7259b8a": true
@@ -471,6 +487,12 @@
 		},
 		"46d0fdd0f82145e697a09039e54b6aed": {
 		},
+		"49ecb5dc1beb4923bb88e89cae8c2057": {
+			"audioLayer": "",
+			"event": "onButtonClick",
+			"runAtEditTime": true,
+			"source": "file://./Audio/ButtonPress.wav"
+		},
 		"4d87f3a5be1f457c8ba2da2e54e991ed": {
 		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
@@ -540,6 +562,10 @@
 		"c63d8679256943a28e93c624c570f65f": {
 		},
 		"ca924693d1d14c1cad121d3747126acb": {
+		},
+		"d08a553b8287460086e7266cf0103047": {
+			"autoplay": true,
+			"source": "file://./Audio/ExperienceSoundCompressed.wav"
 		},
 		"d4d4440532bd43718d14775551748351": {
 		},
@@ -779,6 +805,8 @@
 			],
 			"size": 0.5,
 			"text": "...\n"
+		},
+		"49ecb5dc1beb4923bb88e89cae8c2057": {
 		},
 		"4d87f3a5be1f457c8ba2da2e54e991ed": {
 		},
@@ -1109,6 +1137,10 @@
 			"visible": true
 		},
 		"ca924693d1d14c1cad121d3747126acb": {
+		},
+		"d08a553b8287460086e7266cf0103047": {
+			"loop": true,
+			"volume": 0.2
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"castShadow": true,
@@ -1666,6 +1698,16 @@
 			},
 			"scriptName": "MeshStandardMaterial_5",
 			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
+		},
+		"d08a553b8287460086e7266cf0103047": {
+			"id": "d08a553b8287460086e7266cf0103047",
+			"label": "Audio",
+			"parent": {
+				"id": "root",
+				"order": "a2"
+			},
+			"scriptName": "Audio",
+			"type": "@zcomponent/core/lib/components/Audio#Audio"
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"id": "d4d4440532bd43718d14775551748351",
