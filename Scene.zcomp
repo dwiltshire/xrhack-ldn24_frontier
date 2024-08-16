@@ -1,23 +1,217 @@
 {
+	"animation": {
+		"clips": {
+			"0ec88e2d7338475dad9c00ed3c166b7b": {
+				"id": "0ec88e2d7338475dad9c00ed3c166b7b",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "CloseCalendar",
+				"order": "a4",
+				"scriptName": "CloseCalendar",
+				"tracks": {
+					"e62b8351f9a34efda271baf0e5b7fcb7": {
+						"blend": "overlay",
+						"entityID": "d3f139b63edc466b9bbd5405a72bcbbb",
+						"id": "e62b8351f9a34efda271baf0e5b7fcb7",
+						"keyframes": {
+							"94f4736e8ee8431e9bc0652c08447f2b": {
+								"id": "94f4736e8ee8431e9bc0652c08447f2b",
+								"t": 0,
+								"v": [
+									0,
+									0,
+									0
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+							"94f4736e8ee8431e9bc0652c08447f2b-blend": {
+								"id": "94f4736e8ee8431e9bc0652c08447f2b-blend",
+								"t": 0,
+								"v": 1
+							}
+						}
+					}
+				},
+				"type": "state"
+			},
+			"1f1e48c4e0df414697c050d33a0ade3b": {
+				"id": "1f1e48c4e0df414697c050d33a0ade3b",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "CloseChatbox",
+				"order": "a5",
+				"scriptName": "CloseChatbox",
+				"tracks": {
+				},
+				"type": "state"
+			},
+			"4a8636f34ad548d080fad7a5b864c604": {
+				"id": "4a8636f34ad548d080fad7a5b864c604",
+				"length": 500,
+				"lengthType": "manual",
+				"name": "OpenChatbox",
+				"order": "a3",
+				"scriptName": "OpenChatbox",
+				"tracks": {
+					"1450acd2da0d41489331b05aebb86baf": {
+						"blend": "overlay",
+						"entityID": "3518cf72754a4a8ca574d019ce109a87",
+						"id": "1450acd2da0d41489331b05aebb86baf",
+						"keyframes": {
+							"fb1a01eb29d8469f85e1efce3e4e197f": {
+								"id": "fb1a01eb29d8469f85e1efce3e4e197f",
+								"t": 0,
+								"v": [
+									1,
+									1,
+									1
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "timeline"
+			},
+			"a760999581934e918e130833e0b53daf": {
+				"id": "a760999581934e918e130833e0b53daf",
+				"length": 0,
+				"lengthType": "expand",
+				"name": "OpenCalendar",
+				"order": "a6",
+				"scriptName": "OpenCalendar",
+				"tracks": {
+					"d57767d70e21435da682eeffd35b8ae6": {
+						"blend": "overlay",
+						"entityID": "d3f139b63edc466b9bbd5405a72bcbbb",
+						"id": "d57767d70e21435da682eeffd35b8ae6",
+						"keyframes": {
+							"12015ecb0d894b40ba0dbf7981cea8a7": {
+								"id": "12015ecb0d894b40ba0dbf7981cea8a7",
+								"t": 0,
+								"v": [
+									1,
+									1,
+									1
+								]
+							}
+						},
+						"order": "a0",
+						"property": [
+							"scale"
+						],
+						"type": "property",
+						"weight": {
+						}
+					}
+				},
+				"type": "state"
+			}
+		},
+		"curves": {
+		},
+		"layers": {
+			"45f1691247a94704a4bfdac7081c57ef": {
+				"clips": {
+					"16530773cde34efba0b78c3737c3a596": {
+						"clipId": "0ec88e2d7338475dad9c00ed3c166b7b",
+						"id": "16530773cde34efba0b78c3737c3a596",
+						"order": "a5",
+						"scriptName": "CloseCalendar0"
+					},
+					"71688543b4a3455abc5ede8416678427": {
+						"clipId": "a760999581934e918e130833e0b53daf",
+						"id": "71688543b4a3455abc5ede8416678427",
+						"order": "a4",
+						"scriptName": "OpenCalendar0"
+					}
+				},
+				"defaultClip": "e51f272e90c3456fa31fb8555926bb14",
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "45f1691247a94704a4bfdac7081c57ef",
+				"name": "OpenCalendar",
+				"order": "a2",
+				"scriptName": "OpenCalendar"
+			},
+			"6fee0f375eb74b34a3abe28b4eadf38e": {
+				"clips": {
+					"437fc7538cdf44c18ffebb88db0a97d5": {
+						"clipId": "1f1e48c4e0df414697c050d33a0ade3b",
+						"id": "437fc7538cdf44c18ffebb88db0a97d5",
+						"order": "a3",
+						"scriptName": "CloseChatbox0"
+					},
+					"ab690bdc255a4d4aab977d08c828c5cf": {
+						"clipId": "4a8636f34ad548d080fad7a5b864c604",
+						"id": "ab690bdc255a4d4aab977d08c828c5cf",
+						"order": "a2V",
+						"scriptName": "OpenChatbox0"
+					}
+				},
+				"defaultClip": null,
+				"defaultFadeParameters": {
+					"easing": "ease",
+					"pin": 0,
+					"time": 300
+				},
+				"enabled": true,
+				"id": "6fee0f375eb74b34a3abe28b4eadf38e",
+				"name": "OpenChatbox",
+				"order": "a3",
+				"scriptName": "OpenChatbox"
+			}
+		}
+	},
 	"behaviors": {
+		"45986a74b9e84499a5a9b506dfc686bd": {
+			"id": "45986a74b9e84499a5a9b506dfc686bd",
+			"label": "ToggleLayerClips",
+			"parent": {
+				"id": "387f51b495bf42d4a40356a4e5582c89",
+				"order": "a3",
+				"scriptName": "ToggleLayerClips0"
+			},
+			"type": "@zcomponent/core/lib/behaviors/ToggleLayerClips#ToggleLayerClips"
+		},
+		"fb75a4e03a5144dea0ba761dfa5608d1": {
+			"id": "fb75a4e03a5144dea0ba761dfa5608d1",
+			"label": "ToggleLayerClips",
+			"parent": {
+				"id": "387f51b495bf42d4a40356a4e5582c89",
+				"order": "a2",
+				"scriptName": "ToggleLayerClips"
+			},
+			"type": "@zcomponent/core/lib/behaviors/ToggleLayerClips#ToggleLayerClips"
+		}
 	},
 	"constructorProps": {
 	},
 	"entitiesByLabel": {
-		"Box": {
-			"194aae695cba4b60a35c287f3e37fbcf": true
-		},
-		"Button": {
-			"eabdc277461d400b9b7c14eec8769f1e": true
-		},
-		"Cone": {
-			"f6371bf08200415f82989d46101107a8": true
-		},
-		"ConeGeometry": {
-			"f3937ace1ef5478c9221e2cfc2453503": true
+		"CalendarMenu": {
+			"d3f139b63edc466b9bbd5405a72bcbbb": true
 		},
 		"Content Group": {
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"ContextSetup": {
+			"982c78ba948641e2a64e732eda46c9d5": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -34,6 +228,9 @@
 		"DirectionalLight": {
 			"857f9901b65b42c89a3ff04470d70738": true
 		},
+		"DockBarMenu": {
+			"387f51b495bf42d4a40356a4e5582c89": true
+		},
 		"Group": {
 			"root": true
 		},
@@ -42,12 +239,6 @@
 		},
 		"Mesh Group (Delete Me)": {
 			"6ef7d30d3e044b6f806dac36e63a857d": true
-		},
-		"MeshStandardMaterial": {
-			"547097f646a54d39aa1706d0ba7c7ef8": true
-		},
-		"MeshStandardMaterial  3": {
-			"8602fb46317c411d85f2649e8162aff6": true
 		},
 		"MeshStandardMaterial 2": {
 			"aca73192c64842aba2138a6c01994452": true
@@ -70,6 +261,9 @@
 		"UI": {
 			"747969f055334066832fae3254d8bec5": true
 		},
+		"VoiceChatbox": {
+			"3518cf72754a4a8ca574d019ce109a87": true
+		},
 		"XR Camera": {
 			"f82f3ce18b9e4f6985431ebf8ee9f60d": true
 		},
@@ -84,20 +278,14 @@
 		}
 	},
 	"entitiesByScriptName": {
-		"Box": {
-			"194aae695cba4b60a35c287f3e37fbcf": true
-		},
-		"Button": {
-			"eabdc277461d400b9b7c14eec8769f1e": true
-		},
-		"Cone": {
-			"f6371bf08200415f82989d46101107a8": true
-		},
-		"ConeGeometry": {
-			"f3937ace1ef5478c9221e2cfc2453503": true
+		"CalendarMenu": {
+			"d3f139b63edc466b9bbd5405a72bcbbb": true
 		},
 		"Content_Group": {
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
+		},
+		"ContextSetup": {
+			"982c78ba948641e2a64e732eda46c9d5": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -114,17 +302,14 @@
 		"DirectionalLight": {
 			"857f9901b65b42c89a3ff04470d70738": true
 		},
+		"DockBarMenu": {
+			"387f51b495bf42d4a40356a4e5582c89": true
+		},
 		"Left_Controller": {
 			"8b5eb2e54e94493a9dfe311ba1f0d0ab": true
 		},
-		"MeshStandardMaterial": {
-			"547097f646a54d39aa1706d0ba7c7ef8": true
-		},
 		"MeshStandardMaterial0": {
 			"aca73192c64842aba2138a6c01994452": true
-		},
-		"MeshStandardMaterial_2": {
-			"8602fb46317c411d85f2649e8162aff6": true
 		},
 		"Mesh_GroupDeleteMe0": {
 			"6ef7d30d3e044b6f806dac36e63a857d": true
@@ -147,6 +332,9 @@
 		"UI": {
 			"747969f055334066832fae3254d8bec5": true
 		},
+		"VoiceChatbox": {
+			"3518cf72754a4a8ca574d019ce109a87": true
+		},
 		"XRRigVRPassthrough": {
 			"1cc708d8a74849a3970861a8c786ddf3": true
 		},
@@ -163,15 +351,18 @@
 	"entityConstructorProps": {
 		"0ba8e27369df45ca897731dcb1e39bcf": {
 		},
-		"194aae695cba4b60a35c287f3e37fbcf": {
-		},
 		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
 		},
 		"1cc708d8a74849a3970861a8c786ddf3": {
 		},
-		"52148d8eafe3426085e700e049662c07": {
+		"3518cf72754a4a8ca574d019ce109a87": {
 		},
-		"547097f646a54d39aa1706d0ba7c7ef8": {
+		"387f51b495bf42d4a40356a4e5582c89": {
+		},
+		"45986a74b9e84499a5a9b506dfc686bd": {
+			"event": "OnCreateButtonPressed"
+		},
+		"52148d8eafe3426085e700e049662c07": {
 		},
 		"6ef7d30d3e044b6f806dac36e63a857d": {
 		},
@@ -187,14 +378,14 @@
 		},
 		"857f9901b65b42c89a3ff04470d70738": {
 		},
-		"8602fb46317c411d85f2649e8162aff6": {
-		},
 		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
 			"allowRightHandControllers": false,
 			"allowUnspecifiedHandControllers": false
 		},
 		"93d863ce631c4e7fa9e246d771ea370e": {
 			"allowLeftHandControllers": false
+		},
+		"982c78ba948641e2a64e732eda46c9d5": {
 		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
 		},
@@ -208,15 +399,12 @@
 			"fallbackSessionMode": "immersive-vr",
 			"startOnLaunch": "immersive-ar"
 		},
-		"eabdc277461d400b9b7c14eec8769f1e": {
-		},
-		"f3937ace1ef5478c9221e2cfc2453503": {
-			"height": 3,
-			"radialSegments": 112
-		},
-		"f6371bf08200415f82989d46101107a8": {
+		"d3f139b63edc466b9bbd5405a72bcbbb": {
 		},
 		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
+		},
+		"fb75a4e03a5144dea0ba761dfa5608d1": {
+			"event": "onCalendarPressed"
 		}
 	},
 	"entityPropOverrides": {
@@ -268,32 +456,39 @@
 	"entityProps": {
 		"0ba8e27369df45ca897731dcb1e39bcf": {
 		},
-		"194aae695cba4b60a35c287f3e37fbcf": {
-			"position": [
-				-0.1055513644738793,
-				0.15168311653813327,
-				-1.000890785674453
-			],
-			"scale": [
-				0.3,
-				0.3,
-				0.3
-			]
-		},
 		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
 		},
 		"1cc708d8a74849a3970861a8c786ddf3": {
 		},
-		"52148d8eafe3426085e700e049662c07": {
-		},
-		"547097f646a54d39aa1706d0ba7c7ef8": {
-			"color": [
-				1,
-				0.011764705882352941,
-				0.011764705882352941
+		"3518cf72754a4a8ca574d019ce109a87": {
+			"position": [
+				0,
+				1.29720527359573,
+				-0.4752940584746914
 			],
-			"metalness": 0.364955357142857,
-			"roughness": 0.492606026785714
+			"rotation": [
+				-0.3781251384882622,
+				0,
+				0
+			],
+			"scale": [
+				0,
+				0,
+				0
+			]
+		},
+		"387f51b495bf42d4a40356a4e5582c89": {
+			"position": [
+				0,
+				1.1170328153628555,
+				-0.34460400801526225
+			]
+		},
+		"45986a74b9e84499a5a9b506dfc686bd": {
+			"layerClipA": "ab690bdc255a4d4aab977d08c828c5cf",
+			"layerClipB": "437fc7538cdf44c18ffebb88db0a97d5"
+		},
+		"52148d8eafe3426085e700e049662c07": {
 		},
 		"6ef7d30d3e044b6f806dac36e63a857d": {
 		},
@@ -301,9 +496,9 @@
 		},
 		"77a68218309245289c411d5da417fab9": {
 			"position": [
-				0.2071166689187388,
+				-0.0528818553195346,
 				0.19534313787252522,
-				-1.2945843345288786
+				-0.39003114239461895
 			],
 			"scale": [
 				0.2,
@@ -325,15 +520,6 @@
 				0
 			]
 		},
-		"8602fb46317c411d85f2649e8162aff6": {
-			"color": [
-				0.7215686274509804,
-				0.054901960784313725,
-				0.8823529411764706
-			],
-			"metalness": 0.364955357142857,
-			"roughness": 0.492606026785714
-		},
 		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
 			"position": [
 				-0.3,
@@ -347,6 +533,8 @@
 				1.3,
 				0
 			]
+		},
+		"982c78ba948641e2a64e732eda46c9d5": {
 		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
 		},
@@ -365,29 +553,23 @@
 		},
 		"d00105d4f4dc4897b014577ba2fae6fd": {
 		},
-		"eabdc277461d400b9b7c14eec8769f1e": {
+		"d3f139b63edc466b9bbd5405a72bcbbb": {
 			"position": [
 				0,
-				0.9241960556842486,
-				-1.7368616342448604
-			],
-			"text": "Start"
-		},
-		"f3937ace1ef5478c9221e2cfc2453503": {
-		},
-		"f6371bf08200415f82989d46101107a8": {
-			"position": [
-				-0.2368504152207141,
-				0.29912672540503465,
-				-1.5531646141650288
+				1.45962618789529,
+				-0.483754535873933
 			],
 			"scale": [
-				0.2,
-				0.2,
-				0.2
+				0,
+				0,
+				0
 			]
 		},
 		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
+		},
+		"fb75a4e03a5144dea0ba761dfa5608d1": {
+			"layerClipA": "71688543b4a3455abc5ede8416678427",
+			"layerClipB": "16530773cde34efba0b78c3737c3a596"
 		}
 	},
 	"id": "5d4513e843574c04847bf1474912090f",
@@ -401,16 +583,6 @@
 			},
 			"scriptName": "DefaultCookieConsent",
 			"type": "@zcomponent/core/lib/components/DefaultCookieConsent#DefaultCookieConsent"
-		},
-		"194aae695cba4b60a35c287f3e37fbcf": {
-			"id": "194aae695cba4b60a35c287f3e37fbcf",
-			"label": "Box",
-			"parent": {
-				"id": "6ef7d30d3e044b6f806dac36e63a857d",
-				"order": "a0"
-			},
-			"scriptName": "Box",
-			"type": "@zcomponent/three/lib/components/meshes/Box#Box"
 		},
 		"1aeb29f67f3a43ca9e13e92f7a8c48b9": {
 			"id": "1aeb29f67f3a43ca9e13e92f7a8c48b9",
@@ -432,6 +604,26 @@
 			"scriptName": "XRRigVRPassthrough",
 			"type": "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough#XRRigVRPassthrough"
 		},
+		"3518cf72754a4a8ca574d019ce109a87": {
+			"id": "3518cf72754a4a8ca574d019ce109a87",
+			"label": "VoiceChatbox",
+			"parent": {
+				"id": "747969f055334066832fae3254d8bec5",
+				"order": "a2"
+			},
+			"scriptName": "VoiceChatbox",
+			"type": "./Components/UI/VocieChatbox/VoiceChatbox.zcomp#default"
+		},
+		"387f51b495bf42d4a40356a4e5582c89": {
+			"id": "387f51b495bf42d4a40356a4e5582c89",
+			"label": "DockBarMenu",
+			"parent": {
+				"id": "747969f055334066832fae3254d8bec5",
+				"order": "a1"
+			},
+			"scriptName": "DockBarMenu",
+			"type": "./Components/UI/DockBar/DockBarMenu.zcomp#default"
+		},
 		"52148d8eafe3426085e700e049662c07": {
 			"id": "52148d8eafe3426085e700e049662c07",
 			"label": "DefaultLoader",
@@ -441,16 +633,6 @@
 			},
 			"scriptName": "DefaultLoader",
 			"type": "@zcomponent/core/lib/components/DefaultLoader#DefaultLoader"
-		},
-		"547097f646a54d39aa1706d0ba7c7ef8": {
-			"id": "547097f646a54d39aa1706d0ba7c7ef8",
-			"label": "MeshStandardMaterial",
-			"parent": {
-				"id": "194aae695cba4b60a35c287f3e37fbcf",
-				"order": "a0"
-			},
-			"scriptName": "MeshStandardMaterial",
-			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
 		},
 		"6ef7d30d3e044b6f806dac36e63a857d": {
 			"id": "6ef7d30d3e044b6f806dac36e63a857d",
@@ -522,16 +704,6 @@
 			"scriptName": "DirectionalLight",
 			"type": "@zcomponent/three/lib/components/lights/DirectionalLight#DirectionalLight"
 		},
-		"8602fb46317c411d85f2649e8162aff6": {
-			"id": "8602fb46317c411d85f2649e8162aff6",
-			"label": "MeshStandardMaterial  3",
-			"parent": {
-				"id": "f6371bf08200415f82989d46101107a8",
-				"order": "a1"
-			},
-			"scriptName": "MeshStandardMaterial_2",
-			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
-		},
 		"8b5eb2e54e94493a9dfe311ba1f0d0ab": {
 			"id": "8b5eb2e54e94493a9dfe311ba1f0d0ab",
 			"label": "Left Controller",
@@ -551,6 +723,16 @@
 			},
 			"scriptName": "Right_Controller",
 			"type": "@zcomponent/three-webxr/lib/components/XRController#XRController"
+		},
+		"982c78ba948641e2a64e732eda46c9d5": {
+			"id": "982c78ba948641e2a64e732eda46c9d5",
+			"label": "ContextSetup",
+			"parent": {
+				"id": "root",
+				"order": "a5"
+			},
+			"scriptName": "ContextSetup",
+			"type": "./State/utils/ContextSetup#ContextSetup"
 		},
 		"a57f5d58e38e4a0b918dcf605ea12736": {
 			"id": "a57f5d58e38e4a0b918dcf605ea12736",
@@ -603,35 +785,15 @@
 			"scriptName": "XR_Manager",
 			"type": "@zcomponent/three-webxr/lib/components/XRManager#XRManager"
 		},
-		"eabdc277461d400b9b7c14eec8769f1e": {
-			"id": "eabdc277461d400b9b7c14eec8769f1e",
-			"label": "Button",
+		"d3f139b63edc466b9bbd5405a72bcbbb": {
+			"id": "d3f139b63edc466b9bbd5405a72bcbbb",
+			"label": "CalendarMenu",
 			"parent": {
 				"id": "747969f055334066832fae3254d8bec5",
 				"order": "a0"
 			},
-			"scriptName": "Button",
-			"type": "./Button/Button.zcomp#default"
-		},
-		"f3937ace1ef5478c9221e2cfc2453503": {
-			"id": "f3937ace1ef5478c9221e2cfc2453503",
-			"label": "ConeGeometry",
-			"parent": {
-				"id": "f6371bf08200415f82989d46101107a8",
-				"order": "a0"
-			},
-			"scriptName": "ConeGeometry",
-			"type": "@zcomponent/three/lib/components/geometries/ConeGeometry#ConeGeometry"
-		},
-		"f6371bf08200415f82989d46101107a8": {
-			"id": "f6371bf08200415f82989d46101107a8",
-			"label": "Cone",
-			"parent": {
-				"id": "6ef7d30d3e044b6f806dac36e63a857d",
-				"order": "a2"
-			},
-			"scriptName": "Cone",
-			"type": "@zcomponent/three/lib/components/meshes/Mesh#Mesh"
+			"scriptName": "CalendarMenu",
+			"type": "./Components/UI/Calendar/CalendarMenu.zcomp#default"
 		},
 		"f82f3ce18b9e4f6985431ebf8ee9f60d": {
 			"id": "f82f3ce18b9e4f6985431ebf8ee9f60d",

@@ -1,5 +1,25 @@
 {
 	"behaviors": {
+		"2d7989cc520c4edf8df48b43bd479ec4": {
+			"id": "2d7989cc520c4edf8df48b43bd479ec4",
+			"label": "EmitComponentPropEvent",
+			"parent": {
+				"id": "dd2648e5414e4cf1a942e80f9691d935",
+				"order": "a0",
+				"scriptName": "EmitComponentPropEvent"
+			},
+			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+		},
+		"b62f5a3267744ad78211888d1d8cabcf": {
+			"id": "b62f5a3267744ad78211888d1d8cabcf",
+			"label": "EmitComponentPropEvent",
+			"parent": {
+				"id": "aad084934f1d47478f4b59a7a2122df7",
+				"order": "a0",
+				"scriptName": "EmitComponentPropEvent"
+			},
+			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+		}
 	},
 	"behaviorsByNode": {
 	},
@@ -18,8 +38,11 @@
 		"Dock 2": {
 			"17d7750e935f43b7a4884c8c14b6ab09": true
 		},
-		"ShareButton": {
-			"ad0aa64a9763456889f1c14faeef3ff4": true
+		"EnvironmentButton": {
+			"f4dcaff6558f4e369ebce26c2474dd40": true
+		},
+		"ShareButton 2": {
+			"38b0e023dd144dd7897d00025a8f07f7": true
 		},
 		"UserAccount": {
 			"a3f9996c65974edaafbe1552ac410968": true
@@ -38,8 +61,11 @@
 		"Dock_2": {
 			"17d7750e935f43b7a4884c8c14b6ab09": true
 		},
-		"ShareButton": {
-			"ad0aa64a9763456889f1c14faeef3ff4": true
+		"EnvironmentButton": {
+			"f4dcaff6558f4e369ebce26c2474dd40": true
+		},
+		"ShareButton0": {
+			"38b0e023dd144dd7897d00025a8f07f7": true
 		},
 		"UserAccount": {
 			"a3f9996c65974edaafbe1552ac410968": true
@@ -48,15 +74,23 @@
 	"entityConstructorProps": {
 		"17d7750e935f43b7a4884c8c14b6ab09": {
 		},
+		"2d7989cc520c4edf8df48b43bd479ec4": {
+			"event": "_OnButtonPressed"
+		},
+		"38b0e023dd144dd7897d00025a8f07f7": {
+		},
 		"a3f9996c65974edaafbe1552ac410968": {
 		},
 		"a9f103b33d1a442e81dfcac32aa22af2": {
 		},
 		"aad084934f1d47478f4b59a7a2122df7": {
 		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
+		"b62f5a3267744ad78211888d1d8cabcf": {
+			"event": "onButtonPressed"
 		},
 		"dd2648e5414e4cf1a942e80f9691d935": {
+		},
+		"f4dcaff6558f4e369ebce26c2474dd40": {
 		}
 	},
 	"entityPropOverrides": {
@@ -118,6 +152,23 @@
 				1.9239850362821809
 			]
 		},
+		"2d7989cc520c4edf8df48b43bd479ec4": {
+			"eventToEmit": {
+				"_zfn": true,
+				"args": {
+				},
+				"prop": "OnCreateButtonPressed",
+				"t": "emitcomponentevent"
+			}
+		},
+		"38b0e023dd144dd7897d00025a8f07f7": {
+			"icon_text": "share",
+			"position": [
+				1.7267595095894288,
+				0,
+				0
+			]
+		},
 		"a3f9996c65974edaafbe1552ac410968": {
 			"icon_text": "user",
 			"position": [
@@ -141,13 +192,14 @@
 				0
 			]
 		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
-			"icon_text": "share",
-			"position": [
-				1.7267595095894288,
-				0,
-				0
-			]
+		"b62f5a3267744ad78211888d1d8cabcf": {
+			"eventToEmit": {
+				"_zfn": true,
+				"args": {
+				},
+				"prop": "onCalendarPressed",
+				"t": "emitcomponentevent"
+			}
 		},
 		"dd2648e5414e4cf1a942e80f9691d935": {
 			"icon_text": "create",
@@ -158,6 +210,13 @@
 			],
 			"rotation": [
 				0,
+				0,
+				0
+			]
+		},
+		"f4dcaff6558f4e369ebce26c2474dd40": {
+			"position": [
+				0.3767827543072688,
 				0,
 				0
 			]
@@ -174,6 +233,16 @@
 			},
 			"scriptName": "Dock_2",
 			"type": "./Dock.zcomp#default"
+		},
+		"38b0e023dd144dd7897d00025a8f07f7": {
+			"id": "38b0e023dd144dd7897d00025a8f07f7",
+			"label": "ShareButton 2",
+			"parent": {
+				"id": "a9f103b33d1a442e81dfcac32aa22af2",
+				"order": "ZzV"
+			},
+			"scriptName": "ShareButton0",
+			"type": "./ShareButton.zcomp#default"
 		},
 		"a3f9996c65974edaafbe1552ac410968": {
 			"id": "a3f9996c65974edaafbe1552ac410968",
@@ -205,16 +274,6 @@
 			"scriptName": "CalendarButton",
 			"type": "./CalendarButton.zcomp#default"
 		},
-		"ad0aa64a9763456889f1c14faeef3ff4": {
-			"id": "ad0aa64a9763456889f1c14faeef3ff4",
-			"label": "ShareButton",
-			"parent": {
-				"id": "a9f103b33d1a442e81dfcac32aa22af2",
-				"order": "Zz"
-			},
-			"scriptName": "ShareButton",
-			"type": "./ShareButton.zcomp#default"
-		},
 		"dd2648e5414e4cf1a942e80f9691d935": {
 			"id": "dd2648e5414e4cf1a942e80f9691d935",
 			"label": "CreateButton",
@@ -225,6 +284,16 @@
 			"scriptName": "CreateButton",
 			"type": "./CreateButton.zcomp#default"
 		},
+		"f4dcaff6558f4e369ebce26c2474dd40": {
+			"id": "f4dcaff6558f4e369ebce26c2474dd40",
+			"label": "EnvironmentButton",
+			"parent": {
+				"id": "root",
+				"order": "a4"
+			},
+			"scriptName": "EnvironmentButton",
+			"type": "../Button/EnvironmentButton.zcomp#default"
+		},
 		"root": {
 			"id": "root",
 			"type": "@zcomponent/three/lib/components/Group#Group"
@@ -232,6 +301,26 @@
 	},
 	"preview": "@zcomponent/three/lib/preview#default",
 	"props": {
+		"OnCreateButtonPressed": {
+			"name": "OnCreateButtonPressed",
+			"order": 0,
+			"type": {
+				"children": [
+				],
+				"isObservable": true,
+				"name": "event"
+			}
+		},
+		"onCalendarPressed": {
+			"name": "onCalendarPressed",
+			"order": 0,
+			"type": {
+				"children": [
+				],
+				"isObservable": true,
+				"name": "event"
+			}
+		},
 		"position": {
 			"comments": [
 				"The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position."

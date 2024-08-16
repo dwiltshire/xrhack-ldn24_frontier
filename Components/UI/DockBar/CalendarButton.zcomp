@@ -1,5 +1,15 @@
 {
 	"behaviors": {
+		"b981f2c2f65c42e9a63f2dd2c6e1bfa0": {
+			"id": "b981f2c2f65c42e9a63f2dd2c6e1bfa0",
+			"label": "EmitComponentPropEvent",
+			"parent": {
+				"id": "cc847accf57f43e2a1a8811951f28f09",
+				"order": "a0",
+				"scriptName": "EmitComponentPropEvent"
+			},
+			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+		}
 	},
 	"behaviorsByNode": {
 	},
@@ -23,6 +33,9 @@
 	},
 	"entityConstructorProps": {
 		"9d03203d4bb440e4b7d8ca45522b5473": {
+		},
+		"b981f2c2f65c42e9a63f2dd2c6e1bfa0": {
+			"event": "onClick"
 		},
 		"cc847accf57f43e2a1a8811951f28f09": {
 			"source": "file://./Resources/calendar_icon.png"
@@ -100,6 +113,15 @@
 				1.4712657157113116
 			]
 		},
+		"b981f2c2f65c42e9a63f2dd2c6e1bfa0": {
+			"eventToEmit": {
+				"_zfn": true,
+				"args": {
+				},
+				"prop": "onButtonPressed",
+				"t": "emitcomponentevent"
+			}
+		},
 		"cc847accf57f43e2a1a8811951f28f09": {
 		}
 	},
@@ -139,6 +161,16 @@
 			"type": {
 				"isObservable": true,
 				"name": "string"
+			}
+		},
+		"onButtonPressed": {
+			"name": "onButtonPressed",
+			"order": 0,
+			"type": {
+				"children": [
+				],
+				"isObservable": true,
+				"name": "event"
 			}
 		},
 		"position": {

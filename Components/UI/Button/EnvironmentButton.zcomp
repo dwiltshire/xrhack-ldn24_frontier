@@ -1,5 +1,15 @@
 {
 	"behaviors": {
+		"9c8cdcfa0fba4183bed291623f7f7544": {
+			"id": "9c8cdcfa0fba4183bed291623f7f7544",
+			"label": "EmitComponentPropEvent",
+			"parent": {
+				"id": "fa57de8301bb4c448980180e6e8157ef",
+				"order": "a0",
+				"scriptName": "EmitComponentPropEvent"
+			},
+			"type": "@zcomponent/core/lib/behaviors/EmitComponentPropEvent#EmitComponentPropEvent"
+		}
 	},
 	"behaviorsByNode": {
 	},
@@ -7,39 +17,23 @@
 	},
 	"entitiesByLabel": {
 		"Image": {
-			"b8677cba7c4142de9aeae93d0aa99d67": true
-		},
-		"Text": {
-			"9d03203d4bb440e4b7d8ca45522b5473": true
+			"fa57de8301bb4c448980180e6e8157ef": true
 		}
 	},
 	"entitiesByScriptName": {
 		"Image": {
-			"b8677cba7c4142de9aeae93d0aa99d67": true
-		},
-		"Text": {
-			"9d03203d4bb440e4b7d8ca45522b5473": true
+			"fa57de8301bb4c448980180e6e8157ef": true
 		}
 	},
 	"entityConstructorProps": {
-		"9d03203d4bb440e4b7d8ca45522b5473": {
+		"9c8cdcfa0fba4183bed291623f7f7544": {
+			"event": "onClick"
 		},
-		"b8677cba7c4142de9aeae93d0aa99d67": {
-			"source": "file://./Resources/create_button.png"
+		"fa57de8301bb4c448980180e6e8157ef": {
+			"source": "file://./Resources/turn_360_button.png"
 		}
 	},
 	"entityPropOverrides": {
-		"componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text": {
-			"entityID": "9d03203d4bb440e4b7d8ca45522b5473",
-			"entityPropIsConstructor": false,
-			"entityPropPath": [
-				"text"
-			],
-			"id": "componentprop:prop:9d03203d4bb440e4b7d8ca45522b5473:text",
-			"isConstructorProp": false,
-			"propName": "icon_text",
-			"type": "componentprop"
-		},
 		"componentprop:prop:root:position": {
 			"entityID": "root",
 			"entityPropIsConstructor": false,
@@ -86,42 +80,27 @@
 		}
 	},
 	"entityProps": {
-		"9d03203d4bb440e4b7d8ca45522b5473": {
-			"anchorX": "center",
-			"doubleSide": true,
-			"position": [
-				0,
-				-0.5658024197626985,
-				0
-			],
-			"scale": [
-				1.4712657157113116,
-				1.4712657157113116,
-				1.4712657157113116
-			]
+		"9c8cdcfa0fba4183bed291623f7f7544": {
+			"eventToEmit": {
+				"_zfn": true,
+				"args": {
+				},
+				"prop": "_On360ButtonPressed",
+				"t": "emitcomponentevent"
+			}
 		},
-		"b8677cba7c4142de9aeae93d0aa99d67": {
-			"rotation": [
-				0,
-				0,
-				0
+		"fa57de8301bb4c448980180e6e8157ef": {
+			"scale": [
+				0.1,
+				0.1,
+				0.1
 			]
 		}
 	},
-	"id": "b9923228ad854b68bab8241345b3d28a",
+	"id": "e1e4d2b6775848e5b54706359777b50f",
 	"nodes": {
-		"9d03203d4bb440e4b7d8ca45522b5473": {
-			"id": "9d03203d4bb440e4b7d8ca45522b5473",
-			"label": "Text",
-			"parent": {
-				"id": "b8677cba7c4142de9aeae93d0aa99d67",
-				"order": "a0"
-			},
-			"scriptName": "Text",
-			"type": "@zcomponent/three/lib/components/text/Text#Text"
-		},
-		"b8677cba7c4142de9aeae93d0aa99d67": {
-			"id": "b8677cba7c4142de9aeae93d0aa99d67",
+		"fa57de8301bb4c448980180e6e8157ef": {
+			"id": "fa57de8301bb4c448980180e6e8157ef",
 			"label": "Image",
 			"parent": {
 				"id": "root",
@@ -137,23 +116,14 @@
 	},
 	"preview": "@zcomponent/three/lib/preview#default",
 	"props": {
-		"_OnCreateButtonPressed": {
-			"name": "_OnCreateButtonPressed",
+		"_On360ButtonPressed": {
+			"name": "_On360ButtonPressed",
 			"order": 0,
 			"type": {
 				"children": [
 				],
 				"isObservable": true,
 				"name": "event"
-			}
-		},
-		"icon_text": {
-			"default": "icon_text",
-			"name": "icon_text",
-			"order": 0,
-			"type": {
-				"isObservable": true,
-				"name": "string"
 			}
 		},
 		"position": {

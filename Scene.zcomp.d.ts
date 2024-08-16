@@ -1,24 +1,25 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
-import { Box as Box_0 } from "@zcomponent/three/lib/components/meshes/Box";
-import { Mesh as Mesh_1 } from "@zcomponent/three/lib/components/meshes/Mesh";
-import { ConeGeometry as ConeGeometry_2 } from "@zcomponent/three/lib/components/geometries/ConeGeometry";
-import { Group as Group_3 } from "@zcomponent/three/lib/components/Group";
-import { DefaultCookieConsent as DefaultCookieConsent_4 } from "@zcomponent/core/lib/components/DefaultCookieConsent";
-import { DefaultEnvironment as DefaultEnvironment_5 } from "@zcomponent/three/lib/components/environments/DefaultEnvironment";
-import { DefaultLoader as DefaultLoader_6 } from "@zcomponent/core/lib/components/DefaultLoader";
-import { DirectionalLight as DirectionalLight_7 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
-import { XRController as XRController_8 } from "@zcomponent/three-webxr/lib/components/XRController";
-import { MeshStandardMaterial as MeshStandardMaterial_9 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
-import { ShadowPlane as ShadowPlane_10 } from "@zcomponent/three/lib/components/meshes/ShadowPlane";
-import { Sphere as Sphere_11 } from "@zcomponent/three/lib/components/meshes/Sphere";
-import { TeleportManager as TeleportManager_12 } from "@zcomponent/three-webxr/lib/components/TeleportManager";
-import { TurnManager as TurnManager_13 } from "@zcomponent/three-webxr/lib/components/TurnManager";
-import { XRRigVRPassthrough as XRRigVRPassthrough_14 } from "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough";
-import { XRCamera as XRCamera_15 } from "@zcomponent/three-webxr/lib/components/XRCamera";
-import { XRDefaultLoader as XRDefaultLoader_16 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
-import { XRManager as XRManager_17 } from "@zcomponent/three-webxr/lib/components/XRManager";
-import { default as Button_zcomp_18 } from "./Button/Button.zcomp";
+import { Group as Group_0 } from "@zcomponent/three/lib/components/Group";
+import { DefaultCookieConsent as DefaultCookieConsent_1 } from "@zcomponent/core/lib/components/DefaultCookieConsent";
+import { DefaultEnvironment as DefaultEnvironment_2 } from "@zcomponent/three/lib/components/environments/DefaultEnvironment";
+import { DefaultLoader as DefaultLoader_3 } from "@zcomponent/core/lib/components/DefaultLoader";
+import { DirectionalLight as DirectionalLight_4 } from "@zcomponent/three/lib/components/lights/DirectionalLight";
+import { XRController as XRController_5 } from "@zcomponent/three-webxr/lib/components/XRController";
+import { ShadowPlane as ShadowPlane_6 } from "@zcomponent/three/lib/components/meshes/ShadowPlane";
+import { TeleportManager as TeleportManager_7 } from "@zcomponent/three-webxr/lib/components/TeleportManager";
+import { TurnManager as TurnManager_8 } from "@zcomponent/three-webxr/lib/components/TurnManager";
+import { XRRigVRPassthrough as XRRigVRPassthrough_9 } from "@zcomponent/three-webxr/lib/components/XRRigVRPassthrough";
+import { XRCamera as XRCamera_10 } from "@zcomponent/three-webxr/lib/components/XRCamera";
+import { XRDefaultLoader as XRDefaultLoader_11 } from "@zcomponent/three-webxr/lib/components/XRDefaultLoader";
+import { XRManager as XRManager_12 } from "@zcomponent/three-webxr/lib/components/XRManager";
+import { MeshStandardMaterial as MeshStandardMaterial_13 } from "@zcomponent/three/lib/components/materials/MeshStandardMaterial";
+import { Sphere as Sphere_14 } from "@zcomponent/three/lib/components/meshes/Sphere";
+import { default as CalendarMenu_zcomp_15 } from "./Components/UI/Calendar/CalendarMenu.zcomp";
+import { default as VoiceChatbox_zcomp_16 } from "./Components/UI/VocieChatbox/VoiceChatbox.zcomp";
+import { default as DockBarMenu_zcomp_17 } from "./Components/UI/DockBar/DockBarMenu.zcomp";
+import { ToggleLayerClips as ToggleLayerClips_18 } from "@zcomponent/core/lib/behaviors/ToggleLayerClips";
+import { ContextSetup as ContextSetup_19 } from "./State/utils/ContextSetup";
 
 interface ConstructorProps {
 
@@ -33,127 +34,120 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
-		Box: Box_0 & {
+		Content_Group: Group_0 & {
 			behaviors: {
 
 			}
 		},
-		Cone: Mesh_1 & {
+		DefaultCookieConsent: DefaultCookieConsent_1 & {
 			behaviors: {
 
 			}
 		},
-		ConeGeometry: ConeGeometry_2 & {
+		DefaultEnvironment: DefaultEnvironment_2 & {
 			behaviors: {
 
 			}
 		},
-		Content_Group: Group_3 & {
+		DefaultLoader: DefaultLoader_3 & {
 			behaviors: {
 
 			}
 		},
-		DefaultCookieConsent: DefaultCookieConsent_4 & {
+		Defaults: Group_0 & {
 			behaviors: {
 
 			}
 		},
-		DefaultEnvironment: DefaultEnvironment_5 & {
+		DirectionalLight: DirectionalLight_4 & {
 			behaviors: {
 
 			}
 		},
-		DefaultLoader: DefaultLoader_6 & {
+		Left_Controller: XRController_5 & {
 			behaviors: {
 
 			}
 		},
-		Defaults: Group_3 & {
+		Right_Controller: XRController_5 & {
 			behaviors: {
 
 			}
 		},
-		DirectionalLight: DirectionalLight_7 & {
+		ShadowPlane: ShadowPlane_6 & {
 			behaviors: {
 
 			}
 		},
-		Left_Controller: XRController_8 & {
+		Teleport_Manager: TeleportManager_7 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial: MeshStandardMaterial_9 & {
+		Turn_Manager: TurnManager_8 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial0: MeshStandardMaterial_9 & {
+		UI: Group_0 & {
 			behaviors: {
 
 			}
 		},
-		MeshStandardMaterial_2: MeshStandardMaterial_9 & {
+		XRRigVRPassthrough: XRRigVRPassthrough_9 & {
 			behaviors: {
 
 			}
 		},
-		Mesh_GroupDeleteMe0: Group_3 & {
+		XR_Camera: XRCamera_10 & {
 			behaviors: {
 
 			}
 		},
-		Right_Controller: XRController_8 & {
+		XR_DefaultLoader: XRDefaultLoader_11 & {
 			behaviors: {
 
 			}
 		},
-		ShadowPlane: ShadowPlane_10 & {
+		XR_Manager: XRManager_12 & {
 			behaviors: {
 
 			}
 		},
-		Sphere: Sphere_11 & {
+		MeshStandardMaterial0: MeshStandardMaterial_13 & {
 			behaviors: {
 
 			}
 		},
-		Teleport_Manager: TeleportManager_12 & {
+		Mesh_GroupDeleteMe0: Group_0 & {
 			behaviors: {
 
 			}
 		},
-		Turn_Manager: TurnManager_13 & {
+		Sphere: Sphere_14 & {
 			behaviors: {
 
 			}
 		},
-		XRRigVRPassthrough: XRRigVRPassthrough_14 & {
+		CalendarMenu: CalendarMenu_zcomp_15 & {
 			behaviors: {
 
 			}
 		},
-		XR_Camera: XRCamera_15 & {
+		VoiceChatbox: VoiceChatbox_zcomp_16 & {
 			behaviors: {
 
 			}
 		},
-		XR_DefaultLoader: XRDefaultLoader_16 & {
+		DockBarMenu: DockBarMenu_zcomp_17 & {
 			behaviors: {
-
+				0: ToggleLayerClips_18,
+				ToggleLayerClips: ToggleLayerClips_18,
+				1: ToggleLayerClips_18,
+				ToggleLayerClips0: ToggleLayerClips_18,
 			}
 		},
-		XR_Manager: XRManager_17 & {
-			behaviors: {
-
-			}
-		},
-		UI: Group_3 & {
-			behaviors: {
-
-			}
-		},
-		Button: Button_zcomp_18 & {
+		ContextSetup: ContextSetup_19 & {
 			behaviors: {
 
 			}
@@ -161,7 +155,14 @@ declare class Comp extends ZComponent {
 	};
 
 	animation: Animation & { layers: {
-
+		OpenCalendar: Layer & { clips: {
+			CloseCalendar0: LayerClip;
+			OpenCalendar0: LayerClip;
+		}};
+		OpenChatbox: Layer & { clips: {
+			OpenChatbox0: LayerClip;
+			CloseChatbox0: LayerClip;
+		}};
 	}};
 
 	/**

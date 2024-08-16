@@ -1,13 +1,7 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
-import { default as CalendarButton_zcomp_0 } from "./CalendarButton.zcomp";
+import { Image as Image_0 } from "@zcomponent/three/lib/components/Image";
 import { EmitComponentPropEvent as EmitComponentPropEvent_1 } from "@zcomponent/core/lib/behaviors/EmitComponentPropEvent";
-import { default as CreateButton_zcomp_2 } from "./CreateButton.zcomp";
-import { Group as Group_3 } from "@zcomponent/three/lib/components/Group";
-import { default as Dock_zcomp_4 } from "./Dock.zcomp";
-import { default as UserAccount_zcomp_5 } from "./UserAccount.zcomp";
-import { default as ShareButton_zcomp_6 } from "./ShareButton.zcomp";
-import { default as EnvironmentButton_zcomp_7 } from "../Button/EnvironmentButton.zcomp";
 
 interface ConstructorProps {
 
@@ -22,41 +16,10 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
-		CalendarButton: CalendarButton_zcomp_0 & {
+		Image: Image_0 & {
 			behaviors: {
 				0: EmitComponentPropEvent_1,
 				EmitComponentPropEvent: EmitComponentPropEvent_1,
-			}
-		},
-		CreateButton: CreateButton_zcomp_2 & {
-			behaviors: {
-				0: EmitComponentPropEvent_1,
-				EmitComponentPropEvent: EmitComponentPropEvent_1,
-			}
-		},
-		Dock: Group_3 & {
-			behaviors: {
-
-			}
-		},
-		Dock_2: Dock_zcomp_4 & {
-			behaviors: {
-
-			}
-		},
-		UserAccount: UserAccount_zcomp_5 & {
-			behaviors: {
-
-			}
-		},
-		ShareButton0: ShareButton_zcomp_6 & {
-			behaviors: {
-
-			}
-		},
-		EnvironmentButton: EnvironmentButton_zcomp_7 & {
-			behaviors: {
-
 			}
 		},
 	};
@@ -64,6 +27,16 @@ declare class Comp extends ZComponent {
 	animation: Animation & { layers: {
 
 	}};
+
+	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
+	 * @zprop
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
+	 */
+	public visible: Observable<boolean>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -96,24 +69,9 @@ declare class Comp extends ZComponent {
 	public scale: Observable<[x: number, y: number, z: number]>;
 
 	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
-	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
-	 */
-	public visible: Observable<boolean>;
-
-	/**
 	 * @zprop
 	 */
-	public onCalendarPressed: Event<[]>;
-
-	/**
-	 * @zprop
-	 */
-	public OnCreateButtonPressed: Event<[]>;
+	public _On360ButtonPressed: Event<[]>;
 }
 
 export default Comp;
