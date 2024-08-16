@@ -160,7 +160,7 @@ export class EmotionAnalyzer extends Behavior<Group> {
         for (const group in EMOTION_GROUPS) {
             let component = EmotionToComponentMap[group] as EmotionMeshComponent;  
 
-            const opacity = cumulativeSums[group] / (10.0);
+            const opacity = cumulativeSums[group] / (15.0);
 
             component.opacity += opacity;
             component.element.scale.addScalar(opacity);
