@@ -172,7 +172,7 @@
 		"38b0e023dd144dd7897d00025a8f07f7": {
 			"icon_text": "share",
 			"position": [
-				0.6433081126464288,
+				0.5509395087630856,
 				0,
 				0
 			],
@@ -240,11 +240,13 @@
 			"visible": false
 		},
 		"f4dcaff6558f4e369ebce26c2474dd40": {
+			"icon_text": "environment",
 			"position": [
-				0.20381103118798266,
+				0.18130002458494787,
 				0,
 				0.0015781978009304712
-			]
+			],
+			"visible": true
 		},
 		"fc24ebcaff484b99a3cd1ca40df752e6": {
 			"position": [
