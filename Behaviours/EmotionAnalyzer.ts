@@ -84,6 +84,9 @@ export class EmotionAnalyzer extends Behavior<Group> {
 	updateEmotionScoresAndBoxHeights(value) {
         // Generate mock data and update the emotion scores
         // const mockData = generateMock();
+        if (!value) {
+            return;
+        }
         const emotionScores = value; // mockData.models.prosody.scores;
 
         // Step 1: Convert the object into an array of key-value pairs
