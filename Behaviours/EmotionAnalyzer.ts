@@ -135,6 +135,17 @@ export class EmotionAnalyzer extends Behavior<Group> {
             Joy: this.zcomponent.nodes.EmotionJoy
         }
 
+        const EmotionToLabelMap = {
+            Anger: this.zcomponent.nodes.AngerLabel,
+            Fear: this.zcomponent.nodes.FearLabel,
+            Amusement: this.zcomponent.nodes.AmusementLabel,
+            Love: this.zcomponent.nodes.LoveLabel,
+            Surprise: this.zcomponent.nodes.SurpriseLabel,
+            Sadness: this.zcomponent.nodes.SadnessLabel,
+            Interest: this.zcomponent.nodes.InterestLabel,
+            Joy: this.zcomponent.nodes.JoyLabel
+        }
+
         for (const group in EMOTION_GROUPS) {
             let component = EmotionToComponentMap[group] as EmotionMeshComponent;  
 
