@@ -241,6 +241,86 @@ declare class Comp extends ZComponent {
 
 			}
 		},
+		MeshStandardMaterial_30: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_20: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_40: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_80: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial0: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_50: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_70: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		MeshStandardMaterial_60: MeshStandardMaterial_12 & {
+			behaviors: {
+
+			}
+		},
+		AmusementLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		AngerLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		SadnessLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		SurpriseLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		FearLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		LoveLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		InterestLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
+		JoyLabel: ExtrudedText_10 & {
+			behaviors: {
+
+			}
+		},
 	};
 
 	animation: Animation & { layers: {

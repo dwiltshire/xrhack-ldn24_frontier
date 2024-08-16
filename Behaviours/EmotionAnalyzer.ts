@@ -74,34 +74,44 @@ export class EmotionAnalyzer extends Behavior<Group> {
 
         this.audioContext = this.contextManager.get(AudioAnalysisContext);
         
-        console.log("MY BEHAVIOUR");
-
-        if (this.intervalId === null) {
-            this.intervalId = window.setInterval(() => {
-
-                console.log("TIMER");
-
-                this.updateEmotionScoresAndBoxHeights();
-                this.updateRandomWord();  // Fetch and update the random word every 5 seconds
-            }, 1000); // 1 second interval
-        }
+        // console.log("MY BEHAVIOUR");
+        
+        this.audioContext.lastSentiment.addListener((value) => {
+            this.updateEmotionScoresAndBoxHeights(value);
+        });
 	}
 
-	updateEmotionScoresAndBoxHeights() {
+	updateEmotionScoresAndBoxHeights(value) {
         // Generate mock data and update the emotion scores
-        const mockData = generateMock();
-        const emotionScores = this.audioContext.lastSentiment.value; // mockData.models.prosody.scores;
+        // const mockData = generateMock();
+        const emotionScores = value; // mockData.models.prosody.scores;
 
-        console.log(emotionScores);
+        // Step 1: Convert the object into an array of key-value pairs
+        // const entries = Object.entries(emotionScores);
+
+        // Step 2: Sort the array by the values
+        // const sortedEntries = entries.sort(([,a], [,b]) => b - a);
+
+        // Step 3: Convert the sorted array back into an object
+        // const sortedEmotions = Object.fromEntries(sortedEntries);
+
+        // console.log(emotionScores);
 
         // Calculate the sum of emotion scores for each group and add to cumulative sums
         for (const group in EMOTION_GROUPS) {
             if (EMOTION_GROUPS.hasOwnProperty(group) && emotionScores) {
-                let roundSum = 0;
-                EMOTION_GROUPS[group].forEach(emotion => {
-                    roundSum += emotionScores[emotion] || 0;
-                });
-                cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
+                // let roundSum = 0;
+
+                let roundSum = emotionScores[group];
+
+                cumulativeSums[group] = roundSum;
+
+                // EMOTION_GROUPS[group].forEach(emotion => {
+                //     roundSum += emotionScores[emotion] || 0;
+                // });
+                // cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
+
+                console.log('Group: ', group, '. Emotions group sum: ', roundSum);
 
                 // scoresText += `<strong>${group}:</strong><br>`;
                 // EMOTION_GROUPS[group].forEach(emotion => {
@@ -110,7 +120,7 @@ export class EmotionAnalyzer extends Behavior<Group> {
             }
         }
 
-        console.log('CHIILLLLDDREEN', this.zcomponent.nodes.Content_Group.children.length);
+        // console.log('CHIILLLLDDREEN', this.zcomponent.nodes.Content_Group.children.length);
 
         // var nodes = this.zcomponent.nodes.Content_Group.children;
 
@@ -125,13 +135,25 @@ export class EmotionAnalyzer extends Behavior<Group> {
             Joy: this.zcomponent.nodes.EmotionJoy
         }
 
+        const EmotionToLabelMap = {
+            Anger: this.zcomponent.nodes.AngerLabel,
+            Fear: this.zcomponent.nodes.FearLabel,
+            Amusement: this.zcomponent.nodes.AmusementLabel,
+            Love: this.zcomponent.nodes.LoveLabel,
+            Surprise: this.zcomponent.nodes.SurpriseLabel,
+            Sadness: this.zcomponent.nodes.SadnessLabel,
+            Interest: this.zcomponent.nodes.InterestLabel,
+            Joy: this.zcomponent.nodes.JoyLabel
+        }
+
         for (const group in EMOTION_GROUPS) {
             let component = EmotionToComponentMap[group] as EmotionMeshComponent;  
 
-            const opacity = cumulativeSums[group] / (100.0 * 4);
+            const opacity = cumulativeSums[group] / (10.0);
 
             component.opacity += opacity;
-            // console.log(component.opacity);
+            component.element.scale.addScalar(opacity);
+           
         }
 
        
