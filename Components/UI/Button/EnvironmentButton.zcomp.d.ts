@@ -2,9 +2,18 @@ import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Ev
 
 import { Image as Image_0 } from "@zcomponent/three/lib/components/Image";
 import { EmitComponentPropEvent as EmitComponentPropEvent_1 } from "@zcomponent/core/lib/behaviors/EmitComponentPropEvent";
+import { ToggleLayerClips as ToggleLayerClips_2 } from "@zcomponent/core/lib/behaviors/ToggleLayerClips";
+import { Image360 as Image360_3 } from "@zcomponent/three/lib/components/Image360";
+import { Text as Text_4 } from "@zcomponent/three/lib/components/text/Text";
 
 interface ConstructorProps {
-
+	/**
+	 * If true, the scene's environment map will be set to this HDR image
+	 * 
+	 * @zprop
+	 * @zdefault true
+	 */
+	ToggleEnvironment: boolean;
 }
 
 /**
@@ -20,12 +29,27 @@ declare class Comp extends ZComponent {
 			behaviors: {
 				0: EmitComponentPropEvent_1,
 				EmitComponentPropEvent: EmitComponentPropEvent_1,
+				1: ToggleLayerClips_2,
+				ToggleLayerClips: ToggleLayerClips_2,
+			}
+		},
+		Image360: Image360_3 & {
+			behaviors: {
+
+			}
+		},
+		Text: Text_4 & {
+			behaviors: {
+
 			}
 		},
 	};
 
 	animation: Animation & { layers: {
-
+		Environment: Layer & { clips: {
+			Turn360On0: LayerClip;
+			Turn360OF0: LayerClip;
+		}};
 	}};
 
 	/**
@@ -72,6 +96,12 @@ declare class Comp extends ZComponent {
 	 * @zprop
 	 */
 	public _On360ButtonPressed: Event<[]>;
+
+	/**
+	 * @zprop
+	 * @zdefault "icon_text"
+	 */
+	public icon_text: Observable<string>;
 }
 
 export default Comp;
