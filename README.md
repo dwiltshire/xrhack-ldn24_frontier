@@ -28,6 +28,33 @@ export const HUME_AI = {
 };
 ```
 
+## Voice Anaylsis
+
+Voice analysis is provided by [Hume](https://platform.hume.ai/), please familiarise yourself with their [Terms & Conditions](https://platform.hume.ai/policies/terms-of-use) and pricing before sharing/deploying this project.
+
+To enable Voice Analyis you must make use of the `ContextSetup` component (see 'gotchas' below). This will ensure that the analysis tools are availble to link to scene entities.
+
+Once enabled, you should be able to link the following properties and methods to your entities:
+
+### Properties
+
+| Property        | Type   | Description                                                                                                                                                                              | Example                                                                                                         |
+| --------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| analysisState   | String | Current state of the anaylsis process                                                                                                                                                    | `Pending` (connecting to hume)<br />`Ready` (ready to record input)<br />`Listening` (actively recording input) |
+| nextActionLabel | String | The anaylsis flow follows a simple sequence of connect > start > stop. This field provided a label to describe what the next action will be.                                             | `Connect`<br />`Stop`<br />`Start`                                                                              |
+| lastMessage     | String | A text transcript of the last audio recording that the Hume platform was able to analyse                                                                                                 | `"I am feeling great"`                                                                                          |
+| lastSentiment   | String | An object representing the detected emotions in the last audio recording as detected by the Hume platform. There are 61 emotions and they are each assigned a value between `0` and `1`. | `{"Admiration": 0.1, "Adoration": 0.2, "Anger": 0.3, "etc": "..etc"}`<br />                                     |
+
+![connecting-to-context](Documentation/images/connecting-to-context-property.png)
+
+### Methods
+
+| Method            | Parameters | Description                                                                                                |
+| ----------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
+| triggerNextAction | (None)     | Will trigger the next action in the analysis sequence e.g. connect to hume/start recording/stop recording. |
+
+![connecting-to-context](Documentation/images/calling-a-context-method.png)
+
 ## Gotchas
 
 _Context Links_
