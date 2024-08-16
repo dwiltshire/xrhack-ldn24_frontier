@@ -5,9 +5,10 @@ import { EmitComponentPropEvent as EmitComponentPropEvent_1 } from "@zcomponent/
 import { default as CreateButton_zcomp_2 } from "./CreateButton.zcomp";
 import { Group as Group_3 } from "@zcomponent/three/lib/components/Group";
 import { default as Dock_zcomp_4 } from "./Dock.zcomp";
-import { default as UserAccount_zcomp_5 } from "./UserAccount.zcomp";
+import { default as EnvironmentButton_zcomp_5 } from "../Button/EnvironmentButton.zcomp";
 import { default as ShareButton_zcomp_6 } from "./ShareButton.zcomp";
-import { default as EnvironmentButton_zcomp_7 } from "../Button/EnvironmentButton.zcomp";
+import { default as UserAccount_zcomp_7 } from "./UserAccount.zcomp";
+import { default as Button_zcomp_8 } from "../Button/Button.zcomp";
 
 interface ConstructorProps {
 
@@ -44,7 +45,7 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		UserAccount: UserAccount_zcomp_5 & {
+		EnvironmentButton: EnvironmentButton_zcomp_5 & {
 			behaviors: {
 
 			}
@@ -54,7 +55,12 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		EnvironmentButton: EnvironmentButton_zcomp_7 & {
+		UserAccount: UserAccount_zcomp_7 & {
+			behaviors: {
+
+			}
+		},
+		Start: Button_zcomp_8 & {
 			behaviors: {
 
 			}
@@ -64,6 +70,16 @@ declare class Comp extends ZComponent {
 	animation: Animation & { layers: {
 
 	}};
+
+	/**
+	 * @zprop
+	 */
+	public OnCreateButtonPressed: Event<[]>;
+
+	/**
+	 * @zprop
+	 */
+	public onCalendarPressed: Event<[]>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -104,16 +120,6 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 11
 	 */
 	public visible: Observable<boolean>;
-
-	/**
-	 * @zprop
-	 */
-	public onCalendarPressed: Event<[]>;
-
-	/**
-	 * @zprop
-	 */
-	public OnCreateButtonPressed: Event<[]>;
 }
 
 export default Comp;

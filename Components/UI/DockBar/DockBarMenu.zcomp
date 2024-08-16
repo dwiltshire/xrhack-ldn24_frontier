@@ -44,6 +44,9 @@
 		"ShareButton 2": {
 			"38b0e023dd144dd7897d00025a8f07f7": true
 		},
+		"Start": {
+			"fc24ebcaff484b99a3cd1ca40df752e6": true
+		},
 		"UserAccount": {
 			"a3f9996c65974edaafbe1552ac410968": true
 		}
@@ -66,6 +69,9 @@
 		},
 		"ShareButton0": {
 			"38b0e023dd144dd7897d00025a8f07f7": true
+		},
+		"Start": {
+			"fc24ebcaff484b99a3cd1ca40df752e6": true
 		},
 		"UserAccount": {
 			"a3f9996c65974edaafbe1552ac410968": true
@@ -91,6 +97,8 @@
 		"dd2648e5414e4cf1a942e80f9691d935": {
 		},
 		"f4dcaff6558f4e369ebce26c2474dd40": {
+		},
+		"fc24ebcaff484b99a3cd1ca40df752e6": {
 		}
 	},
 	"entityPropOverrides": {
@@ -164,9 +172,14 @@
 		"38b0e023dd144dd7897d00025a8f07f7": {
 			"icon_text": "share",
 			"position": [
-				1.7267595095894288,
+				0.6433081126464288,
 				0,
 				0
+			],
+			"scale": [
+				1.065696832209021,
+				1.065696832209021,
+				1.065696832209021
 			]
 		},
 		"a3f9996c65974edaafbe1552ac410968": {
@@ -190,6 +203,11 @@
 				-0.6994411468434992,
 				0,
 				0
+			],
+			"scale": [
+				1.0366196366001041,
+				1.0366196366001041,
+				1.0366196366001041
 			]
 		},
 		"b62f5a3267744ad78211888d1d8cabcf": {
@@ -202,9 +220,10 @@
 			}
 		},
 		"dd2648e5414e4cf1a942e80f9691d935": {
+			"enabled": false,
 			"icon_text": "create",
 			"position": [
-				0.4821230313895779,
+				0.6357068630023861,
 				0,
 				0
 			],
@@ -212,14 +231,33 @@
 				0,
 				0,
 				0
-			]
+			],
+			"scale": [
+				1.0867537864415258,
+				1.0867537864415258,
+				1.0867537864415258
+			],
+			"visible": false
 		},
 		"f4dcaff6558f4e369ebce26c2474dd40": {
 			"position": [
-				0.3767827543072688,
+				0.20381103118798266,
+				0,
+				0.0015781978009304712
+			]
+		},
+		"fc24ebcaff484b99a3cd1ca40df752e6": {
+			"position": [
+				0.5239330034636479,
 				0,
 				0
-			]
+			],
+			"scale": [
+				3.707363701931528,
+				3.707363701931528,
+				1.0592467719804366
+			],
+			"visible": false
 		}
 	},
 	"id": "6fe6bd9ebc584f4e91e653e093fab70c",
@@ -293,6 +331,16 @@
 			},
 			"scriptName": "EnvironmentButton",
 			"type": "../Button/EnvironmentButton.zcomp#default"
+		},
+		"fc24ebcaff484b99a3cd1ca40df752e6": {
+			"id": "fc24ebcaff484b99a3cd1ca40df752e6",
+			"label": "Start",
+			"parent": {
+				"id": "a9f103b33d1a442e81dfcac32aa22af2",
+				"order": "Zw"
+			},
+			"scriptName": "Start",
+			"type": "../Button/Button.zcomp#default"
 		},
 		"root": {
 			"id": "root",
