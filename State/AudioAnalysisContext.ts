@@ -97,6 +97,9 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
   /** @zui */
   public lastSentiment = new Observable<Prosody | undefined>(undefined);
 
+  /** @zui */
+  public lastAiMessage = new Observable<string>("...");
+
   constructor(
     contextManager: ContextManager,
     constructorProps: ConstructionProps
@@ -165,13 +168,20 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
     this.client.on("message", async (message) => {
       console.log("message", message);
       switch (message.type) {
-        // case "assistant_message":
+        case "assistant_message":
         case "user_message":
           const { role, content } = message.message;
 
-          this.lastSentiment.value = message.models.prosody?.scores as Prosody;
+          if (message.type === "user_message") {
+            this.lastSentiment.value = message.models.prosody
+              ?.scores as Prosody;
+            if (role === "assistant") {
+              this.lastMessage.value = content;
+            }
+          } else {
+            this.lastAiMessage.value = content;
+          }
 
-          this.onMessageReceived(role, content);
           break;
 
         case "audio_output":
@@ -265,11 +275,5 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
     this.currentAudio = null;
     this.isPlaying = false;
     this.audioQueue.length = 0;
-  }
-
-  onMessageReceived(role: "assistant" | "system" | "user", content: string) {
-    if (role === "assistant") {
-      this.lastMessage.value = content;
-    }
   }
 }
