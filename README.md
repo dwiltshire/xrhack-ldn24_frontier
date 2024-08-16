@@ -59,3 +59,6 @@ Once enabled, you should be able to link the following properties and methods to
 
 _Context Links_
 There was an issue with Context registration timings which can cause fields to not link to their values when mapping using the "link to context value" feature. To work around this, make sure the `ContextSetup.ts` component is included in your scene.
+
+_Glitchy pngs_
+There was an issue where we were finding image elements that were using transparent png would glitch during the experience. Issue was related to having multiple pngs stacked on top of each other thwarting threejs attempt to accutately otder them. Fix is to add the `RenderOrder.ts` behaviour to manually override the render order of the affected elements with an appropriate value - in our case `10` worked.

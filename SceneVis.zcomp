@@ -104,7 +104,7 @@
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
 		},
 		"ContextSetup": {
-			"415dc3c7ee204e699abc9597d6610c11": true
+			"d8c21a95db3048909915b0668b99068f": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -250,9 +250,6 @@
 		"UI": {
 			"8e16061cc30c46139699514381c58f8a": true
 		},
-		"User Placement Manager": {
-			"1a58dc40b496466b880e7a51cea0328f": true
-		},
 		"XR Camera": {
 			"c37977ec906344f3802cdca1d6ac24d5": true
 		},
@@ -280,7 +277,7 @@
 			"bf59aa4eac3f4628bcd8579ee35fae3c": true
 		},
 		"ContextSetup": {
-			"415dc3c7ee204e699abc9597d6610c11": true
+			"d8c21a95db3048909915b0668b99068f": true
 		},
 		"DefaultCookieConsent": {
 			"0ba8e27369df45ca897731dcb1e39bcf": true
@@ -423,9 +420,6 @@
 		"UI": {
 			"8e16061cc30c46139699514381c58f8a": true
 		},
-		"User_PlacementManager": {
-			"1a58dc40b496466b880e7a51cea0328f": true
-		},
 		"XRRigARUserPlacement0": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
 		},
@@ -448,8 +442,6 @@
 		},
 		"0dd90d75beb548fcbbc3f4e63b79137a": {
 		},
-		"1a58dc40b496466b880e7a51cea0328f": {
-		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 		},
 		"1cb01263ed2d42e9b0c0cefc13920877": {
@@ -470,8 +462,6 @@
 		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
-		},
-		"415dc3c7ee204e699abc9597d6610c11": {
 		},
 		"46d0fdd0f82145e697a09039e54b6aed": {
 		},
@@ -544,6 +534,8 @@
 		"ca924693d1d14c1cad121d3747126acb": {
 		},
 		"d4d4440532bd43718d14775551748351": {
+		},
+		"d8c21a95db3048909915b0668b99068f": {
 		},
 		"dc6dc211baef4a19877886367be44e21": {
 		},
@@ -638,11 +630,6 @@
 	},
 	"entityProps": {
 		"0369b09380e649aab87b180eb3aa4f1a": {
-			"position": [
-				0,
-				0,
-				20
-			],
 			"rotation": [
 				0,
 				0,
@@ -655,11 +642,6 @@
 		},
 		"0dd90d75beb548fcbbc3f4e63b79137a": {
 		},
-		"1a58dc40b496466b880e7a51cea0328f": {
-			"forceGroundPlane": true,
-			"notPlacingLayerClip": "60477e43538a41709ba5c801556aef2e",
-			"placingLayerClip": "9762b682a3fc49a78c9ab2b8cd29d70f"
-		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 			"fog": true,
 			"transparent": false
@@ -667,10 +649,10 @@
 		"1cb01263ed2d42e9b0c0cefc13920877": {
 		},
 		"1e9992bc9dcf44d3b01ced234f9f1235": {
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				-7.593326542209019,
-				-5.875577273401237,
+				-6.1929398711318155,
+				-4.011461354831344,
 				-27.076327337660707
 			],
 			"rateOfChange": 1,
@@ -695,8 +677,13 @@
 		"2022177141c04bc29c60da812382741d": {
 			"bevelEnabled": false,
 			"position": [
-				-7.429434579265873,
-				-3.842299352950345,
+				-6.916701390094502,
+				-1.9518066437682737,
+				0.00023866872798240422
+			],
+			"rotation": [
+				0,
+				-0.0004654832489589672,
 				0
 			],
 			"scale": [
@@ -705,7 +692,7 @@
 				1
 			],
 			"size": 0.5,
-			"text": "...qweqe\n"
+			"text": "..."
 		},
 		"259ece5827fe40128368a51aceee7d97": {
 			"function": {
@@ -720,8 +707,13 @@
 		"345e47aa1ff0427e85381633c5f2bc01": {
 			"bevelEnabled": false,
 			"position": [
-				-9.586875933423885,
-				-1.4758250909600763,
+				-8.166103652685466,
+				-0.458771897965077,
+				0
+			],
+			"rotation": [
+				-0.020704616052784175,
+				0,
 				0
 			],
 			"scale": [
@@ -729,24 +721,26 @@
 				1,
 				1
 			],
+			"size": 0.5,
 			"text": "Amusement\n\n\n"
 		},
 		"366246262b7d47e1b9980f88a52ef7f5": {
 		},
 		"39d8591407a64f75bf92a93739c41c67": {
 			"position": [
-				-2.966304576309418,
-				-3.91618616606595,
+				0.012316613181617253,
+				-4.439821723973001,
 				0
 			],
-			"text": "Sadness\n\n\n"
+			"size": 0.5,
+			"text": "...\n"
 		},
 		"3ba26cc8bcf1499f8d52b6d97d0e43b8": {
 		},
 		"401bbc457e964ecbb07fc65fad867438": {
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				-11.40049861031077,
+				-9.391145870340088,
 				2.6489265614697826,
 				-27.99556867829518
 			],
@@ -769,8 +763,6 @@
 			"shapeScale": 0.6,
 			"spikeFrequency": 3
 		},
-		"415dc3c7ee204e699abc9597d6610c11": {
-		},
 		"46d0fdd0f82145e697a09039e54b6aed": {
 			"position": [
 				-1.469325339858159,
@@ -778,24 +770,29 @@
 				0
 			],
 			"size": 0.5,
-			"text": "Interest\n\n\n"
+			"text": "...\n"
 		},
 		"4d87f3a5be1f457c8ba2da2e54e991ed": {
 		},
 		"4f044f8ce02442d3a5df4f5387683d07": {
 			"position": [
-				3.904868354059206,
-				-1.795515418448895,
-				0
+				2.7125031150726784,
+				0.3528218253397716,
+				-0.04324448635651233
+			],
+			"rotation": [
+				-0.016684841974731197,
+				0.008671829738863492,
+				1.355303675133327e-20
 			],
 			"size": 0.5,
 			"text": "Surprise\n\n\n\n"
 		},
 		"4fb98c6ff1ce4103b135fbf08eac1b15": {
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
 				1.8255126532952906,
-				-10.229779018857124,
+				-7.988231269498133,
 				-28.400346026271272
 			],
 			"rateOfChange": 0.4,
@@ -821,11 +818,12 @@
 		},
 		"56110440042a4ad2af87c7b740c48852": {
 			"position": [
-				-6.896870939431084,
-				0,
+				-6.0883923471699255,
+				-0.5848131571097097,
 				0
 			],
-			"text": "Anger\n\n\n"
+			"size": 0.5,
+			"text": "..."
 		},
 		"59cba062b83d4eeaabee591728946232": {
 			"enabled": false,
@@ -839,9 +837,10 @@
 			}
 		},
 		"5d206b59420e4ecca151274ea8b0ca22": {
+			"fontSize": 0.05,
 			"position": [
-				-0.2749435772369141,
-				1.4895762612583163,
+				-0.09440358923939152,
+				1.2607598999048502,
 				0.3068733056313313
 			],
 			"scale": [
@@ -861,10 +860,10 @@
 		},
 		"78ee6b0a2e294857a2beb22f0c6e0b40": {
 			"castShadow": true,
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				0.9460715377983542,
-				17.098361498335382,
+				0.7430293238306671,
+				14.806806780061281,
 				-28.40032419175318
 			],
 			"rateOfChange": 2,
@@ -905,18 +904,20 @@
 		},
 		"8c384edf40254bcab755f2e3a7161c7d": {
 			"position": [
-				2.4585391434542445,
-				0,
+				3.6924405355095034,
+				-0.5154926523237933,
 				0
 			],
-			"text": "Surprise\n\n\n\n"
+			"size": 0.5,
+			"text": "...\n"
 		},
 		"8c594047ea674c3bab3a2f22961e60b2": {
 			"position": [
-				-1.1812431547872482,
+				-0.8788242557523265,
 				3.680198162731516,
 				0
 			],
+			"size": 0.5,
 			"text": "Joy\n\n\n"
 		},
 		"8d7d1c3137e243e5bbe5280bc7259b8a": {
@@ -937,15 +938,15 @@
 			"position": [
 				0,
 				0,
-				13.397977414468983
+				-3.3569868455030507
 			]
 		},
 		"9256d579f67744baa35da13378520884": {
 			"castShadow": true,
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				14.622264218653164,
-				2.7123714668922756,
+				12.853225544505115,
+				3.9082968136298164,
 				-28.400346026271272
 			],
 			"rateOfChange": 4.9,
@@ -972,7 +973,7 @@
 		"a30ef6a438e84eaa9e5139fdf7a4f095": {
 			"position": [
 				3.0993092100422803,
-				-1.336212621033607,
+				0.7114611444763894,
 				0
 			],
 			"size": 0.5,
@@ -983,7 +984,7 @@
 		"adc5e2842ba646719918b60749b09c74": {
 			"position": [
 				3.6754902776301352,
-				-1.214569321501724,
+				0.8329837751548368,
 				0
 			],
 			"size": 0.5,
@@ -991,21 +992,23 @@
 		},
 		"b42e9ee932d744f69c9fd924b9570369": {
 			"position": [
-				2.8271235010628373,
-				0,
+				4.199905221037195,
+				-0.32672599755271925,
 				0
 			],
-			"text": "Love\n\n\n"
+			"size": 0.5,
+			"text": "...\n"
 		},
 		"b4be73b3dcad4ef9a6654e822505a64c": {
 		},
 		"bbe0c2580b134a31a70a7ce59b0821e1": {
 			"position": [
-				2.492229786907574,
+				3.3998758864208476,
 				0,
 				0
 			],
-			"text": "Fear\n\n\n"
+			"size": 0.5,
+			"text": "...\n"
 		},
 		"be4d21ff928c48e48553efb8ec9aa26c": {
 			"enabled": true,
@@ -1020,7 +1023,7 @@
 			"position": [
 				0,
 				0,
-				20
+				0.10835923914977297
 			],
 			"rotation": [
 				0,
@@ -1035,8 +1038,8 @@
 		},
 		"c087e89d60b044ef8e93b81b6b1ac95d": {
 			"position": [
-				-1.4530043913682413,
-				-5.6891917220389185,
+				-1.2204399981418796,
+				-3.416675050082187,
 				0
 			],
 			"size": 0.5,
@@ -1052,10 +1055,10 @@
 		},
 		"c63d8679256943a28e93c624c570f65f": {
 			"castShadow": true,
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				9.003778242686838,
-				11.237319359032272,
+				8.212567182454979,
+				10.724919885247159,
 				-28.357170522930783
 			],
 			"rateOfChange": 1,
@@ -1083,10 +1086,10 @@
 		},
 		"d4d4440532bd43718d14775551748351": {
 			"castShadow": true,
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
 				9.94864027356694,
-				-5.940490388843481,
+				-3.727571791288687,
 				-28.33450255456378
 			],
 			"rateOfChange": 1,
@@ -1110,6 +1113,8 @@
 			"spikeFrequency": 0.5,
 			"visible": true
 		},
+		"d8c21a95db3048909915b0668b99068f": {
+		},
 		"dc6dc211baef4a19877886367be44e21": {
 			"enabled": true
 		},
@@ -1126,7 +1131,7 @@
 				0
 			],
 			"size": 0.5,
-			"text": "...\n\n\n\n"
+			"text": "...\n"
 		},
 		"ef9bcc68042d406f9093054448afcbb9": {
 		},
@@ -1136,6 +1141,7 @@
 				4.127675827860855,
 				0
 			],
+			"size": 0.5,
 			"text": "Interest\n\n\n"
 		},
 		"f66a011b0cc14713b3b9213dfb5267b4": {
@@ -1145,20 +1151,20 @@
 		"f8bc763e629544c2a9734325736a3835": {
 			"position": [
 				-6.4583273181369005,
-				-1.434771773806364,
+				0.49608906517219475,
 				0
 			],
 			"size": 0.5,
-			"text": "....\n\n\n\n"
+			"text": "Anger\n\n\n\n"
 		},
 		"f8d623ffe905437283f3b99adef36051": {
 		},
 		"ff64ed3f08874d968f71e3afa3bb4b1e": {
 			"castShadow": true,
-			"opacity": 0.2,
+			"opacity": 0.15,
 			"position": [
-				-9.400856351841858,
-				11.595450036403491,
+				-7.408536388087826,
+				10.555959805890827,
 				-28.400346026271272
 			],
 			"rateOfChange": 1,
@@ -1224,16 +1230,6 @@
 			},
 			"scriptName": "MeshStandardMaterial_7",
 			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
-		},
-		"1a58dc40b496466b880e7a51cea0328f": {
-			"id": "1a58dc40b496466b880e7a51cea0328f",
-			"label": "User Placement Manager",
-			"parent": {
-				"id": "0369b09380e649aab87b180eb3aa4f1a",
-				"order": "a3"
-			},
-			"scriptName": "User_PlacementManager",
-			"type": "@zcomponent/three-webxr/lib/components/UserPlacementManager#UserPlacementManager"
 		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 			"id": "1b6e550ab10c4b99afde95da490e7928",
@@ -1324,16 +1320,6 @@
 			},
 			"scriptName": "EmotionAnger",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
-		},
-		"415dc3c7ee204e699abc9597d6610c11": {
-			"id": "415dc3c7ee204e699abc9597d6610c11",
-			"label": "ContextSetup",
-			"parent": {
-				"id": "8e16061cc30c46139699514381c58f8a",
-				"order": "a0"
-			},
-			"scriptName": "ContextSetup",
-			"type": "./ContextSetup#ContextSetup"
 		},
 		"46d0fdd0f82145e697a09039e54b6aed": {
 			"id": "46d0fdd0f82145e697a09039e54b6aed",
@@ -1654,6 +1640,16 @@
 			},
 			"scriptName": "EmotionSurprise",
 			"type": "./Components/Visualization/EmotionMeshComponent#EmotionMeshComponent"
+		},
+		"d8c21a95db3048909915b0668b99068f": {
+			"id": "d8c21a95db3048909915b0668b99068f",
+			"label": "ContextSetup",
+			"parent": {
+				"id": "8e16061cc30c46139699514381c58f8a",
+				"order": "Zy"
+			},
+			"scriptName": "ContextSetup",
+			"type": "./State/utils/ContextSetup#ContextSetup"
 		},
 		"deb694620f694696812065fe58ce123c": {
 			"id": "deb694620f694696812065fe58ce123c",
