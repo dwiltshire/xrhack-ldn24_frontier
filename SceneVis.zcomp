@@ -250,9 +250,6 @@
 		"UI": {
 			"8e16061cc30c46139699514381c58f8a": true
 		},
-		"User Placement Manager": {
-			"1a58dc40b496466b880e7a51cea0328f": true
-		},
 		"XR Camera": {
 			"c37977ec906344f3802cdca1d6ac24d5": true
 		},
@@ -423,9 +420,6 @@
 		"UI": {
 			"8e16061cc30c46139699514381c58f8a": true
 		},
-		"User_PlacementManager": {
-			"1a58dc40b496466b880e7a51cea0328f": true
-		},
 		"XRRigARUserPlacement0": {
 			"0369b09380e649aab87b180eb3aa4f1a": true
 		},
@@ -447,8 +441,6 @@
 		"0c4ebdc7633941dca542c9ae9cd90aca": {
 		},
 		"0dd90d75beb548fcbbc3f4e63b79137a": {
-		},
-		"1a58dc40b496466b880e7a51cea0328f": {
 		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 		},
@@ -638,11 +630,6 @@
 	},
 	"entityProps": {
 		"0369b09380e649aab87b180eb3aa4f1a": {
-			"position": [
-				0,
-				0,
-				20
-			],
 			"rotation": [
 				0,
 				0,
@@ -654,11 +641,6 @@
 		"0c4ebdc7633941dca542c9ae9cd90aca": {
 		},
 		"0dd90d75beb548fcbbc3f4e63b79137a": {
-		},
-		"1a58dc40b496466b880e7a51cea0328f": {
-			"forceGroundPlane": true,
-			"notPlacingLayerClip": "60477e43538a41709ba5c801556aef2e",
-			"placingLayerClip": "9762b682a3fc49a78c9ab2b8cd29d70f"
 		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 			"fog": true,
@@ -935,7 +917,7 @@
 			"position": [
 				0,
 				0,
-				13.397977414468983
+				-3.3569868455030507
 			]
 		},
 		"9256d579f67744baa35da13378520884": {
@@ -1018,7 +1000,7 @@
 			"position": [
 				0,
 				0,
-				20
+				-1.4189128113160896
 			],
 			"rotation": [
 				0,
@@ -1224,16 +1206,6 @@
 			},
 			"scriptName": "MeshStandardMaterial_7",
 			"type": "@zcomponent/three/lib/components/materials/MeshStandardMaterial#MeshStandardMaterial"
-		},
-		"1a58dc40b496466b880e7a51cea0328f": {
-			"id": "1a58dc40b496466b880e7a51cea0328f",
-			"label": "User Placement Manager",
-			"parent": {
-				"id": "0369b09380e649aab87b180eb3aa4f1a",
-				"order": "a3"
-			},
-			"scriptName": "User_PlacementManager",
-			"type": "@zcomponent/three-webxr/lib/components/UserPlacementManager#UserPlacementManager"
 		},
 		"1b6e550ab10c4b99afde95da490e7928": {
 			"id": "1b6e550ab10c4b99afde95da490e7928",
