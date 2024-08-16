@@ -21,17 +21,17 @@ declare class Comp extends ZComponent {
 
 			}
 		},
+		month: Image_1 & {
+			behaviors: {
+
+			}
+		},
 		next_button: Image_1 & {
 			behaviors: {
 
 			}
 		},
 		previous_button: Image_1 & {
-			behaviors: {
-
-			}
-		},
-		month: Image_1 & {
 			behaviors: {
 
 			}
@@ -46,16 +46,6 @@ declare class Comp extends ZComponent {
 	animation: Animation & { layers: {
 
 	}};
-
-	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
-	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
-	 */
-	public visible: Observable<boolean>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -86,6 +76,16 @@ declare class Comp extends ZComponent {
 	 * @zgrouppriority 10
 	 */
 	public scale: Observable<[x: number, y: number, z: number]>;
+
+	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
+	 * @zprop
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
+	 */
+	public visible: Observable<boolean>;
 }
 
 export default Comp;

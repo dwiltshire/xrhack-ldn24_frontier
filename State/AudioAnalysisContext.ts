@@ -129,6 +129,8 @@ export class AudioAnalysisContext extends Context<ConstructionProps> {
           break;
       }
     });
+
+    this.connect();
   }
 
   /** @zui */

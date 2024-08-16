@@ -7,8 +7,8 @@ import { Group as Group_3 } from "@zcomponent/three/lib/components/Group";
 import { default as Dock_zcomp_4 } from "./Dock.zcomp";
 import { default as EnvironmentButton_zcomp_5 } from "../Button/EnvironmentButton.zcomp";
 import { default as ShareButton_zcomp_6 } from "./ShareButton.zcomp";
-import { default as UserAccount_zcomp_7 } from "./UserAccount.zcomp";
-import { default as Button_zcomp_8 } from "../Button/Button.zcomp";
+import { default as Button_zcomp_7 } from "../Button/Button.zcomp";
+import { default as UserAccount_zcomp_8 } from "./UserAccount.zcomp";
 
 interface ConstructorProps {
 
@@ -55,12 +55,12 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		UserAccount: UserAccount_zcomp_7 & {
+		Start: Button_zcomp_7 & {
 			behaviors: {
 
 			}
 		},
-		Start: Button_zcomp_8 & {
+		UserAccount: UserAccount_zcomp_8 & {
 			behaviors: {
 
 			}

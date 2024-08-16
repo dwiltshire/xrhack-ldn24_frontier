@@ -1,8 +1,8 @@
 import { ZComponent, ContextManager, Observable, Animation, Layer, LayerClip, Event } from "@zcomponent/core";
 
 import { Image as Image_0 } from "@zcomponent/three/lib/components/Image";
-import { Text as Text_1 } from "@zcomponent/three/lib/components/text/Text";
-import { Group as Group_2 } from "@zcomponent/three/lib/components/Group";
+import { Group as Group_1 } from "@zcomponent/three/lib/components/Group";
+import { Text as Text_2 } from "@zcomponent/three/lib/components/text/Text";
 
 interface ConstructorProps {
 
@@ -17,12 +17,17 @@ declare class Comp extends ZComponent {
 	constructor(contextManager: ContextManager, constructorProps: ConstructorProps);
 
 	nodes: {
-		voice_bar0: Image_0 & {
+		AI0: Image_0 & {
 			behaviors: {
 
 			}
 		},
-		AI0: Image_0 & {
+		Chatbox: Group_1 & {
+			behaviors: {
+
+			}
+		},
+		Text: Text_2 & {
 			behaviors: {
 
 			}
@@ -32,12 +37,7 @@ declare class Comp extends ZComponent {
 
 			}
 		},
-		Text: Text_1 & {
-			behaviors: {
-
-			}
-		},
-		Chatbox: Group_2 & {
+		voice_bar0: Image_0 & {
 			behaviors: {
 
 			}
@@ -45,11 +45,11 @@ declare class Comp extends ZComponent {
 	};
 
 	animation: Animation & { layers: {
-		VoiceBarPressed: Layer & { clips: {
-			Pressed0: LayerClip;
-		}};
 		AI_Button: Layer & { clips: {
 			pressed0: LayerClip;
+		}};
+		VoiceBarPressed: Layer & { clips: {
+			Pressed0: LayerClip;
 		}};
 		AudioButton: Layer & { clips: {
 			Pressed: LayerClip;
@@ -57,14 +57,13 @@ declare class Comp extends ZComponent {
 	}};
 
 	/**
-	 * Determines if this object and its children are rendered to the screen.
-	 * 
 	 * @zprop
-	 * @zdefault true
-	 * @zgroup Appearance
-	 * @zgrouppriority 11
+	 * @zdefault "Hey, how are you doing today?"
+	 * @zgroup Text
+	 * @zgrouppriority 21
+	 * @ztype text-multiline
 	 */
-	public visible: Observable<boolean>;
+	public InputText: Observable<string>;
 
 	/**
 	 * The position, in 3D space, of this node relative to its parent. The three elements of the array correspond to the `x`, `y`, and `z` components of position.
@@ -97,13 +96,14 @@ declare class Comp extends ZComponent {
 	public scale: Observable<[x: number, y: number, z: number]>;
 
 	/**
+	 * Determines if this object and its children are rendered to the screen.
+	 * 
 	 * @zprop
-	 * @zdefault "Hey, how are you doing today?"
-	 * @zgroup Text
-	 * @zgrouppriority 21
-	 * @ztype text-multiline
+	 * @zdefault true
+	 * @zgroup Appearance
+	 * @zgrouppriority 11
 	 */
-	public InputText: Observable<string>;
+	public visible: Observable<boolean>;
 }
 
 export default Comp;
