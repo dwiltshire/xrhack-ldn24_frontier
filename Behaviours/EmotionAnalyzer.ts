@@ -3,6 +3,7 @@ import { Group as Group } from "@zcomponent/three/lib/components/Group";
 import { default as SceneVis} from "../SceneVis.zcomp";
 import { EmotionMeshComponent } from '../Components/Visualization/EmotionMeshComponent';
 import { AudioAnalysisContext, Prosody } from "../State/AudioAnalysisContext";
+import { ExtrudedText } from "@zcomponent/three/lib/components/meshes/ExtrudedText";
 
 
 // Define the emotion groups
@@ -16,6 +17,15 @@ const EMOTION_GROUPS = {
     Anger: ['Anger', 'Contempt', 'Disgust', 'Embarrassment', 'Shame'],
     Amusement: ['Amusement', 'Aesthetic Appreciation', 'Craving', 'Boredom', 'Tiredness', 'Entrancement']
 };
+
+function findEmotionGroup(emotion: string): string | null {
+    for (const group in EMOTION_GROUPS) {
+        if (EMOTION_GROUPS[group].includes(emotion)) {
+            return group;
+        }
+    }
+    return null; // Return null if the emotion is not found in any group
+}
 
 // Initialize cumulative sums for each group
 const cumulativeSums = {
@@ -84,56 +94,18 @@ export class EmotionAnalyzer extends Behavior<Group> {
 	updateEmotionScoresAndBoxHeights(value) {
         // Generate mock data and update the emotion scores
         // const mockData = generateMock();
+        if (!value) {
+            return;
+        }
         const emotionScores = value; // mockData.models.prosody.scores;
 
         // Step 1: Convert the object into an array of key-value pairs
-        // const entries = Object.entries(emotionScores);
+        // @ts-ignore
+        const entries = Object.entries(emotionScores);
 
         // Step 2: Sort the array by the values
-        // const sortedEntries = entries.sort(([,a], [,b]) => b - a);
-
-        // Step 3: Convert the sorted array back into an object
-        // const sortedEmotions = Object.fromEntries(sortedEntries);
-
-        // console.log(emotionScores);
-
-        // Calculate the sum of emotion scores for each group and add to cumulative sums
-        for (const group in EMOTION_GROUPS) {
-            if (EMOTION_GROUPS.hasOwnProperty(group) && emotionScores) {
-                // let roundSum = 0;
-
-                let roundSum = emotionScores[group];
-
-                cumulativeSums[group] = roundSum;
-
-                // EMOTION_GROUPS[group].forEach(emotion => {
-                //     roundSum += emotionScores[emotion] || 0;
-                // });
-                // cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
-
-                console.log('Group: ', group, '. Emotions group sum: ', roundSum);
-
-                // scoresText += `<strong>${group}:</strong><br>`;
-                // EMOTION_GROUPS[group].forEach(emotion => {
-                //     const score = emotionScores[emotion] !== undefined ? emotionScores[emotion].toFixed(6) : "N/A";
-                // });
-            }
-        }
-
-        // console.log('CHIILLLLDDREEN', this.zcomponent.nodes.Content_Group.children.length);
-
-        // var nodes = this.zcomponent.nodes.Content_Group.children;
-
-        const EmotionToComponentMap = {
-            Anger: this.zcomponent.nodes.EmotionAnger,
-            Fear: this.zcomponent.nodes.EmotionFear,
-            Amusement: this.zcomponent.nodes.EmotionAmusement,
-            Love: this.zcomponent.nodes.EmotionLove,
-            Surprise: this.zcomponent.nodes.EmotionSurprise,
-            Sadness: this.zcomponent.nodes.EmotionSadness,
-            Interest: this.zcomponent.nodes.EmotionInterest,
-            Joy: this.zcomponent.nodes.EmotionJoy
-        }
+        // @ts-ignore
+        const sortedEntries = entries.sort(([,a], [,b]) => b - a);
 
         const EmotionToLabelMap = {
             Anger: this.zcomponent.nodes.AngerLabel,
@@ -146,6 +118,45 @@ export class EmotionAnalyzer extends Behavior<Group> {
             Joy: this.zcomponent.nodes.JoyLabel
         }
 
+
+        // Step 3: Iterate over the first 5 entries and apply findEmotionGroup
+        for (let i = 0; i < 5; i++) {
+            const [emotion, score] = sortedEntries[i];
+            const group = findEmotionGroup(emotion);
+            
+            console.log(`Top ${i} emotion: ${emotion}, Score: ${score}, Group: ${group}`);
+
+            if (group) {
+                const label = EmotionToLabelMap[group] as ExtrudedText;
+                label.text.value = emotion;
+            }
+        }
+
+        // Calculate the sum of emotion scores for each group and add to cumulative sums
+        for (const group in EMOTION_GROUPS) {
+            if (EMOTION_GROUPS.hasOwnProperty(group) && emotionScores) {
+                let roundSum = 0;
+
+                EMOTION_GROUPS[group].forEach(emotion => {
+                    roundSum += emotionScores[emotion] || 0;
+                });
+                cumulativeSums[group] += roundSum;  // Add the current round sum to the cumulative sum
+
+                console.log('Group: ', group, '. Emotions group sum: ', roundSum);
+            }
+        }
+
+        const EmotionToComponentMap = {
+            Anger: this.zcomponent.nodes.EmotionAnger,
+            Fear: this.zcomponent.nodes.EmotionFear,
+            Amusement: this.zcomponent.nodes.EmotionAmusement,
+            Love: this.zcomponent.nodes.EmotionLove,
+            Surprise: this.zcomponent.nodes.EmotionSurprise,
+            Sadness: this.zcomponent.nodes.EmotionSadness,
+            Interest: this.zcomponent.nodes.EmotionInterest,
+            Joy: this.zcomponent.nodes.EmotionJoy
+        }
+
         for (const group in EMOTION_GROUPS) {
             let component = EmotionToComponentMap[group] as EmotionMeshComponent;  
 
@@ -153,30 +164,7 @@ export class EmotionAnalyzer extends Behavior<Group> {
 
             component.opacity += opacity;
             component.element.scale.addScalar(opacity);
-           
         }
-
-       
-
-        // Update the heights of the boxes based on the cumulative sums, divided by 100
-        /*const boxOne = this.zcomponent.nodes.BoxOne.element;
-        const boxTwo = this.zcomponent.nodes.BoxTwo.element;
-        const boxThree = this.zcomponent.nodes.BoxThree.element;
-        const boxFour = this.zcomponent.nodes.BoxFour.element;
-        const boxFive = this.zcomponent.nodes.BoxFive.element;
-
-        boxOne.scale.setY(cumulativeSums["Joy"] / 100);
-        boxTwo.scale.setY(cumulativeSums["Love"] / 100);
-        boxThree.scale.setY(cumulativeSums["Interest"] / 100);
-        boxFour.scale.setY(cumulativeSums["Surprise"] / 100);
-        boxFive.scale.setY(cumulativeSums["Sadness"] / 100);
-
-        const emotionScoresElement = document.getElementById('emotionScores');
-        if (emotionScoresElement) {
-            emotionScoresElement.innerHTML = scoresText;
-        } else {
-            console.error("Element with id 'emotionScores' not found.");
-        }*/
     }
 
     private async updateRandomWord() {
