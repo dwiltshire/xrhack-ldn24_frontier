@@ -3,6 +3,7 @@ import { Group as Group } from "@zcomponent/three/lib/components/Group";
 import { default as SceneVis} from "../SceneVis.zcomp";
 import { EmotionMeshComponent } from '../Components/Visualization/EmotionMeshComponent';
 import { AudioAnalysisContext, Prosody } from "../State/AudioAnalysisContext";
+import { ExtrudedText } from "@zcomponent/three/lib/components/meshes/ExtrudedText";
 
 
 // Define the emotion groups
@@ -16,6 +17,15 @@ const EMOTION_GROUPS = {
     Anger: ['Anger', 'Contempt', 'Disgust', 'Embarrassment', 'Shame'],
     Amusement: ['Amusement', 'Aesthetic Appreciation', 'Craving', 'Boredom', 'Tiredness', 'Entrancement']
 };
+
+function findEmotionGroup(emotion: string): string | null {
+    for (const group in EMOTION_GROUPS) {
+        if (EMOTION_GROUPS[group].includes(emotion)) {
+            return group;
+        }
+    }
+    return null; // Return null if the emotion is not found in any group
+}
 
 // Initialize cumulative sums for each group
 const cumulativeSums = {
@@ -90,15 +100,37 @@ export class EmotionAnalyzer extends Behavior<Group> {
         const emotionScores = value; // mockData.models.prosody.scores;
 
         // Step 1: Convert the object into an array of key-value pairs
-        // const entries = Object.entries(emotionScores);
+        // @ts-ignore
+        const entries = Object.entries(emotionScores);
 
         // Step 2: Sort the array by the values
-        // const sortedEntries = entries.sort(([,a], [,b]) => b - a);
+        // @ts-ignore
+        const sortedEntries = entries.sort(([,a], [,b]) => b - a);
 
-        // Step 3: Convert the sorted array back into an object
-        // const sortedEmotions = Object.fromEntries(sortedEntries);
+        const EmotionToLabelMap = {
+            Anger: this.zcomponent.nodes.AngerLabel,
+            Fear: this.zcomponent.nodes.FearLabel,
+            Amusement: this.zcomponent.nodes.AmusementLabel,
+            Love: this.zcomponent.nodes.LoveLabel,
+            Surprise: this.zcomponent.nodes.SurpriseLabel,
+            Sadness: this.zcomponent.nodes.SadnessLabel,
+            Interest: this.zcomponent.nodes.InterestLabel,
+            Joy: this.zcomponent.nodes.JoyLabel
+        }
 
-        // console.log(emotionScores);
+
+        // Step 3: Iterate over the first 5 entries and apply findEmotionGroup
+        for (let i = 0; i < 5; i++) {
+            const [emotion, score] = sortedEntries[i];
+            const group = findEmotionGroup(emotion);
+            
+            console.log(`Top ${i} emotion: ${emotion}, Score: ${score}, Group: ${group}`);
+
+            if (group) {
+                const label = EmotionToLabelMap[group] as ExtrudedText;
+                label.text.value = emotion;
+            }
+        }
 
         // Calculate the sum of emotion scores for each group and add to cumulative sums
         for (const group in EMOTION_GROUPS) {
@@ -136,17 +168,6 @@ export class EmotionAnalyzer extends Behavior<Group> {
             Sadness: this.zcomponent.nodes.EmotionSadness,
             Interest: this.zcomponent.nodes.EmotionInterest,
             Joy: this.zcomponent.nodes.EmotionJoy
-        }
-
-        const EmotionToLabelMap = {
-            Anger: this.zcomponent.nodes.AngerLabel,
-            Fear: this.zcomponent.nodes.FearLabel,
-            Amusement: this.zcomponent.nodes.AmusementLabel,
-            Love: this.zcomponent.nodes.LoveLabel,
-            Surprise: this.zcomponent.nodes.SurpriseLabel,
-            Sadness: this.zcomponent.nodes.SadnessLabel,
-            Interest: this.zcomponent.nodes.InterestLabel,
-            Joy: this.zcomponent.nodes.JoyLabel
         }
 
         for (const group in EMOTION_GROUPS) {
